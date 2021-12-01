@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example: Overpass-API with Leaflet.js</title>
+    <title>FEIndoor</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="/static/CSS/style.css"/> 
+    <link rel="stylesheet" href="/static/CSS/style.css"/>
+    <link rel="stylesheet" href="static/css/cs-skin-elastic.css">
+   
+    <!-- Aquí comienza el boot Gmon !-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+
+    <!-- Aquí finaliza el boot Gon !-->
+
+
+    
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/osmtogeojson@2.2.12/osmtogeojson.js"></script>
@@ -14,9 +29,91 @@
   </head>
   <body>
 
+
+      <!-- Left Panel -->
+      <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+          <div id="main-menu" class="main-menu">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="Hola"><i class="menu-icon fa fa-laptop"></i>Inicio</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                       <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Administradores</a>
+                       <ul class="sub-menu children dropdown-menu">
+                           <li><i class="fa fa-pencil"></i><a href="Hola Mundo">Registro de Administradores</a></li>
+                           <li><i class="fa fa-table"></i><a href="Adios Mundo">Listado de Administradores</a></li>
+                       </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Servidores</a>
+                       <ul class="sub-menu children dropdown-menu">
+                           
+                           <li><i class="fa fa-table"></i><a href="Chao Mundo">Listado de Servidores</a></li>
+                       </ul>
+                    </li>
+		    
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+
+
+
+
+
+
+
+
     
-    <div id="map" style="height:600px" >
-      
+
+
+
+
+
+
+  <!-- Right Panel -->
+  <div id="right-panel" class="right-panel">
+      <!-- Header-->
+      <header id="header" class="header">
+        <div class="top-center">
+          <div class="navbar-header">
+            <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+            <a class="navbar-brand hidden" href="#"><img src="" alt="Logo"></a>
+          </div>
+        </div>
+        <div class="top-right">
+          <div class="header-menu">
+            <div class="user-area dropdown float-right">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img class="user-avatar rounded-circle" src="" alt="User Avatar">
+              </a>
+              <div class="user-menu dropdown-menu">
+                <a class="nav-link" href="coco"><i class="fa fa- user"></i>Perfil</a>
+                <a class="nav-link" href="papa"><i class="fa fa -cog"></i>Administración</a>
+                  <a class="nav-link" href="Plete"><i class="fa fa-power -off"></i>Logout</a>
+	
+	      </div>
+            </div>
+	      
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="animated fadeIn">
+            <div class="row">
+              <div class="col-lg-12">
+		
+                <div class="col-md-12 prueba">
+                  <div class="card bg-primary">
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0 text-light text-center">
+                        <h1 class="text-light">FEINDOOR Aplicación para navegación en espacios cerrados </h1>
+			
+			<div id="map" style="height:600px" >
+			  
       <div class="leaflet-control-container">
         <div class="leaflet-top leaflet-right">
           <div id="overpass-api-controls" class="leaflet-bar leaflet-control">
@@ -26,6 +123,17 @@
         </div>
       </div>
 
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+    
+
+
+   <!-- left kdkdkd -->
+    
+    
+   
 
 
 
@@ -51,5 +159,12 @@
 
     
     <script src="/static/JS/script.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="/JS/main.js"></script>
+    
   </body>
 </html>
