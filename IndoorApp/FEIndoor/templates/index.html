@@ -18,50 +18,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
 
     <!-- Aquí finaliza el boot Gon !-->
-
-
+    
+    
     
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/osmtogeojson@2.2.12/osmtogeojson.js"></script>
-   
-   
+    
+    
   </head>
+  
   <body>
-
-
-      <!-- Left Panel -->
-      <aside id="left-panel" class="left-panel">
-        <nav class="navbar navbar-expand-sm navbar-default">
-          <div id="main-menu" class="main-menu">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="Hola"><i class="menu-icon fa fa-laptop"></i>Inicio</a>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                       <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Administradores</a>
-                       <ul class="sub-menu children dropdown-menu">
-                           <li><i class="fa fa-pencil"></i><a href="Hola Mundo">Registro de Administradores</a></li>
-                           <li><i class="fa fa-table"></i><a href="Adios Mundo">Listado de Administradores</a></li>
-                       </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Servidores</a>
-                       <ul class="sub-menu children dropdown-menu">
+    
+    
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+      <nav class="navbar navbar-expand-sm navbar-default">
+        <div id="main-menu" class="main-menu">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="Hola"><i class="menu-icon fa fa-laptop"></i>Inicio</a>
+            </li>
+            <li class="menu-item-has-children dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Administradores</a>
+              <ul class="sub-menu children dropdown-menu">
+                <li><i class="fa fa-pencil"></i><a href="Hola Mundo">Registro de Administradores</a></li>
+                <li><i class="fa fa-table"></i><a href="Adios Mundo">Listado de Administradores</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Servidores</a>
+              <ul class="sub-menu children dropdown-menu">
                            
-                           <li><i class="fa fa-table"></i><a href="Chao Mundo">Listado de Servidores</a></li>
-                       </ul>
-                    </li>
-		    
-                </ul>
-            </div><!-- /.navbar-collapse -->
+                <li><i class="fa fa-table"></i><a href="Chao Mundo">Listado de Servidores</a></li>
+              </ul>
+            </li>
+	    
+          </ul>
+        </div><!-- /.navbar-collapse -->
         </nav>
     </aside>
     <!-- /#left-panel -->
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+ 
+  <!-- Right Panel -->
+   
+      	
+    <!-- Header-->
+    
+    
+    
+    
+ <div id="right-panel" class="right-panel">
 
 
 
 
+
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="letrasd">
+  <h1 class="navbar-brand letrasd" > Platadorma de Navegacion en espacios cerrados</h1>
+</div>
+    <ul class="navbar-nav">
+     
+      <li class="nav-item">
+   
+      </li>
+      <li class="nav-item">
+       
+      </li>
+      <li class="nav-item">
+        <img  src="/static/img/logo.png"  class="d-inline-block tamaño align-top" alt="CACACACACA">
+      </li>
+    </ul>
+
+
+  
+</nav>
+
+   
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 
@@ -70,25 +137,16 @@
 
 
 
-
-
-
-  <!-- Right Panel -->
-  <div id="right-panel" class="right-panel">
-      <!-- Header-->
-      <header id="header" class="header">
-        <div class="top-center">
+    <div class="top-center">
           <div class="navbar-header">
             <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
-            <a class="navbar-brand hidden" href="#"><img src="" alt="Logo"></a>
+            <a class="navbar-brand hidden" href="#"><img src="/static/img/logo.png" alt="Logo"></a>
           </div>
         </div>
         <div class="top-right">
           <div class="header-menu">
             <div class="user-area dropdown float-right">
-              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img class="user-avatar rounded-circle" src="" alt="User Avatar">
-              </a>
+              
               <div class="user-menu dropdown-menu">
                 <a class="nav-link" href="coco"><i class="fa fa- user"></i>Perfil</a>
                 <a class="nav-link" href="papa"><i class="fa fa -cog"></i>Administración</a>
@@ -99,7 +157,7 @@
 	      
             </div>
           </div>
-        </header>
+
 
         <div class="content">
           <div class="animated fadeIn">
@@ -109,62 +167,61 @@
                 <div class="col-md-12 prueba">
                   <div class="card bg-primary">
                     <div class="card-body">
-                      <blockquote class="blockquote mb-0 text-light text-center">
-                        <h1 class="text-light">FEINDOOR Aplicación para navegación en espacios cerrados </h1>
-			
-			<div id="map" style="height:600px" >
+                      <blockquote>
+                        
+			<div id="map" style="height:630px;width:1300px " >
 			  
-      <div class="leaflet-control-container">
-        <div class="leaflet-top leaflet-right">
-          <div id="overpass-api-controls" class="leaflet-bar leaflet-control">
-            <input id="query-textfield" value="leisure=playground" size="50">
-            <input id="query-button" type="button" placeholder="Nombre del aula " value="Nombre del Aula">
-          </div>
-        </div>
-      </div>
+			  <div class="leaflet-control-container">
+			    <div class="leaflet-top leaflet-right">
+			      <div id="overpass-api-controls" class="leaflet-bar leaflet-control">
+				<input id="query-textfield" value="leisure=playground" size="30">
+				<input id="query-button" type="button" placeholder="Nombre del aula " value="Nombre del Aula">
+			      </div>
+			    </div>
+			  </div>
 
                                     </blockquote>
                                 </div>
                             </div>
                         </div>
     
+		
+		
+		<!-- left kdkdkd -->
+		
+		
+		
 
+		
+		
+		<div class="leaflet-control-container">
+		  <div class="leaflet-bottom leaflet-right">
+		    <div id="levels" class="leaflet-bar leaflet-control">
+		      <input id="uno" type="button" value="1">
+		    </div>
+		  </div>
 
-   <!-- left kdkdkd -->
-    
-    
-   
+		  
+		  <div class="leaflet-control-container">
+		    <div class="leaflet-center leaflet-right">
+		      <div id="levels" class="leaflet-bar leaflet-control">
+			<input id="dos" type="button" value="2">
+		      </div>
+		    </div>
+		    
 
-
-
-        <div class="leaflet-control-container">
-        <div class="leaflet-bottom leaflet-right">
-           <div id="levels" class="leaflet-bar leaflet-control">
-            <input id="uno" type="button" value="1">
-          </div>
-        </div>
-
-	
-	<div class="leaflet-control-container">
-          <div class="leaflet-center leaflet-right">
-            <div id="levels" class="leaflet-bar leaflet-control">
-              <input id="dos" type="button" value="2">
-            </div>
-          </div>
-	  
-
-      
-      
-    </div>
-
-    
-    <script src="/static/JS/script.js"></script>
-
-     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
-    <script src="/JS/main.js"></script>
-    
+		    
+		    
+		  </div>
+		  
+		  
+		  <script src="/static/JS/script.js"></script>
+		  
+		  <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+		  <script src="/JS/main.js"></script>
+		  
   </body>
 </html>

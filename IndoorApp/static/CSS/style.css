@@ -12,6 +12,20 @@
 --------------------------------------------------------- */
 /*
 
+*/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-item {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
 
 Googel Fonts  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
@@ -21,6 +35,46 @@ Googel Fonts  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 .bg-flat-color-1 {
   background: #00c292; }
+
+
+.letrasd {
+
+    padding-top: 50px;
+    float: center;
+    padding-left: 200px;
+    font-size: 19;
+ 
+    
+}
+.header {
+
+    width: 10px;
+    background:  #00c292;
+    position: initial;
+}
+.navbar-brand {
+    padding-top: 50px;
+    float: center;
+    padding-left: 370px;
+    font-size: 100%
+    
+}
+
+.tamaño {
+    
+    height: 100%;
+    width: 100%;
+    float:right;
+    padding-left:100px;
+
+}
+
+
+imge.img {
+    float:right;
+     height: 100 px;
+}
+
 
 .bg-flat-color-2 {
   background: #ab8ce4; }
@@ -1062,11 +1116,11 @@ header .form-inline {
   .user-area .dropdown-toggle:before {
     content: "";
     position: absolute;
-    right: -3px;
-    bottom: 10px;
+    right: 3px;
+    bottom: 60px;
     background: #868e96;
-    width: 11px;
-    height: 11px;
+    width: 100px;
+    height: 1000px;
     border-radius: 100%;
     border: 2px  solid white;
     z-index: 1; }
@@ -2216,7 +2270,7 @@ footer.site-footer {
     aside.left-panel .navbar .navbar-brand {
       display: none; }
       aside.left-panel .navbar .navbar-brand.hidden {
-        padding: 0 0 10px;
+        padding: 0 0 0px;
         text-align: center;
         width: 100%; }
         aside.left-panel .navbar .navbar-brand.hidden img {
@@ -2511,3 +2565,4 @@ footer.site-footer {
    min-height: 70vh;
 }
 /*# sourceMappingURL=style.css.map */
+
