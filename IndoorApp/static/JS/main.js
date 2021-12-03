@@ -1,7 +1,6 @@
 $.noConflict();
 
 jQuery(document).ready(function($) {
-
 	"use strict";
 
 	[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
@@ -9,9 +8,6 @@ jQuery(document).ready(function($) {
 	});
 
 	jQuery('.selectpicker').selectpicker;
-
-
-	
 
 	$('.search-trigger').on('click', function(event) {
 		event.preventDefault();
@@ -51,17 +47,17 @@ jQuery(document).ready(function($) {
 	 
 	// Menu Trigger
 	$('#menuToggle').on('click', function(event) {
-		var windowWidth = $(window).width();   		 
-		if (windowWidth<1010) { 
-			$('body').removeClass('open'); 
-			if (windowWidth<760){ 
-				$('#left-panel').slideToggle(); 
+		var windowWidth = $(window).width();
+		if (windowWidth<1010) {
+			$('body').removeClass('open');
+			if (windowWidth<760){
+				$('#left-panel').slideToggle();
 			} else {
 				$('#left-panel').toggleClass('open-menu');  
 			} 
 		} else {
 			$('body').toggleClass('open');
-			$('#left-panel').removeClass('open-menu');  
+			$('#left-panel').removeClass('open-menu');
 		} 
 			 
 	}); 
