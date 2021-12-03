@@ -1,0 +1,27 @@
+.mapi {
+    margin-top: 10%;
+    margin-left:17%;
+    position: relative;
+    z-index:1;
+}
+
+.titul{
+    float: center;
+    margin-left: 19%;
+    FONT-SIZE:45PX;
+}
+
+.muni {
+
+    FLOAT: LEFT;
+    FONT-SIZE: 160%;
+    MARGIN-TOP: 35PX;
+
+}
+
+section {
+    width:79%;
+    margin-rigth:98px;
+}
+
+

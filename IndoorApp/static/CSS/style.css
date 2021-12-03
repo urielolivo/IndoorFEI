@@ -14,17 +14,6 @@
 
 */
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.grid-item {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 
 
 Googel Fonts  */
@@ -35,45 +24,11 @@ Googel Fonts  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 .bg-flat-color-1 {
   background: #00c292; }
-
-
-.letrasd {
-
-    padding-top: 50px;
-    float: center;
-    padding-left: 200px;
-    font-size: 19;
- 
-    
-}
-.header {
-
-    width: 10px;
-    background:  #00c292;
-    position: initial;
-}
-.navbar-brand {
-    padding-top: 50px;
-    float: center;
-    padding-left: 370px;
-    font-size: 100%
+.container-fluid{
+    max-width: 100%;
     
 }
 
-.tamaño {
-    
-    height: 100%;
-    width: 100%;
-    float:right;
-    padding-left:100px;
-
-}
-
-
-imge.img {
-    float:right;
-     height: 100 px;
-}
 
 
 .bg-flat-color-2 {

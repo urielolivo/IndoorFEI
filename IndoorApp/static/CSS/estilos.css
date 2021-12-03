@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    display:block;
+    width:13%;
+    float:left;
+    margin-left: 80%;
+    
+}
+
+
+
+header {
+    width:100%;
+    height:100%;
+    background: #333;
+    color: #FFF;
+}
+
+.contenedor {
+
+    width: 90%;
+    height:100%;
+    margin:auto;
+    
+}
+
+
+
+body {
+    background:#424747;
+    
+}
