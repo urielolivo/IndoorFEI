@@ -38,6 +38,15 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
     subdomains:['mt0','mt1','mt2','mt3']
 });
 
+/*  //geoserver
+var wms = L.tileLayer.wms("https://localhost:8080/geoserver/wms", {
+    layers : 'geoapp:Admin',
+    format : 'image/png',
+    transparent : true,
+    attribution : "wms test"
+});
+*/
+
 //marcador
 var marca = L.marker([19.5412371, -96.9271773], {draggable: true})
 var popup = marca.bindPopup('ubicacion'+ marca.getLatLng()).openPopup()
@@ -47,21 +56,25 @@ console.log(marca.getLatLng());
 popup.addTo(map);
 
 
-// layer controlador
+/* +++++++ layer controlador +++++++
+ */
+
 var baseMaps ={
     "OSM_Mapnik" : OpenStreetMap_Mapnik,
     "OSM_DE" : OpenStreetMap_DE,
     "Google Street" : googleStreets,
     "Google Hybrid" : googleHybrid,
+    //"wms" : wms,
+
 };
 
 var overlayMaps = {
-    "Marker" : marca
+    "Marker" : marca,
+    //"Nivel 1" : nivel1,
+    //"Nivel 2" : nivel2,
 };
 
 L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-
 
 
 
