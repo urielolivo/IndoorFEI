@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
 		new SelectFx(el);
 	});
 
+
 	jQuery('.selectpicker').selectpicker;
 
 	$('.search-trigger').on('click', function(event) {
