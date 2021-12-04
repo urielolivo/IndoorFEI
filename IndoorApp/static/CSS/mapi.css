@@ -8,14 +8,14 @@
 .titul{
     float: center;
     margin-left: 19%;
-    FONT-SIZE:45PX;
+    font-size:45PX;
 }
 
 .muni {
 
-    FLOAT: LEFT;
-    FONT-SIZE: 160%;
-    MARGIN-TOP: 35PX;
+    float: LEFT;
+    font-size: 160%;
+    margin-top: 35PX;
 
 }
 

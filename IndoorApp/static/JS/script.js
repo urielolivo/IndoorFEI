@@ -26,7 +26,7 @@ var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmd
     //google street
 googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     minZoom: 19,
-    maxZoom: 20,
+    maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
 });
 
@@ -34,16 +34,17 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 
 googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
     minZoom:19,
-    maxZoom: 20,
+    maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
 });
 
-/*  //geoserver
-var wms = L.tileLayer.wms("https://localhost:8080/geoserver/wms", {
-    layers : 'geoapp:Admin',
-    format : 'image/png',
-    transparent : true,
-    attribution : "wms test"
+/*
+  //geoserver
+var geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
+    layers: 'feindoor2:osm_line',
+    format: 'image/png',
+    transparent: true,
+    attribution: "wms test",
 });
 */
 
@@ -64,7 +65,7 @@ var baseMaps ={
     "OSM_DE" : OpenStreetMap_DE,
     "Google Street" : googleStreets,
     "Google Hybrid" : googleHybrid,
-    //"wms" : wms,
+    //"wms" : geo,
 
 };
 
@@ -75,6 +76,18 @@ var overlayMaps = {
 };
 
 L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+/* ++++++ eventos de leaflet +++
+ */
+// e
+map.on('mouseover',  function (){
+    console.log('el mouse esta en el mapa')
+});
+map.on('mousemove', function(e){
+    document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
+    console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
+})
 
 
 
