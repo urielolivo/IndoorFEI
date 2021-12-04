@@ -1,4 +1,4 @@
-// Inicializacion de map
+1// Inicializacion de map
 var map = L.map('map').setView([19.54126, -96.92720], 19); //Se le asiganan las coordenadas de la facultad
 
 //osm layer
@@ -102,47 +102,73 @@ function buildOverpassApiUrl(map, overpassQuery) {
     return resultUrl;
 }
 
-$("#uno").click(function(){
-    alert("holamunod");
-    var level1 =  buildOverpassApiUrl(map, 'level=1');
-    
-}); 
 
 
 
-
-// Hacer la consulta por medio de una busqueda 
-$("#query-button").click(function () {
-    // var queryTextfieldValue = 'level=1';
-          var queryTextfieldValue = $("#query-textfield").val()
-          var overpassApiUrl = buildOverpassApiUrl(map, queryTextfieldValue);
-
-          $.get(overpassApiUrl, function (osmDataAsJson) {
-              var resultAsGeojson = osmtogeojson(osmDataAsJson);
-              var resultLayer = L.geoJson(resultAsGeojson, {style: function (feature) {
-                  return {color: "#333c87"};
-                  },
-                  filter: function (feature, layer) {
-                  var isPolygon = (feature.geometry) && (feature.geometry.type !== undefined) && (feature.geometry.type === "Polygon");
-            //  if (isPolygon) {
-              //  feature.geometry.type = "Point";
-               // var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
-               // feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
-             // }
-                      return true;
-                      },
-
-                  onEachFeature: function (feature, layer) {
-                  var popupContent = "";
-                  popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
-                  var keys = Object.keys(feature.properties.tags);
-                  keys.forEach(function (key) {
-                      popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
-                  });
-
-              }
-
-              }).addTo(map);
-          });
+$("#uno").click(function () {
+    var Nivel = 'level=1'
+    var overpassApiUrl = buildOverpassApiUrl(map, Nivel);
+        
+    $.get(overpassApiUrl, function (osmDataAsJson) {
+        var resultAsGeojson = osmtogeojson(osmDataAsJson);
+        var resultLayer = L.geoJson(resultAsGeojson, {
+            style: function (feature) {
+		return {color: "#182876"};
+            },
+            filter: function (feature, layer) {
+		//var isPolygon = (feature.geometry) && (feature.geometry.type != "access") && (feature.geometry.type === "Polygon");
+		//if (isPolygon) {
+		//  feature.geometry.type = "Point";
+		// var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
+                //  feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
+		//}
+		return true;
+            },
+            onEachFeature: function (feature, layer) {
+		var popupContent = "Información :D";
+		popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
+              var keys = Object.keys(feature.properties.tags);
+		keys.forEach(function (key) {
+                    popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
+		});
+		popupContent = popupContent + "</dl>"
+		layer.bindPopup(popupContent);
+            }
+        }).addTo(map);
+    });
 });
 
+
+
+$("#dos").click(function () {
+    var Nivel = 'level=2'
+    var overpassApiUrl = buildOverpassApiUrl(map, Nivel);
+        
+    $.get(overpassApiUrl, function (osmDataAsJson) {
+        var resultAsGeojson = osmtogeojson(osmDataAsJson);
+        var resultLayer = L.geoJson(resultAsGeojson, {
+            style: function (feature) {
+		return {color: "#182876"};
+            },
+            filter: function (feature, layer) {
+              var isPolygon = (feature.geometry) && (feature.geometry.type != "access") && (feature.geometry.type === "Polygon");
+		if (isPolygon) {
+		    feature.geometry.type = "Point";
+		    var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
+                    feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
+		}
+		return true;
+            },
+            onEachFeature: function (feature, layer) {
+		var popupContent = "";
+		popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
+              var keys = Object.keys(feature.properties.tags);
+		keys.forEach(function (key) {
+                    popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
+		});
+		popupContent = popupContent + "</dl>"
+		layer.bindPopup(popupContent);
+            }
+        }).addTo(map);
+    });
+});
