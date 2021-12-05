@@ -93,14 +93,17 @@ map.on('mousemove', function(e){
 
 function buildOverpassApiUrl(map, overpassQuery) {
     var bounds = map.getBounds().getSouth() + ',' + map.getBounds().getWest() + ',' + map.getBounds().getNorth() + ',' + map.getBounds().getEast();
-    var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
+  //  var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
     var wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
     var relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
-    var query = '?data=[out:json][timeout:15];(' + nodeQuery + wayQuery + relationQuery + ');out body geom;';
+    var query = '?data=[out:json][timeout:15];(' + wayQuery + relationQuery + ');out body geom;';
     var baseUrl = 'http://overpass-api.de/api/interpreter';
     var resultUrl = baseUrl + query;
     return resultUrl;
 }
+
+
+
 
 
 
@@ -116,27 +119,14 @@ $("#uno").click(function () {
 		return {color: "#182876"};
             },
             filter: function (feature, layer) {
-		//var isPolygon = (feature.geometry) && (feature.geometry.type != "access") && (feature.geometry.type === "Polygon");
-		//if (isPolygon) {
-		//  feature.geometry.type = "Point";
-		// var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
-                //  feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
-		//}
+
 		return true;
             },
-            onEachFeature: function (feature, layer) {
-		var popupContent = "Información :D";
-		popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
-              var keys = Object.keys(feature.properties.tags);
-		keys.forEach(function (key) {
-                    popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
-		});
-		popupContent = popupContent + "</dl>"
-		layer.bindPopup(popupContent);
-            }
+           
         }).addTo(map);
     });
 });
+
 
 
 
@@ -151,24 +141,10 @@ $("#dos").click(function () {
 		return {color: "#182876"};
             },
             filter: function (feature, layer) {
-              var isPolygon = (feature.geometry) && (feature.geometry.type != "access") && (feature.geometry.type === "Polygon");
-		if (isPolygon) {
-		    feature.geometry.type = "Point";
-		    var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
-                    feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
-		}
+             
 		return true;
             },
-            onEachFeature: function (feature, layer) {
-		var popupContent = "";
-		popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
-              var keys = Object.keys(feature.properties.tags);
-		keys.forEach(function (key) {
-                    popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
-		});
-		popupContent = popupContent + "</dl>"
-		layer.bindPopup(popupContent);
-            }
+           
         }).addTo(map);
     });
 });
