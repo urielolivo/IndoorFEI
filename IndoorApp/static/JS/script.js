@@ -38,6 +38,12 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
     subdomains:['mt0','mt1','mt2','mt3']
 });
 
+
+//+++++++ niveles capas
+
+nivel1 = L.geoJSON(hqData)
+nivel2 = L.geoJSON(hqData2)
+
 /*
   //geoserver
 var geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
@@ -52,9 +58,10 @@ var geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
 var marca = L.marker([19.5412371, -96.9271773], {draggable: true})
 var popup = marca.bindPopup('ubicacion'+ marca.getLatLng()).openPopup()
 
-console.log(marca.getLatLng());
+//console.log(marca.getLatLng());
     //marca.addTo(map);
 popup.addTo(map);
+
 
 
 /* +++++++ layer controlador +++++++
@@ -69,13 +76,17 @@ var baseMaps ={
 
 };
 
+var niveles = {
+    "Nivel 1" : nivel1,
+    "Nivel 2" : nivel2,
+}
+
 var overlayMaps = {
     "Marker" : marca,
-    //"Nivel 1" : nivel1,
-    //"Nivel 2" : nivel2,
 };
 
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+L.control.layers(baseMaps,niveles, overlayMaps).addTo(map);
 
 
 /* ++++++ eventos de leaflet +++
@@ -88,6 +99,7 @@ map.on('mousemove', function(e){
     document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
     console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
 })
+
 
 
 
@@ -114,7 +126,7 @@ $("#uno").click(function () {
         
     $.get(overpassApiUrl, function (osmDataAsJson) {
         var resultAsGeojson = osmtogeojson(osmDataAsJson);
-        var resultLayer = L.geoJson(resultAsGeojson, {
+        var resultLayer1 = L.geoJson(resultAsGeojson, {
             style: function (feature) {
 		return {color: "#182876"};
             },
@@ -123,10 +135,11 @@ $("#uno").click(function () {
 		return true;
             },
            
-        }).addTo(map);
+        });
+        resultLayer1.addTo(map);
+
     });
 });
-
 
 
 
@@ -141,10 +154,11 @@ $("#dos").click(function () {
 		return {color: "#182876"};
             },
             filter: function (feature, layer) {
-             
-		return true;
+                return true;
             },
            
-        }).addTo(map);
+        });
+        resultLayer.addTo(map);
+        map.removeLayer();
     });
 });
