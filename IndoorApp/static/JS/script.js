@@ -1,12 +1,21 @@
 // Inicializacion de map
-var map = L.map('map').setView([19.54126, -96.92720], 19); //Se le asiganan las coordenadas de la facultad
-//L.control.scale.().addTo(map);
-//osm layer
-//
-var imageUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-	imageBounds = [[19.54126, -96.92720], [19.541241, -96.541243]];
+///var map = L.map('map').setView([19.54126, -96.92720], 18);
+var map = L.map('map', {
+    maxZoom: 19,
+    minZoom: 18,
+    maxBounds: [
+        //sur oeste
+        [19.54068, -96.92768],
+        //north east
+        [19.54180, -96.92665]
+        ], 
+}).setView([19.54126, -96.2720], 19);
 
-L.imageOverlay(imageUrl, imageBounds).addTo(map);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}) .addTo(map);
+
+L.marker([40.743, -74.176]) .addTo(map);
 
 
 var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
