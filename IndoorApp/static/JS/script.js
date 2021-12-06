@@ -57,7 +57,16 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 
 var nivel3 = L.geoJSON(hqData, {
   onEachFeature: function (feature, layer) {
-    layer.bindPopup('<h1>'+feature.properties.f1+'</h1><p>name: '+feature.properties.f2+'</p>');
+    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p>' + feature.properties.tags + "</dd>");
+  }
+})
+
+
+
+
+var nivel22 = L.geoJSON(hqData2, {
+  onEachFeature: function (feature, layer) {
+    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p>' + feature.properties.id + "</dd>");
   }
 })
 
@@ -100,14 +109,15 @@ var baseMaps ={
 };
 
 var niveles = {
-    "Nivel 1" : nivel1,
-    "Nivel 2" : nivel2,
-    "Nivel1data" : nivel3,
+    "Nivel 1" : nivel3,
+    "Nivel 2": nivel22,
 }
 
-var overlayMaps = {
-    "Marker" : marca,
-};
+//var overlayMaps = {
+  //  "Marker" : marca,  //
+//
+//
+//};
 
 
 L.control.layers(baseMaps, niveles).addTo(map);
@@ -143,12 +153,12 @@ map.on('click', function (e){
 
 
 
-//leaflet search
-//L.Control.geocoder().addTo(map);
 
 
 var geocoder = L.Control.geocoder({
-  defaultMarkGeocode: true
+  defaultMarkGeocode: true,
+    errorMessage: "No se encontró el aula o Laboratorio :(",
+    geocodingQueryParams: "Mexico"
 })
   .on('markgeocode', function(e) {
     var bbox = e.geocode.bbox;
@@ -159,9 +169,24 @@ var geocoder = L.Control.geocoder({
       bbox.getNorthWest(),
       bbox.getSouthWest()
     ]).addTo(map);
+      
     map.fitBounds(poly.getBounds());
-  })
-  .addTo(map);
+  }).addTo(map);
+
+
+
+
+
+//leaflet search
+//L.Control.geocoder().addTo(map);
+  
+
+
+
+
+
+
+
 
 
 function buildOverpassApiUrl(map, overpassQuery) {
