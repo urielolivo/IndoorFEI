@@ -55,17 +55,11 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 });
 
 
-
-L.geoJSON(hqData,{
-    onEachFeature: function (feature, layer) {
-        var popupContent = "";
-        popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
-        var keys = Object.keys(feature.properties.tags);
-        keys.forEach(function (key) {
-            popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
-        });
-    }
-}).addTo(map);
+var nivel3 = L.geoJSON(hqData, {
+  onEachFeature: function (feature, layer) {
+    layer.bindPopup('<h1>'+feature.properties.f1+'</h1><p>name: '+feature.properties.f2+'</p>');
+  }
+})
 
 
 //+++++++ niveles capas
@@ -108,6 +102,7 @@ var baseMaps ={
 var niveles = {
     "Nivel 1" : nivel1,
     "Nivel 2" : nivel2,
+    "Nivel1data" : nivel3,
 }
 
 var overlayMaps = {
