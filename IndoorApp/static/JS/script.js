@@ -17,7 +17,6 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 L.marker([40.743, -74.176]) .addTo(map);
 
-
 var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     center: [19.54126, -96.92720],
     minZoom: 19,
@@ -56,13 +55,21 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 });
 
 
+L.geoJSON(hqData,{
+    onEachFeature: function (feature, layer) {
+        var popupContent = "";
+        popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
+        var keys = Object.keys(feature.properties.tags);
+        keys.forEach(function (key) {
+            popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
+        });
+    }
+}).addTo(map);
+
+
 //+++++++ niveles capas
 
-nivel1 = L.geoJSON(hqData),{
-    onEachFeature: function (feature, layer){
-
-    }
-}
+nivel1 =L.geoJSON(hqData)
 nivel2 = L.geoJSON(hqData2)
 
 /*
@@ -110,6 +117,7 @@ var overlayMaps = {
 L.control.layers(baseMaps, niveles).addTo(map);
 
 
+
 /* ++++++ eventos de leaflet +++
  */
 // e
@@ -125,8 +133,9 @@ map.on('click', function (e){
     popupdata= [];
     document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
     if(popupc){
-        removelayer(popupc)
-    }
+        console.info("ya hay un marcadorc")
+        map.removerLayer(popupc)
+    }else
     popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
     console.log(popupdata)
     //popupdata.addTo(map);
