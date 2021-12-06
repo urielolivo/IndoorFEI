@@ -1,27 +1,29 @@
 .mapi {
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left:17%;
+    margin-right:10%;
+    margin-bottom:15%;
     position: relative;
     z-index:1;
 }
 
 .titul{
     float: center;
-    margin-left: 19%;
+    margin-left: 25%;
     font-size:45PX;
 }
 
 .muni {
 
-    float: LEFT;
-    font-size: 160%;
+    float: left;
+    font-size: 150%;
     margin-top: 35PX;
 
 }
 
 section {
     width:79%;
-    margin-rigth:98px;
+    margin-right:98px;
 }
 
 

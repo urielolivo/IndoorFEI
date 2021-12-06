@@ -1,16 +1,8 @@
-// Inicializacion de map
+/ Inicializacion de map
 var map = L.map('map').setView([19.54126, -96.92720], 19); //Se le asiganan las coordenadas de la facultad
-//L.control.scale.().addTo(map);
+
 //osm layer
-//
-var imageUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-	imageBounds = [[19.54126, -96.92720], [19.541241, -96.541243]];
-
-L.imageOverlay(imageUrl, imageBounds).addTo(map);
-
-
-var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    center: [19.54126, -96.92720],
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 19,
     maxZoom: 30,
     attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -19,14 +11,14 @@ osm.addTo(map);
 
 // proveedores de capas
     //osm_mapnik
-var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-   minZoom: 19,
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    minZoom: 19,
     maxZoom: 30,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
     //osm_de
-var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',{    minZoom: 19,
-    bbox: [19.54126, -19.54126],
+var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+    minZoom: 19,
     maxZoom: 30,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
@@ -46,15 +38,9 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
     subdomains:['mt0','mt1','mt2','mt3']
 });
 
-
-//+++++++ niveles capas
-
-nivel1 = L.geoJSON(hqData)
-nivel2 = L.geoJSON(hqData2)
-
 /*
   //geoserver
-varÑ geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
+var geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
     layers: 'feindoor2:osm_line',
     format: 'image/png',
     transparent: true,
@@ -66,10 +52,9 @@ varÑ geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
 var marca = L.marker([19.5412371, -96.9271773], {draggable: true})
 var popup = marca.bindPopup('ubicacion'+ marca.getLatLng()).openPopup()
 
-//console.log(marca.getLatLng());
+console.log(marca.getLatLng());
     //marca.addTo(map);
 popup.addTo(map);
-
 
 
 /* +++++++ layer controlador +++++++
@@ -84,17 +69,13 @@ var baseMaps ={
 
 };
 
-var niveles = {
-    "Nivel 1" : nivel1,
-    "Nivel 2" : nivel2,
-}
-
 var overlayMaps = {
     "Marker" : marca,
+    //"Nivel 1" : nivel1,
+    //"Nivel 2" : nivel2,
 };
 
-
-L.control.layers(baseMaps,niveles, overlayMaps).addTo(map);
+L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 
 /* ++++++ eventos de leaflet +++
@@ -108,9 +89,6 @@ map.on('mousemove', function(e){
     console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
 })
 
-//leaflet search
-L.Control.geocoder().addTo(map);
-
 
 
 function buildOverpassApiUrl(map, overpassQuery) {
@@ -118,7 +96,7 @@ function buildOverpassApiUrl(map, overpassQuery) {
   //  var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
     var wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
     var relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
-    var query = '?data=[out:json][timeout:15];(' + wayQuery + relationQuery + ');out body geom;';
+    var query = '?data=[out:json][timeout:15];(' + wayQuery + relationQuery + ');out body geom;':;
     var baseUrl = 'http://overpass-api.de/api/interpreter';
     var resultUrl = baseUrl + query;
     return resultUrl;
@@ -136,7 +114,7 @@ $("#uno").click(function () {
         
     $.get(overpassApiUrl, function (osmDataAsJson) {
         var resultAsGeojson = osmtogeojson(osmDataAsJson);
-        var resultLayer1 = L.geoJson(resultAsGeojson, {
+        var resultLayer = L.geoJson(resultAsGeojson, {
             style: function (feature) {
 		return {color: "#182876"};
             },
@@ -145,11 +123,10 @@ $("#uno").click(function () {
 		return true;
             },
            
-        });
-        resultLayer1.addTo(map);
-
+        }).addTo(map);
     });
 });
+
 
 
 
@@ -164,11 +141,10 @@ $("#dos").click(function () {
 		return {color: "#182876"};
             },
             filter: function (feature, layer) {
-                return true;
+             
+		return true;
             },
            
-        });
-        resultLayer.addTo(map);
-        map.removeLayer();
+        }).addTo(map);
     });
 });
