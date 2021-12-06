@@ -1,13 +1,13 @@
 // Inicializacion de map
 ///var map = L.map('map').setView([19.54126, -96.92720], 18);
 var map = L.map('map', {
-    maxZoom: 19,
+    maxZoom: 21,
     minZoom: 18,
     maxBounds: [
         //sur oeste
         [19.54068, -96.92768],
         //north east
-        [19.54180, -96.92665]
+        [19.54230, -96.92665]
         ], 
 }).setView([19.54126, -96.2720], 19);
 
