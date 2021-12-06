@@ -58,7 +58,11 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 
 //+++++++ niveles capas
 
-nivel1 = L.geoJSON(hqData)
+nivel1 = L.geoJSON(hqData),{
+    onEachFeature: function (feature, layer){
+
+    }
+}
 nivel2 = L.geoJSON(hqData2)
 
 /*
@@ -103,7 +107,7 @@ var overlayMaps = {
 };
 
 
-L.control.layers(baseMaps,niveles, overlayMaps).addTo(map);
+L.control.layers(baseMaps, niveles).addTo(map);
 
 
 /* ++++++ eventos de leaflet +++
@@ -117,9 +121,42 @@ map.on('mousemove', function(e){
     console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
 })
 
-//leaflet search
-L.Control.geocoder().addTo(map);
+map.on('click', function (e){
+    popupdata= [];
+    document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
+    if(popupc){
+        removelayer(popupc)
+    }
+    popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
+    console.log(popupdata)
+    //popupdata.addTo(map);
+    var marcac = L.marker([e.latlng.lat, e.latlng.lng], {draggable: true})
+    var popupc = marcac.bindPopup('ubicacion'+ marcac.getLatLng()).openPopup()
+    popupc.addTo(map);
 
+})
+
+
+
+//leaflet search
+//L.Control.geocoder().addTo(map);
+
+
+var geocoder = L.Control.geocoder({
+  defaultMarkGeocode: true
+})
+  .on('markgeocode', function(e) {
+    var bbox = e.geocode.bbox;
+    console.info(bbox);
+    var poly = L.polygon([
+      bbox.getSouthEast(),
+      bbox.getNorthEast(),
+      bbox.getNorthWest(),
+      bbox.getSouthWest()
+    ]).addTo(map);
+    map.fitBounds(poly.getBounds());
+  })
+  .addTo(map);
 
 
 function buildOverpassApiUrl(map, overpassQuery) {
