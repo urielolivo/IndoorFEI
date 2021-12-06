@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/CSS/estilos.css"/>
     <link rel="stylesheet" href="static/CSS/menu.css"/>
     <link rel="stylesheet" href="static/CSS/mapi.css"/>
@@ -24,10 +26,14 @@
         <h1 class="glyphicon titul" >FEIndoor </h1>
         <label class="glyphicon muni  glyphicon-align-justify" for="menu-bar"> </label>
 
-        <nav class="menu">
-            <!-- img class="logo"src="logo.png" alt="uv" -->
-            <a href="Aulas">Aulas</a>
-            <a href="">Laboratorios</a>
+
+
+        <nav class="menu icono">
+    <!--    <img class="logo"src="logo.png" alt="uv"> </img> !-->
+           <a href="">Laboratorios</a>
+           <a class="w3-bar-item" href="Aulas"><i style="font-size:250%"class="icono fa fa-search"></i></a>
+           <a class="w3-bar-item" href="Aulas"><i style="font-size:250%"class="icono fa fa-laptop"></i></a>
+     
             <a href="">Secretarias</a>
             <a href=""> Cubiculos </a>
         </nav>
@@ -35,7 +41,7 @@
     </div>
 </header>
 
-<main>
+<main class=""fluid-container>
     <section class="colorsecx">
         <div id="map" class=" contenedor mapi" style="height:300px; witdh:100px" >
         <div class = "leaflet-control coordinate" style="position: absolute; margin-left: 35%; background-color: white"></div>
@@ -43,12 +49,12 @@
 
 	 
     </section>
+</main>
 
-   
-    <button   id="uno"  type="button" class="b btn btn-primary">Nivel 1</button>
-    <button id="dos"  type="button" class="a btn btn-primary">Nivel 2</button>
-
-
+    <!-- <button   id="uno"   type="button" class="b btn btn-primary">Nivel 1</button>   --!>
+<!-- <button id="dos"  type="button" class="a btn btn-primary">Nivel 2</button> --!>
+ 
+    <!-- --!>
 </main>
 
 <!-- geojson de partes -->
