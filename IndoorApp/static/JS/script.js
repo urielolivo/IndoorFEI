@@ -100,6 +100,8 @@ map.on('mousemove', function(e){
     console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
 })
 
+//leaflet search
+L.Control.geocoder().addTo(map);
 
 
 
