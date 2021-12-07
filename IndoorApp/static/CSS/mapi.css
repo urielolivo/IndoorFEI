@@ -3,12 +3,13 @@
 }
 
 .mapi {
+    width: 100%;
     margin-top: 3%;
     margin-left:17%;
     margin-right:10%;
-    margin-bottom:20%;
+    margin-bottom:40%;
     position: relative;
-    z-index:1;
+    z-index:1;
 }
 
 .titul{
