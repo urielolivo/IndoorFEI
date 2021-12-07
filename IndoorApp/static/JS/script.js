@@ -9,7 +9,7 @@ var map = L.map('map', {
         //north east
         [19.54230, -96.92665]
         ], 
-}).setView([19.54126, -96.2720], 19);
+}).setView([19.54126, -96.2720], 20);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -19,21 +19,28 @@ L.marker([40.743, -74.176]) .addTo(map);
 
 var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     center: [19.54126, -96.92720],
+    maxNativeZoom: 19,
     minZoom: 19,
     maxZoom: 30,
     attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
-osm.addTo(map);
 
 // proveedores de capas
     //osm_mapnik
 var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-   minZoom: 19,
+    maxNativeZoom: 19,
+    minZoom: 19,
     maxZoom: 30,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
+
+
+OpenStreetMap_Mapnik.addTo(map);
+
     //osm_de
-var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',{    minZoom: 19,
+var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',{    
+    maxNativeZoom: 19,
+    minZoom: 19,
     bbox: [19.54126, -19.54126],
     maxZoom: 30,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -100,9 +107,9 @@ popup.addTo(map);
  */
 
 var baseMaps ={
+    "Google Street" : googleStreets,
     "OSM_Mapnik" : OpenStreetMap_Mapnik,
     "OSM_DE" : OpenStreetMap_DE,
-    "Google Street" : googleStreets,
     "Google Hybrid" : googleHybrid,
     //"wms" : geo,
 
