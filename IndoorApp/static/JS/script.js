@@ -9,7 +9,7 @@ var map = L.map('map', {
         //north east
         [19.54230, -96.92665]
         ], 
-}).setView([19.54126, -96.2720], 20);
+}).setView([19.54126, -96.2720], 19);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -63,17 +63,32 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 
 
 var nivel3 = L.geoJSON(hqData, {
-  onEachFeature: function (feature, layer) {
+      style: function (feature) {
+                return {color: "#154F72"};
+              },
+   onEachFeature: function (feature, layer) {
     layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p>' + feature.properties.tags + "</dd>");
-  }
+ }
 })
 
 
 
 
+
+
+
+
+
+
+
+//var marker = L.markerClusterGroup();
 var nivel22 = L.geoJSON(hqData2, {
+    style: function (feature) {
+              return {color: "#16B1C7"};
+            },
+
   onEachFeature: function (feature, layer) {
-    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p>' + feature.properties.id + "</dd>");
+    layer.bindPopup('<h3>'+feature.properties.name+'</h3><h3>Nivel: '+feature.properties.level+'</h3>' + feature.properties.id + "</dd>");
   }
 })
 
@@ -138,8 +153,8 @@ map.on('mouseover',  function (){
     console.log('el mouse esta en el mapa')
 });
 map.on('mousemove', function(e){
-    document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
-    console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
+   document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
+  //  console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
 })
 
 map.on('click', function (e){
@@ -163,21 +178,20 @@ map.on('click', function (e){
 
 
 var geocoder = L.Control.geocoder({
-     defaultMarkGeocode: true,
+    defaultMarkGeocode: true,
     showResultIcons : true,
-    query: "",
-    placeholder: "Search here...",
     errorMessage: "No se encontró el aula o Laboratorio :(",
     geocodingQueryParams: "Mexico",
-geocoder: L.Control.Geocoder.photon({
+    geocoder: L.Control.Geocoder.photon({
 		showResultIcons: true,
 		geocodingQueryParams: {
-			limit: 8,
-			osm_tag: '!shop'
+		limit: 8,
+		osm_tag: '!shop'
 		},
-		htmlTemplate: function(r) {
+
+    htmlTemplate: function(nivel1) {
 			// find out which fields are available
-			console.log(r);
+			console.log(nivel1);
 
 			var a = L.extend({
 				'type'         : '',
@@ -187,7 +201,7 @@ geocoder: L.Control.Geocoder.photon({
         'room'       :'',
 
 			},
-				r.properties
+		nivel1.properties
 			),
 
 
@@ -197,17 +211,9 @@ geocoder: L.Control.Geocoder.photon({
 
 			if (a.type || a.level|| a.name || a.room ) {
 
-          string += '<h3> {name} {type} </h3>';
-          string += '<h4> Nivel:  {level} </h4>';
-				string += ', <span class="leaflet-control-geocoder-address-detail">{room} {name} {type}</span>';
+          string += '<h4> {name}{type}  {osm_value} </h4>';
 			}
 
-        if (a.type || a.nivel|| a.name ) {
-
-          string += '<h3> {name} </h3>';
-            string += '<h4> Nivel : {nivel} </h4>';
-				string += ', <span class="leaflet-control-geocoder-address-detail">{nivel} {name} {type}</span>';
-			}
 
 
 
@@ -216,16 +222,7 @@ geocoder: L.Control.Geocoder.photon({
 			return L.Util.template(string, a, true);
 		}
 
-
-
 })
-
-
-
-
-
-
-
 })
   .on('markgeocode', function(e) {
     var bbox = e.geocode.bbox;
@@ -255,7 +252,7 @@ geocoder: L.Control.Geocoder.photon({
 
 
 
-function buildOverpassApiUrl(map, overpassQuery) {
+/*function buildOverpassApiUrl(map, overpassQuery) {
     var bounds = map.getBounds().getSouth() + ',' + map.getBounds().getWest() + ',' + map.getBounds().getNorth() + ',' + map.getBounds().getEast();
   //  var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
     var wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
@@ -264,7 +261,55 @@ function buildOverpassApiUrl(map, overpassQuery) {
     var baseUrl = 'http://overpass-api.de/api/interpreter';
     var resultUrl = baseUrl + query;
     return resultUrl;
-}
+} */
+
+
+function buildOverpassApiUrl(map, overpassQuery) {
+         var bounds = map.getBounds().getSouth() + ',' + map.getBounds().getWest() + ',' + map.getBounds().getNorth() + ',' + map.getBounds().getEast();
+         var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
+        var wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
+        var relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
+         var query = '?data=[out:json][timeout:15];(' + nodeQuery + wayQuery + relationQuery + ');out body geom;';
+         var baseUrl = 'http://overpass-api.de/api/interpreter';
+         var resultUrl = baseUrl + query;
+         return resultUrl;
+       }
+
+       $("#query-button").click(function () {
+         var nom = 'name='
+         var queryTextfieldValue = $("#query-textfield").val();
+         var consultafin = nom.concat(queryTextfieldValue);
+         console.log(nom.concat(queryTextfieldValue));
+         var overpassApiUrl = buildOverpassApiUrl(map, consultafin);
+
+         $.get(overpassApiUrl, function (osmDataAsJson) {
+          var resultAsGeojson = osmtogeojson(osmDataAsJson);
+           var resultLayer = L.geoJson(resultAsGeojson, {
+             style: function (feature) {
+               return {color: "#ff0000"};
+             },
+             filter: function (feature, layer) {
+               var isPolygon = (feature.geometry) && (feature.geometry.type !== undefined) && (feature.geometry.type === "Polygon");
+               if (isPolygon) {
+                 feature.geometry.type = "Point";
+                 var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
+                 feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
+               }
+               return true;
+             },
+             onEachFeature: function (feature, layer) {
+               var popupContent = "";
+               popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
+               var keys = Object.keys(feature.properties.tags);
+               keys.forEach(function (key) {
+                 popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
+               });
+               popupContent = popupContent + "</dl>"
+               layer.bindPopup(popupContent);
+             }
+           }).addTo(map);
+         });
+       });
 
 
 

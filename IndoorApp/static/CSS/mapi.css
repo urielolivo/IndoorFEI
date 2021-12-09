@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+
+.leaflet-top {
+     margin-bottom: 50%;
+    transform: translate(0, -16%);
+}
+
 .mapi {
     width: 100%;
     margin-top: 3%;
