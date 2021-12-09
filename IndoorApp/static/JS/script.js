@@ -163,22 +163,81 @@ map.on('click', function (e){
 
 
 var geocoder = L.Control.geocoder({
-  defaultMarkGeocode: true,
+     defaultMarkGeocode: true,
+    showResultIcons : true,
+    query: "",
+    placeholder: "Search here...",
     errorMessage: "No se encontró el aula o Laboratorio :(",
-    geocodingQueryParams: "Mexico"
+    geocodingQueryParams: "Mexico",
+geocoder: L.Control.Geocoder.photon({
+		showResultIcons: true,
+		geocodingQueryParams: {
+			limit: 8,
+			osm_tag: '!shop'
+		},
+		htmlTemplate: function(r) {
+			// find out which fields are available
+			console.log(r);
+
+			var a = L.extend({
+				'type'         : '',
+				'level'       : '',
+				'name'       : '',
+        'nivel' : '',
+        'room'       :'',
+
+			},
+				r.properties
+			),
+
+
+			string = '<br><small>{osm_value}';
+
+	//		string += '<br><small>{osm_value}';
+
+			if (a.type || a.level|| a.name || a.room ) {
+
+          string += '<h3> {name} {type} </h3>';
+          string += '<h4> Nivel:  {level} </h4>';
+				string += ', <span class="leaflet-control-geocoder-address-detail">{room} {name} {type}</span>';
+			}
+
+        if (a.type || a.nivel|| a.name ) {
+
+          string += '<h3> {name} </h3>';
+            string += '<h4> Nivel : {nivel} </h4>';
+				string += ', <span class="leaflet-control-geocoder-address-detail">{nivel} {name} {type}</span>';
+			}
+
+
+
+			string += '</small>';
+
+			return L.Util.template(string, a, true);
+		}
+
+
+
+})
+
+
+
+
+
+
+
 })
   .on('markgeocode', function(e) {
     var bbox = e.geocode.bbox;
     console.info(bbox);
-    var poly = L.polygon([
+      var poly = L.polygon([
       bbox.getSouthEast(),
       bbox.getNorthEast(),
       bbox.getNorthWest(),
-      bbox.getSouthWest()
-    ]).addTo(map);
-      
-    map.fitBounds(poly.getBounds());
-  }).addTo(map);
+      bbox.getSouthWest(),
+     ]).addTo(map);
+      map.fitBounds(poly.getBounds('<h3>hola </h3>'));
+      }).addTo(map);
 
 
 
