@@ -9,7 +9,7 @@ var map = L.map('map', {
         //north east
         [19.54230, -96.92665]
         ], 
-}).setView([19.54126, -96.2720], 19);
+}).setView([19.54126, -96.2720], 20);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -285,28 +285,35 @@ function buildOverpassApiUrl(map, overpassQuery) {
          $.get(overpassApiUrl, function (osmDataAsJson) {
           var resultAsGeojson = osmtogeojson(osmDataAsJson);
            var resultLayer = L.geoJson(resultAsGeojson, {
-             style: function (feature) {
-               return {color: "#ff0000"};
+             style: function () {
+                     
+                 
+                return {color: "#95D353"};
+
              },
-             filter: function (feature, layer) {
-               var isPolygon = (feature.geometry) && (feature.geometry.type !== undefined) && (feature.geometry.type === "Polygon");
-               if (isPolygon) {
-                 feature.geometry.type = "Point";
-                 var polygonCenter = L.latLngBounds(feature.geometry.coordinates[0]).getCenter();
-                 feature.geometry.coordinates = [ polygonCenter.lat, polygonCenter.lng ];
-               }
-               return true;
-             },
-             onEachFeature: function (feature, layer) {
+            
+    
+
+             onEachFeature: function (feature,layer) {
                var popupContent = "";
-               popupContent = popupContent + "<dt>@id</dt><dd>" + feature.properties.type + "/" + feature.properties.id + "</dd>";
-               var keys = Object.keys(feature.properties.tags);
+
+        var keys = Object.keys(feature.properties.tags);
                keys.forEach(function (key) {
-                 popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key] + "</dd>";
+                    console.log(feature.properties.tags[key]);
+                   popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key]  + "</dd>";
                });
                popupContent = popupContent + "</dl>"
                layer.bindPopup(popupContent);
+
+
              }
+
+
+
+
+
+
+
            }).addTo(map);
          });
        });
@@ -315,6 +322,26 @@ function buildOverpassApiUrl(map, overpassQuery) {
 
 
 
+
+
+
+
+///// POSIBLE CONTROL DE GLE 
+//
+//
+//
+//
+
+var searchControl = new L.Control.Search({
+layer: sitis,  // Determines the name of variable, which includes our GeoJSON layer!
+propertyName: 'name',
+marker: false,
+moveToLocation: function(latlng, title, map) {
+    //map.fitBounds( latlng.layer.getBounds() );
+    var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+    map.setView(latlng, zoom); // access the zoom
+    }
+});
 
 
 $("#uno").click(function () {
