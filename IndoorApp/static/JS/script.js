@@ -1,5 +1,3 @@
-// Inicializacion de map
-///var map = L.map('map').setView([19.54126, -96.92720], 18);
 var map = L.map('map', {
     maxZoom: 21,
     minZoom: 18,
@@ -47,7 +45,7 @@ var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmd
 });
 
     //google street
-googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+let googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     minZoom: 19,
     maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
@@ -55,7 +53,7 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 
 // google hybrid
 
-googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+let googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
     minZoom:19,
     maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
@@ -63,7 +61,7 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 
 
 var nivel3 = L.geoJSON(hqData, {
-      style: function (feature) {
+      style: function () {
                 return {color: "#154F72"};
               },
    onEachFeature: function (feature, layer) {
@@ -164,7 +162,7 @@ map.on('click', function (e){
         console.info("ya hay un marcadorc")
         map.removerLayer(popupc)
     }else
-    popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
+    popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.ltlng.lng)
     console.log(popupdata)
     //popupdata.addTo(map);
     var marcac = L.marker([e.latlng.lat, e.latlng.lng], {draggable: true})
@@ -278,6 +276,10 @@ function buildOverpassApiUrl(map, overpassQuery) {
        $("#query-button").click(function () {
          var nom = 'name='
          var queryTextfieldValue = $("#query-textfield").val();
+           if (queryTextfieldValue == ""){
+
+            swal("Porfavor indica que quieres encontrar.")
+           } else {
          var consultafin = nom.concat(queryTextfieldValue);
          console.log(nom.concat(queryTextfieldValue));
          var overpassApiUrl = buildOverpassApiUrl(map, consultafin);
@@ -288,7 +290,7 @@ function buildOverpassApiUrl(map, overpassQuery) {
              style: function () {
                      
                  
-                return {color: "#95D353"};
+                return {color: "#FF0B0B"};
 
              },
             
@@ -307,6 +309,7 @@ function buildOverpassApiUrl(map, overpassQuery) {
 
 
              }
+               
 
 
 
@@ -316,8 +319,8 @@ function buildOverpassApiUrl(map, overpassQuery) {
 
            }).addTo(map);
          });
-       });
-
+               
+       }});
 
 
 

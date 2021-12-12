@@ -20,7 +20,7 @@ header {
 }
 
 .contenedor {
-
+    font-size:19px;
     width: 90%;
     height:100%;
     margin:auto;
@@ -34,16 +34,13 @@ header {
 }
 
 
-.b {
-    
-    margin-left: 50%;
+.sexc {
+font-size :30px;
+
 }
-
-
-
 body {
     background:#424747;
-    
+    font-size:19px;   
 }
 
 /*#coordinate {

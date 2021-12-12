@@ -1,0 +1,32 @@
+SonarQube plugins:
+  - Python Code Quality and Security 3.8.0.8883 (python)
+  - Go Code Quality and Security 1.8.3.2219 (go)
+  - JaCoCo 1.1.1.1157 (jacoco)
+  - Kotlin Code Quality and Security 2.7.0.948 (kotlin)
+  - IaC Code Quality and Security 1.4.0.1294 (iac)
+  - JavaScript/TypeScript Code Quality and Security 8.6.0.16913 (javascript)
+  - Ruby Code Quality and Security 1.8.3.2219 (ruby)
+  - Scala Code Quality and Security 1.8.3.2219 (sonarscala)
+  - C# Code Quality and Security 8.32.0.39516 (csharp)
+  - Java Code Quality and Security 7.5.0.28054 (java)
+  - HTML Code Quality and Security 3.4.0.2754 (web)
+  - Flex Code Quality and Security 2.6.2.2641 (flex)
+  - XML Code Quality and Security 2.4.0.3273 (xml)
+  - PHP Code Quality and Security 3.21.2.8292 (php)
+  - VB.NET Code Quality and Security 8.32.0.39516 (vbnet)
+  - Configuration detection fot Code Quality and Security 1.1.0.185 (config)
+Global server settings:
+  - sonar.core.id=86E1FA4D-AX2rf3ka2hFSnQ_McN3B
+  - sonar.core.startTime=2021-12-11T15:56:18-0600
+  - sonar.forceAuthentication=false
+  - sonar.validateWebhooks=false
+Project server settings:
+Project scanner properties:
+  - sonar.host.url=http://localhost:9000/sonarqube
+  - sonar.projectBaseDir=/home/uriel/Documentos/DjangoTest/IndoorFEI
+  - sonar.projectKey=FEIndoor
+  - sonar.scanner.app=ScannerCLI
+  - sonar.scanner.appVersion=4.6.2.2472
+  - sonar.sourceEncoding=UTF-8
+  - sonar.verbose=true
+  - sonar.working.directory=/home/uriel/Documentos/DjangoTest/IndoorFEI/.scannerwork

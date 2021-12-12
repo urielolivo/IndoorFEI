@@ -1,0 +1,1 @@
+ 2webXJhr IndoorApp/static/responsiva.html
