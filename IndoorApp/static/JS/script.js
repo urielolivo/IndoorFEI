@@ -163,7 +163,11 @@ map.on('dblclick', function(e) {
        markerArray.push(coordinates);
        drawLine(markerArray);
        nmarker= nmarker+1
+   }else{
+	   swal.fire( 'Seleccione el boton de Limpiar selección','')
+	   console.info("son mas de dos"+ nmarker)
    }
+
 
 });
  /* ++++ Creacion de linea de separacion de puntos */
@@ -173,7 +177,10 @@ function drawLine(marray) {
 }
 
 
-
+$("#ruta").click(function (){
+		nmarker = 0;
+		map.removeLayer(layerGroup);
+	})
 
 
 /*
@@ -245,31 +252,29 @@ map.on('click', function (e){
 	
 	}
 
+
 	$("#buscar").click(function(){
 		var miSelect = document.getElementById("nombres").value;
-
 		if (miSelect == ""){
-			swal.fire( 'el contendi no puede ir vacio','You clicked the button!')	
+			swal.fire( 'el contendi no puede ir vacio','You clicked the button!')
 
 		}
 		var monumentos = L.geoJSON(hqDat, {
-							pointToLayer: function (feature, latlng) {
-									return L.circleMarker(latlng, MarkerOptions);
-								},
-							filter: function(feature, layer) {								
-								if(miSelect != "TODOS"){
-								var x = feature.properties.name == miSelect;
-									console.log(x);
-									return (feature.properties.name == miSelect );
-								//alert("hola");
-								}	else
-									return true;
-									
-							},	
-							style:estilo_monumentos,
-							onEachFeature: popup_monumentos	
-					});		
-
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, MarkerOptions);
+				},
+			filter: function(feature, layer) {
+				if(miSelect != "TODOS"){
+					var x = feature.properties.name == miSelect;
+					console.log(x);
+					return (feature.properties.name == miSelect );
+					//alert("hola");
+					}	else
+						return true;
+				},
+			style:estilo_monumentos,
+			onEachFeature: popup_monumentos
+		});
 		salamancaMonumental.clearLayers();
 		salamancaMonumental.addLayer(monumentos);
 	});
