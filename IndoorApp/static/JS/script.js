@@ -147,6 +147,36 @@ map.on('mousemove', function(e){
   //  console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
 })
 
+
+
+
+/* +++++ AGREGAR CAPAS DE RUTEO +++++ */
+var  nmarker = 0;
+var layerGroup = L.layerGroup().addTo(map);
+var markerArray = [];
+map.on('dblclick', function(e) {
+   var popup3 = e.latlng;
+   if (nmarker< 2) {
+       var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+       marker.addTo(layerGroup);
+       var coordinates = [marker.getLatLng().lat, marker.getLatLng().lng];
+       markerArray.push(coordinates);
+       drawLine(markerArray);
+       nmarker= nmarker+1
+   }
+
+});
+ /* ++++ Creacion de linea de separacion de puntos */
+function drawLine(marray) {
+    var polyline = L.polyline(marray,{color: 'red'}).addTo(map);
+    polyline.addTo(layerGroup);
+}
+
+
+
+
+
+/*
 map.on('click', function (e){
     popupdata= [];
     document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
@@ -163,7 +193,7 @@ map.on('click', function (e){
 
 })
 
-
+*/
 
 
 
