@@ -223,9 +223,10 @@ map.on('click', function (e){
 				};
 				function popup_monumentos (feature, layer) {
 					layer.bindPopup("<div style=text-align:center><h3>"+feature.properties.name+
-			        "<h3></div><hr><table><tr><td> Tipo: "+feature.properties.id+
+			        "<h3></div><hr><table><tr><td> Referencia: "+feature.properties.ref+
 			        "</td></tr><tr><td>Nivel: "+feature.properties.level+
-			        "</td></tr></table>",
+               "</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
+              "</td></tr></table>",
 			        {minWidth: 150, maxWidth: 200});				
 					};
 
@@ -256,7 +257,7 @@ map.on('click', function (e){
 	$("#buscar").click(function(){
 		var miSelect = document.getElementById("nombres").value;
 		if (miSelect == ""){
-			swal.fire( 'el contendi no puede ir vacio','You clicked the button!')
+			swal.fire( 'El contenido no puede ir vacio')
 
 		}
 		var monumentos = L.geoJSON(hqDat, {
@@ -267,7 +268,7 @@ map.on('click', function (e){
 				if(miSelect != "TODOS"){
 					var x = feature.properties.name == miSelect;
 					console.log(x);
-					return (feature.properties.name == miSelect );
+					return (feature.properties.name == miSelect || feature.properties.ref == miSelect  );
 					//alert("hola");
 					}	else
 						return true;

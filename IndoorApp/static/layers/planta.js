@@ -246,7 +246,8 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 102"
+        "name": "Aula 102",
+        "cerca": "Baño Secretarias, Arbol",
       },
       "geometry": {
         "type": "Polygon",
@@ -413,7 +414,8 @@ var hqDat = {
         "@id": "way/1002786287",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 105"
+        "name": "Aula 105",
+        "pref": "Arbol, Baños de hombres",
       },
       "geometry": {
         "type": "Polygon",
@@ -796,7 +798,9 @@ var hqDat = {
         "@id": "way/1002786306",
         "indoor": "room",
         "level": "1",
-        "name": "caja"
+        "name": "caja",
+        "ref":"pagos",
+        "pref":"Entrada estacionamiento"
       },
       "geometry": {
         "type": "Polygon",
@@ -917,7 +921,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "Baños"
+        "name": "Baños",
+        "ref": "baño de hombres",
       },
       "geometry": {
         "type": "Polygon",
@@ -1029,7 +1034,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 103"
+        "name": "Aula 103",
       },
       "geometry": {
         "type": "Polygon",
@@ -1357,7 +1362,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 102",
-        "ref": "102"
+        "ref": "102",
+        "pref": "Baños Secretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -1403,7 +1409,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 103",
-        "ref": "103"
+        "ref": "103",
+        "pref": "Aula 102, Secretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -1477,7 +1484,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 105",
-        "ref": "105"
+        "ref": "105",
+        "pref": "Arbol, Baños Hombres"
       },
       "geometry": {
         "type": "Polygon",
@@ -1837,7 +1845,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 106",
-        "ref": "106"
+        "ref": "106",
+        "pref":"Arbol, Baños Hombres"
       },
       "geometry": {
         "type": "Polygon",
@@ -2188,7 +2197,8 @@ var hqDat = {
         "@id": "way/1008962843",
         "indoor": "room",
         "level": "1",
-        "name": "Auditorio"
+        "name": "Auditorio",
+        "pref":"Explanda, Escaleras"
       },
       "geometry": {
         "type": "Polygon",
@@ -2233,7 +2243,8 @@ var hqDat = {
         "@id": "way/1008962845",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 104"
+        "name": "Aula 104",
+        "pref": "Secretarias, Arbol, Baño de Secretarias",
       },
       "geometry": {
         "type": "Polygon",
@@ -2544,7 +2555,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 101",
-        "room": "indoor"
+        "room": "indoor",
+        "pref":"Baños Secretarias, Escaleras CC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2657,7 +2669,8 @@ var hqDat = {
         "@id": "way/1008962858",
         "indoor": "area",
         "level": "1",
-        "name": "Arbol_jardinera"
+        "name": "Jardinea",
+        "pref": "Arbol",
       },
       "geometry": {
         "type": "Polygon",
