@@ -208,7 +208,7 @@ var hqData = {
         "@id": "way/1002786277",
         "amenity": "toilets",
         "level": "1",
-        "name": "WC_Damas"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -246,7 +246,7 @@ var hqData = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "aula102"
+        "name": "Aula 102"
       },
       "geometry": {
         "type": "Polygon",
@@ -413,7 +413,7 @@ var hqData = {
         "@id": "way/1002786287",
         "indoor": "room",
         "level": "1",
-        "name": "aula105"
+        "name": "Aula 105"
       },
       "geometry": {
         "type": "Polygon",
@@ -527,7 +527,7 @@ var hqData = {
         "@id": "way/1002786292",
         "indoor": "room",
         "level": "1",
-        "name": "aula107"
+        "name": "Aula 107"
       },
       "geometry": {
         "type": "Polygon",
@@ -622,7 +622,7 @@ var hqData = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "aula104"
+        "name": "Aula 104"
       },
       "geometry": {
         "type": "Polygon",
@@ -872,7 +872,7 @@ var hqData = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "WC_Hombres"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -946,7 +946,7 @@ var hqData = {
         "@id": "way/1002786313",
         "indoor": "room",
         "level": "1",
-        "name": "aula106"
+        "name": "Aula 106"
       },
       "geometry": {
         "type": "Polygon",
@@ -984,7 +984,7 @@ var hqData = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "aula103"
+        "name": "Aula 103"
       },
       "geometry": {
         "type": "Polygon",
@@ -1471,7 +1471,7 @@ var hqData = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "WC_Hombres"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2029,7 +2029,7 @@ var hqData = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "1",
-        "name": "WC_Damas"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2066,7 +2066,7 @@ var hqData = {
         "@id": "way/1008962841",
         "indoor": "room",
         "level": "1",
-        "name": "aula108"
+        "name": "Aula 108"
       },
       "geometry": {
         "type": "Polygon",
@@ -2498,7 +2498,7 @@ var hqData = {
         "@id": "way/1008962855",
         "indoor": "room",
         "level": "1",
-        "name": "aula101",
+        "name": "Aula 101",
         "room": "indoor"
       },
       "geometry": {

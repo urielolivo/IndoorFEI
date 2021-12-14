@@ -208,7 +208,7 @@ var hqDat = {
         "@id": "way/1002786277",
         "amenity": "toilets",
         "level": "1",
-        "name": "WC_Damas"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -246,7 +246,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "aula102"
+        "name": "Aula 102"
       },
       "geometry": {
         "type": "Polygon",
@@ -413,7 +413,7 @@ var hqDat = {
         "@id": "way/1002786287",
         "indoor": "room",
         "level": "1",
-        "name": "aula105"
+        "name": "Aula 105"
       },
       "geometry": {
         "type": "Polygon",
@@ -527,7 +527,7 @@ var hqDat = {
         "@id": "way/1002786292",
         "indoor": "room",
         "level": "1",
-        "name": "aula107"
+        "name": "Aula 107"
       },
       "geometry": {
         "type": "Polygon",
@@ -622,7 +622,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "aula104"
+        "name": "Aula 104"
       },
       "geometry": {
         "type": "Polygon",
@@ -917,7 +917,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "WC_Hombres"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -991,7 +991,7 @@ var hqDat = {
         "@id": "way/1002786313",
         "indoor": "room",
         "level": "1",
-        "name": "aula106"
+        "name": "Aula 106"
       },
       "geometry": {
         "type": "Polygon",
@@ -1029,7 +1029,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "aula103"
+        "name": "Aula 103"
       },
       "geometry": {
         "type": "Polygon",
@@ -1516,7 +1516,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "WC_Hombres"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2074,7 +2074,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "1",
-        "name": "WC_Damas"
+        "name": "Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2543,7 +2543,7 @@ var hqDat = {
         "@id": "way/1008962855",
         "indoor": "room",
         "level": "1",
-        "name": "aula101",
+        "name": "Aula 101",
         "room": "indoor"
       },
       "geometry": {
@@ -2991,7 +2991,7 @@ var hqDat = {
         "@id": "way/1008970349",
         "indoor": "room",
         "level": "2",
-        "name": "aula209",
+        "name": "Aula 209",
         "ref": "209",
         "room": "class"
       },
@@ -3158,7 +3158,7 @@ var hqDat = {
         "@id": "way/1008970353",
         "indoor": "room",
         "level": "2",
-        "name": "aula201",
+        "name": "Aula 201",
         "ref": "201",
         "room": "class"
       },
@@ -3201,7 +3201,7 @@ var hqDat = {
         "@id": "way/1008970355",
         "indoor": "room",
         "level": "2",
-        "name": "aula217",
+        "name": "Aula 217",
         "ref": "217",
         "room": "class"
       },
@@ -3356,7 +3356,7 @@ var hqDat = {
         "@id": "way/1008970359",
         "indoor": "room",
         "level": "2",
-        "name": "aula 205",
+        "name": "Aula 205",
         "ref": "205",
         "room": "class"
       },
@@ -3443,7 +3443,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "name": "WC",
+        "name": "Baños",
         "ref": "WCGEO",
         "room": "toilet"
       },
@@ -3560,7 +3560,7 @@ var hqDat = {
         "@id": "way/1008970364",
         "indoor": "room",
         "level": "2",
-        "name": "aula205",
+        "name": "Aula 205",
         "ref": "205",
         "room": "class"
       },
@@ -3796,7 +3796,7 @@ var hqDat = {
         "@id": "way/1008970371",
         "indoor": "room",
         "level": "2",
-        "name": "aula216",
+        "name": "Aula 216",
         "ref": "216",
         "room": "class"
       },
@@ -4005,7 +4005,7 @@ var hqDat = {
         "@id": "way/1008970376",
         "indoor": "room",
         "level": "2",
-        "name": "aula220",
+        "name": "Aula 220",
         "ref": "220",
         "room": "class"
       },
@@ -4334,7 +4334,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "name": "WC",
+        "name": "Baños",
         "ref": "WCLE",
         "room": "toilet"
       },
@@ -4412,7 +4412,7 @@ var hqDat = {
         "@id": "way/1008970387",
         "indoor": "room",
         "level": "2",
-        "name": "aula204",
+        "name": "Aula 204",
         "ref": "204",
         "room": "class",
         "rooms": "aula"
@@ -4650,7 +4650,7 @@ var hqDat = {
         "@id": "way/1008970392",
         "indoor": "room",
         "level": "2",
-        "name": "aula207",
+        "name": "Aula 207",
         "ref": "207",
         "room": "class"
       },
@@ -4783,7 +4783,7 @@ var hqDat = {
         "@id": "way/1008970395",
         "indoor": "room",
         "level": "2",
-        "name": "aula214",
+        "name": "Aula 214",
         "ref": "214",
         "room": "class"
       },
@@ -5042,7 +5042,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "name": "WC CC",
+        "name": "Baños",
         "ref": "WCCC",
         "room": "toilet"
       },
@@ -5138,7 +5138,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "name": "WC",
+        "name": "Baños",
         "ref": "WCECO",
         "room": "toilet"
       },
@@ -5224,7 +5224,7 @@ var hqDat = {
         "@id": "way/1008970406",
         "indoor": "room",
         "level": "2",
-        "name": "aula206",
+        "name": "Aula 206",
         "ref": "206",
         "room": "class"
       },
