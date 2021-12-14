@@ -71,14 +71,6 @@ var nivel3 = L.geoJSON(hqData, {
 
 
 
-
-
-
-
-
-
-
-
 //var marker = L.markerClusterGroup();
 var nivel22 = L.geoJSON(hqData2, {
     style: function (feature) {
@@ -108,7 +100,7 @@ varÑ geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
 
 //marcador
 var marca = L.marker([19.5412371, -96.9271773], {draggable: true})
-var popup = marca.bindPopup('ubicacion'+ marca.getLatLng()).openPopup()
+var popup = marca.bindPopup('ubicacion poerson'+ marca.getLatLng()).openPopup()
 
 //console.log(marca.getLatLng());
     //marca.addTo(map);
@@ -117,7 +109,7 @@ popup.addTo(map);
 
 
 /* +++++++ layer controlador +++++++
- */
+*/
 
 var baseMaps ={
     "Google Street" : googleStreets,
@@ -162,7 +154,7 @@ map.on('click', function (e){
         console.info("ya hay un marcadorc")
         map.removerLayer(popupc)
     }else
-    popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.ltlng.lng)
+   // popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.ltlng.lng)
     console.log(popupdata)
     //popupdata.addTo(map);
     var marcac = L.marker([e.latlng.lat, e.latlng.lng], {draggable: true})
@@ -175,217 +167,81 @@ map.on('click', function (e){
 
 
 
-var geocoder = L.Control.geocoder({
-    defaultMarkGeocode: true,
-    showResultIcons : true,
-    errorMessage: "No se encontró el aula o Laboratorio :(",
-    geocodingQueryParams: "Mexico",
-    geocoder: L.Control.Geocoder.photon({
-		showResultIcons: true,
-		geocodingQueryParams: {
-		limit: 8,
-		osm_tag: '!shop'
-		},
+	 var salamancaMonumental = L.layerGroup().addTo(map);
 
-    htmlTemplate: function(nivel1) {
-			// find out which fields are available
-			console.log(nivel1);
+	 			function colorPuntos(d) { 
+					return d == "aula102" ? '#FF0000' : 
+						'#FF0000'; 
+				};
 
-			var a = L.extend({
-				'type'         : '',
-				'level'       : '',
-				'name'       : '',
-        'nivel' : '',
-        'room'       :'',
+				function estilo_monumentos (feature) {
+					return{
+						radius: 7,
+						fillColor: colorPuntos(feature.properties.name), 
+			    		color: colorPuntos(feature.properties.name), 
+						weight: 1,
+						opacity : 1,
+						fillOpacity : 0.5
+					};
+				};
+				function popup_monumentos (feature, layer) {
+					layer.bindPopup("<div style=text-align:center><h3>"+feature.properties.name+
+			        "<h3></div><hr><table><tr><td> Tipo: "+feature.properties.id+
+			        "</td></tr><tr><td>Nivel: "+feature.properties.level+
+			        "</td></tr></table>",
+			        {minWidth: 150, maxWidth: 200});				
+					};
 
-			},
-		nivel1.properties
-			),
-
-
-			string = '<br><small>{osm_value}';
-
-	//		string += '<br><small>{osm_value}';
-
-			if (a.type || a.level|| a.name || a.room ) {
-
-          string += '<h4> {name}{type}  {osm_value} </h4>';
-			}
+				var MarkerOptions = {
+				    radius: 8,
+				    fillColor: "#ff7800",
+				    color: "#000",
+				    weight: 1,
+				    opacity: 1,
+				    fillOpacity: 0.8
+					};
 
 
+	function myFunction() { 
+			 	var monumentos = L.geoJSON(hqDat, {
+							pointToLayer: function (feature, latlng) {
+									return L.circleMarker(latlng, MarkerOptions);
+								},	
+							style:estilo_monumentos,
+							onEachFeature: popup_monumentos	
+					});		
 
+			 	//salamancaMonumental.addLayer(monumentos);	
+	
+	}
 
-			string += '</small>';
+	$("#buscar").click(function(){
+		var miSelect = document.getElementById("nombres").value;
 
-			return L.Util.template(string, a, true);
+		if (miSelect == ""){
+			swal.fire( 'el contendi no puede ir vacio','You clicked the button!')	
+
 		}
+		var monumentos = L.geoJSON(hqDat, {
+							pointToLayer: function (feature, latlng) {
+									return L.circleMarker(latlng, MarkerOptions);
+								},
+							filter: function(feature, layer) {								
+								if(miSelect != "TODOS"){
+								var x = feature.properties.name == miSelect;
+									console.log(x);
+									return (feature.properties.name == miSelect );
+								//alert("hola");
+								}	else
+									return true;
+									
+							},	
+							style:estilo_monumentos,
+							onEachFeature: popup_monumentos	
+					});		
 
-})
-})
-  .on('markgeocode', function(e) {
-    var bbox = e.geocode.bbox;
-    console.info(bbox);
-      var poly = L.polygon([
-      bbox.getSouthEast(),
-      bbox.getNorthEast(),
-      bbox.getNorthWest(),
-      bbox.getSouthWest(),
-     ]).addTo(map);
-      map.fitBounds(poly.getBounds('<h3>hola </h3>'));
-      }).addTo(map);
-
-
-
-
-
-//leaflet search
-//L.Control.geocoder().addTo(map);
-  
-
+		salamancaMonumental.clearLayers();
+		salamancaMonumental.addLayer(monumentos);
+	});
 
 
-
-
-
-
-
-
-/*function buildOverpassApiUrl(map, overpassQuery) {
-    var bounds = map.getBounds().getSouth() + ',' + map.getBounds().getWest() + ',' + map.getBounds().getNorth() + ',' + map.getBounds().getEast();
-  //  var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
-    var wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
-    var relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
-    var query = '?data=[out:json][timeout:15];(' + wayQuery + relationQuery + ');out body geom;';
-    var baseUrl = 'http://overpass-api.de/api/interpreter';
-    var resultUrl = baseUrl + query;
-    return resultUrl;
-} */
-
-
-function buildOverpassApiUrl(map, overpassQuery) {
-         var bounds = map.getBounds().getSouth() + ',' + map.getBounds().getWest() + ',' + map.getBounds().getNorth() + ',' + map.getBounds().getEast();
-         var nodeQuery = 'node[' + overpassQuery + '](' + bounds + ');';
-        var wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
-        var relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
-         var query = '?data=[out:json][timeout:15];(' + nodeQuery + wayQuery + relationQuery + ');out body geom;';
-         var baseUrl = 'http://overpass-api.de/api/interpreter';
-         var resultUrl = baseUrl + query;
-         return resultUrl;
-       }
-
-       $("#query-button").click(function () {
-         var nom = 'name='
-         var queryTextfieldValue = $("#query-textfield").val();
-           if (queryTextfieldValue == ""){
-
-            swal("Porfavor indica que quieres encontrar.")
-           } else {
-         var consultafin = nom.concat(queryTextfieldValue);
-         console.log(nom.concat(queryTextfieldValue));
-         var overpassApiUrl = buildOverpassApiUrl(map, consultafin);
-
-         $.get(overpassApiUrl, function (osmDataAsJson) {
-          var resultAsGeojson = osmtogeojson(osmDataAsJson);
-           var resultLayer = L.geoJson(resultAsGeojson, {
-             style: function () {
-                     
-                 
-                return {color: "#FF0B0B"};
-
-             },
-            
-    
-
-             onEachFeature: function (feature,layer) {
-               var popupContent = "";
-
-        var keys = Object.keys(feature.properties.tags);
-               keys.forEach(function (key) {
-                    console.log(feature.properties.tags[key]);
-                   popupContent = popupContent + "<dt>" + key + "</dt><dd>" + feature.properties.tags[key]  + "</dd>";
-               });
-               popupContent = popupContent + "</dl>"
-               layer.bindPopup(popupContent);
-
-
-             }
-               
-
-
-
-
-
-
-
-           }).addTo(map);
-         });
-               
-       }});
-
-
-
-
-
-
-
-
-///// POSIBLE CONTROL DE GLE 
-//
-//
-//
-//
-
-var searchControl = new L.Control.Search({
-layer: sitis,  // Determines the name of variable, which includes our GeoJSON layer!
-propertyName: 'name',
-marker: false,
-moveToLocation: function(latlng, title, map) {
-    //map.fitBounds( latlng.layer.getBounds() );
-    var zoom = map.getBoundsZoom(latlng.layer.getBounds());
-    map.setView(latlng, zoom); // access the zoom
-    }
-});
-
-
-$("#uno").click(function () {
-    var Nivel = 'level=1'
-    var overpassApiUrl = buildOverpassApiUrl(map, Nivel);
-        
-    $.get(overpassApiUrl, function (osmDataAsJson) {
-        var resultAsGeojson = osmtogeojson(osmDataAsJson);
-        var resultLayer1 = L.geoJson(resultAsGeojson, {
-            style: function (feature) {
-		return {color: "#182876"};
-            },
-            filter: function (feature, layer) {
-
-		return true;
-            },
-           
-        });
-        resultLayer1.addTo(map);
-
-    });
-});
-
-
-
-$("#dos").click(function () {
-    var Nivel = 'level=2'
-    var overpassApiUrl = buildOverpassApiUrl(map, Nivel);
-        
-    $.get(overpassApiUrl, function (osmDataAsJson) {
-        var resultAsGeojson = osmtogeojson(osmDataAsJson);
-        var resultLayer = L.geoJson(resultAsGeojson, {
-            style: function (feature) {
-		return {color: "#182876"};
-            },
-            filter: function (feature, layer) {
-                return true;
-            },
-           
-        });
-        resultLayer.addTo(map);
-        map.removeLayer();
-    });
-});
