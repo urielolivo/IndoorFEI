@@ -3177,7 +3177,8 @@ var hqDat = {
         "level": "2",
         "name": "Aula 201",
         "ref": "201",
-        "room": "class"
+        "room": "class",
+        "pref": "Baños de Damas"
       },
       "geometry": {
         "type": "Polygon",
@@ -3336,7 +3337,8 @@ var hqDat = {
         "level": "2",
         "name": "Aula 203",
         "ref": "203",
-        "room": "class"
+        "room": "class",
+        "pref": "Baños de Damas, Pasillo CC"
       },
       "geometry": {
         "type": "Polygon",
@@ -3375,7 +3377,8 @@ var hqDat = {
         "level": "2",
         "name": "Aula 205",
         "ref": "205",
-        "room": "class"
+        "room": "class",
+        "pref": "Aula 204"
       },
       "geometry": {
         "type": "Polygon",
@@ -3413,7 +3416,8 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor derecho Geografía",
-        "ref": "Cordergeo"
+        "ref": "Cordergeo",
+        "pref":"Aula 205"
       },
       "geometry": {
         "type": "Polygon",
@@ -3462,7 +3466,8 @@ var hqDat = {
         "level": "2",
         "name": "Baños",
         "ref": "WCGEO",
-        "room": "toilet"
+        "room": "toilet",
+        "pref": "Pasillo CC"
       },
       "geometry": {
         "type": "Polygon",
@@ -3579,7 +3584,8 @@ var hqDat = {
         "level": "2",
         "name": "Aula 205",
         "ref": "205",
-        "room": "class"
+        "room": "class",
+        "pref" : "Corredor Derecho Geografía"
       },
       "geometry": {
         "type": "Polygon",
@@ -3815,7 +3821,8 @@ var hqDat = {
         "level": "2",
         "name": "Aula 216",
         "ref": "216",
-        "room": "class"
+        "room": "class",
+        "pref":"Corredor Izquierdo"
       },
       "geometry": {
         "type": "Polygon",
@@ -3898,10 +3905,12 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970373",
         "alt_name": "Facultad de Estadística e Informática",
+        "name" : "Aula 202",
         "indoor": "room",
         "level": "2",
         "ref": "202",
-        "room": "class"
+        "room": "class",
+        "pref": "Pasillo CC, Baños Damas "
       },
       "geometry": {
         "type": "Polygon",
@@ -3947,7 +3956,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "Jefatura Geografía",
-        "room": "office"
+        "room": "office",
+        "pref":"Aula 203"
       },
       "geometry": {
         "type": "Polygon",
