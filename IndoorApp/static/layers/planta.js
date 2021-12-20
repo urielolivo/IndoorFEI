@@ -11,7 +11,8 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Biblioteca"
+        "name": "Biblioteca",
+        "pref": "Entrada principal"
       },
       "geometry": {
         "type": "Polygon",
@@ -247,7 +248,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 102",
-        "cerca": "Baño Secretarias, Arbol",
+        "pref": "Baño Secretarias, Arbol",
       },
       "geometry": {
         "type": "Polygon",
@@ -292,7 +293,8 @@ var hqDat = {
         "@id": "way/1002786279",
         "indoor": "room",
         "level": "1",
-        "name": "Auditorio"
+        "name": "Auditorio",
+        "pref": "Explanada, Aula 108"
       },
       "geometry": {
         "type": "Polygon",
@@ -529,7 +531,8 @@ var hqDat = {
         "@id": "way/1002786292",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 107"
+        "name": "Aula 107",
+        "pref": "Arbol, Auditorio"
       },
       "geometry": {
         "type": "Polygon",
