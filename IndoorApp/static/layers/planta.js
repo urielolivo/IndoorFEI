@@ -2597,7 +2597,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Aula 107",
-        "ref": "107"
+        "ref": "107",
+        "pref": "Baños de Hombres, Arbol, Pasillo Auditorio"
       },
       "geometry": {
         "type": "Polygon",
