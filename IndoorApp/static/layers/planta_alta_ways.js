@@ -2104,6 +2104,7 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970400",
+        "pagina": "https://www.uv.mx/linae/",
         "indoor": "room",
         "level": "2",
         "name": "Laboratorio de Investigación y Asesoría Estadística",

@@ -562,6 +562,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786294",
+        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
@@ -749,6 +750,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786306",
+        "servicio": "pagos",
         "indoor": "room",
         "level": "1",
         "name": "caja"
@@ -2683,9 +2685,11 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962860",
+        "personal": "MGC. Minerva Reyes Félix",
+        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "SecretariaAcademica"
+        "name": "Secretaria Académica"
       },
       "geometry": {
         "type": "Polygon",
@@ -2724,6 +2728,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962861",
+        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
@@ -2894,6 +2899,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786298",
+        "servicio": "trámites",
         "level": "1",
         "name": "Secretaria"
       },

@@ -567,6 +567,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786294",
+        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
@@ -720,7 +721,7 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
-        "name": "Baño_Secretarias",
+        "name": "Baño Secretarias",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -1077,7 +1078,7 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
-        "name": "Baño_Secretarias",
+        "name": "Baño Secretarias",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -2745,9 +2746,11 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962860",
+        "personal": "MGC. Minerva Reyes Félix",
+        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "SecretariaAcademica"
+        "name": "Secretaria Académica"
       },
       "geometry": {
         "type": "Polygon",
@@ -2786,6 +2789,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962861",
+        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
@@ -4987,6 +4991,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970400",
+        "pagina": "https://www.uv.mx/linae/",
         "indoor": "room",
         "level": "2",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
@@ -5398,6 +5403,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786298",
+        "servicio": "trámites",
         "level": "1",
         "name": "Secretaria"
       },
@@ -5477,8 +5483,9 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786312",
+        "servicio": "trámites",
         "level": "1",
-        "name": "SecreatriaEsta"
+        "name": "Secreatria Esta"
       },
       "geometry": {
         "type": "LineString",
