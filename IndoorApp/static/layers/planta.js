@@ -2043,9 +2043,10 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962836",
+        "servicio": ["trámites", "apoyo"],
         "indoor": "room",
         "level": "1",
-        "name": "Direccion Economia"
+        "name": "Dirección Economía"
       },
       "geometry": {
         "type": "Polygon",
@@ -2747,6 +2748,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962860",
         "personal": "MGC. Minerva Reyes Félix",
+        "pe": "Minerva",
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
@@ -3092,6 +3094,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970351",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
         "name": "CC3",
@@ -3727,7 +3730,7 @@ var hqDat = {
         "@id": "way/1008970369",
         "indoor": "room",
         "level": "2",
-        "name": "CC",
+        "name": "CC4",
         "ref": "4",
         "room": "laboratory"
       },
@@ -4244,6 +4247,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970382",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
         "name": "CC2",
@@ -4283,6 +4287,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970383",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
         "name": "CC1",
@@ -5211,6 +5216,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970405",
+        "servicio": "técnicos",
         "indoor": "room",
         "level": "2",
         "name": "Jefatura de Centro de cómputo",

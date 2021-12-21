@@ -268,7 +268,7 @@ map.on('click', function (e){
 				if(miSelect != "TODOS"){
 					var x = feature.properties.name == miSelect;
 					console.log(x);
-					return (feature.properties.name == miSelect || feature.properties.ref == miSelect  );
+					return (feature.properties.name == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect  );
 					//alert("hola");
 					}	else
 						return true;

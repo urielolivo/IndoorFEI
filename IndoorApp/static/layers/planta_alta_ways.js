@@ -211,6 +211,7 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970351",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
         "name": "CC3",
@@ -838,9 +839,10 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970369",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
-        "name": "CC",
+        "name": "CC4",
         "ref": "4",
         "room": "laboratory"
       },
@@ -1353,6 +1355,7 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970382",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
         "name": "CC2",
