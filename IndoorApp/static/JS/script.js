@@ -203,6 +203,15 @@ map.on('click', function (e){
 */
 
 
+function mostrar() {
+    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("contenido").style.marginLeft = "300px";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+
+
 
 	 var salamancaMonumental = L.layerGroup().addTo(map);
 
@@ -222,12 +231,18 @@ map.on('click', function (e){
 					};
 				};
 				function popup_monumentos (feature, layer) {
-					layer.bindPopup("<div style=text-align:center><h3>"+feature.properties.name+
-						"<h3></div><hr><table><tr><td> Referencia: "+feature.properties.ref+
+            document.getElementById("menu-bar").checked = true;				    
+
+        document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
+						"<h2></div><hr><table><tr><td> Referencia: "+feature.properties.ref+
 						"</td></tr><tr><td>Nivel: "+feature.properties.level+
 						"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
+						"</td></tr></table>";
+
+                       
+        layer.bindPopup ("<div style=text-align:center><h3>"+feature.properties.name+
 						"</td></tr></table>",
-						{minWidth: 150, maxWidth: 200});
+            {minWidth: 150, maxWidth: 200});
 				};
 
 				var MarkerOptions = {
