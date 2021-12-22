@@ -8,6 +8,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786274",
+        "servicio":"estudio",
         "building": "university",
         "indoor": "room",
         "level": "1",

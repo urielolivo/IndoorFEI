@@ -3055,6 +3055,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970350",
+        "servicio":"estudio",
         "indoor": "room",
         "level": "2",
         "name": "Cuarto biblioteca",
@@ -3263,6 +3264,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970356",
+        "servicio":"estudio",
         "indoor": "room",
         "level": "2",
         "name": "CC biblioteca",
@@ -4131,6 +4133,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970378",
+        "servicio":"estudio",
         "indoor": "room",
         "level": "2",
         "name": "Cuarto biblioteca",
