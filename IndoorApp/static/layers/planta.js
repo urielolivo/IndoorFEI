@@ -4590,6 +4590,8 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970390",
+        "servicio": "practicas",
+        "servicio2": "prestamo de equipo",
         "indoor": "room",
         "level": "2",
         "name": "Proyectos SIG",
@@ -4913,6 +4915,8 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970397",
+        "servicio": "practicas",
+        "servicio2": "prestamo de equipo",
         "indoor": "room",
         "level": "2",
         "name": "Laboratorio electrónica",
@@ -5494,7 +5498,7 @@ var hqDat = {
         "@id": "way/1002786312",
         "servicio": "trámites",
         "level": "1",
-        "name": "Secreatria Esta"
+        "name": "Secretaria  Academica Estadistica"
       },
       "geometry": {
         "type": "LineString",
