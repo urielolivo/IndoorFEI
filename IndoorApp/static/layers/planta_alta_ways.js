@@ -8,6 +8,8 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970346",
+        "servicio": "acceso",
+        "servicio1": "prestamo equipo",
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor de entrada CC"
@@ -92,9 +94,12 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970348",
+        "servicio": "acceso",
+        "servicio1": "prestamo equipo",
+        "ref": "CC",
         "indoor": "corridor",
         "level": "2",
-        "name": "corredor centro de cómputo"
+        "name": "Centro de cómputo"
       },
       "geometry": {
         "type": "Polygon",
@@ -2331,6 +2336,7 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970405",
+        "servicio": "técnicos",
         "indoor": "room",
         "level": "2",
         "name": "Jefatura de Centro de cómputo",
