@@ -5012,6 +5012,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970400",
         "pagina": "https://www.uv.mx/linae/",
+        "personal":"L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez",
         "indoor": "room",
         "level": "2",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
@@ -5232,6 +5233,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970405",
         "servicio": "técnicos",
+        "personal": "Dr. José Luis Soto",
         "indoor": "room",
         "level": "2",
         "name": "Jefatura de Centro de cómputo",
