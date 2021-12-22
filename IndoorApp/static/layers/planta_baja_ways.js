@@ -451,7 +451,7 @@ var hqData = {
         "@id": "way/1002786288",
         "indoor": "corridor",
         "level": "1",
-        "name": "corredorauditorio"
+        "name": "corredor auditorio"
       },
       "geometry": {
         "type": "Polygon",
@@ -826,9 +826,11 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786308",
+        "servicio": "acceso",
+        "servicio1": "entrada",
         "indoor": "room",
         "level": "1",
-        "name": "recibidor"
+        "name": "Recibidor"
       },
       "geometry": {
         "type": "Polygon",
@@ -1071,7 +1073,7 @@ var hqData = {
         "@id": "way/1008962814",
         "indoor": "corridor",
         "level": "1",
-        "name": "corredorPrincipal"
+        "name": "Corredor principal"
       },
       "geometry": {
         "type": "Polygon",

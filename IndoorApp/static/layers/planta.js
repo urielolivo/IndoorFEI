@@ -8,6 +8,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786274",
+        "servicio": "acceso",
         "building": "university",
         "indoor": "room",
         "level": "1",
@@ -800,6 +801,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786306",
+        "servicio": "acceso",
         "indoor": "room",
         "level": "1",
         "name": "caja",
@@ -876,9 +878,11 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786308",
+        "servicio": "acceso",
+        "servicio1": "entrada",
         "indoor": "room",
         "level": "1",
-        "name": "recibidor"
+        "name": "Recibidor"
       },
       "geometry": {
         "type": "Polygon",
@@ -2981,7 +2985,7 @@ var hqDat = {
         "servicio1": "prestamo equipo",
         "indoor": "corridor",
         "level": "2",
-        "name": "Centro de cómputo"
+        "name": "Corredor de centro de cómputo"
       },
       "geometry": {
         "type": "Polygon",

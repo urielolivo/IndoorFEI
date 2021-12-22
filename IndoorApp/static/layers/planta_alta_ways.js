@@ -99,7 +99,7 @@ var hqData2 = {
         "ref": "CC",
         "indoor": "corridor",
         "level": "2",
-        "name": "Centro de cómputo"
+        "name": "Corredor de centro de cómputo"
       },
       "geometry": {
         "type": "Polygon",
