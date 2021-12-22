@@ -65,7 +65,7 @@ var nivel3 = L.geoJSON(hqData, {
                 return {color: "#154F72"};
               },
    onEachFeature: function (feature, layer) {
-    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p>' + feature.properties.tags + "</dd>");
+    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p>' + feature.properties.tags + "</dd>");
  }
 })
 
@@ -234,10 +234,12 @@ function mostrar() {
             document.getElementById("menu-bar").checked = true;				    
 
         document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
-						"<h2></div><hr><table><tr><td> Referencia: "+feature.properties.ref+
-						"</td></tr><tr><td>Nivel: "+feature.properties.level+
-						"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
-						"</td></tr></table>";
+			"<h2></div>" + "<hr><table><tr><td> Referencia: "+feature.properties.ref+
+			"</td></tr><tr><td>Personal: "+feature.properties.personal+
+			"</td></tr><tr><td>Nivel: "+feature.properties.level+
+			"</td></tr><tr><td>Página: "+feature.properties.pagina+
+			"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
+			"</td></tr></table>";
 
                        
         layer.bindPopup ("<div style=text-align:center><h3>"+feature.properties.name+
@@ -283,7 +285,7 @@ function mostrar() {
 				if(miSelect != "TODOS"){
 					var x = feature.properties.name == miSelect;
 					console.log(x);
-					return (feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect );
+					return (feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
 					//alert("hola");
 					}	else
 						return true;

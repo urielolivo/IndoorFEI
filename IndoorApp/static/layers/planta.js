@@ -2897,6 +2897,7 @@ var hqDat = {
         "@id": "way/1008970346",
         "servicio": "acceso",
         "servicio1": "prestamo equipo",
+        "servicio2": "imprimir",
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor de entrada CC"
@@ -2981,8 +2982,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970348",
-        "servicio": "acceso",
-        "servicio1": "prestamo equipo",
+        "servicio": "prestamo equipo",
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor de centro de cómputo"
