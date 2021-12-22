@@ -223,12 +223,12 @@ map.on('click', function (e){
 				};
 				function popup_monumentos (feature, layer) {
 					layer.bindPopup("<div style=text-align:center><h3>"+feature.properties.name+
-			        "<h3></div><hr><table><tr><td> Referencia: "+feature.properties.ref+
-			        "</td></tr><tr><td>Nivel: "+feature.properties.level+
-               "</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
-              "</td></tr></table>",
-			        {minWidth: 150, maxWidth: 200});				
-					};
+						"<h3></div><hr><table><tr><td> Referencia: "+feature.properties.ref+
+						"</td></tr><tr><td>Nivel: "+feature.properties.level+
+						"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
+						"</td></tr></table>",
+						{minWidth: 150, maxWidth: 200});
+				};
 
 				var MarkerOptions = {
 				    radius: 8,
