@@ -170,11 +170,13 @@ map.on('dblclick', function(e) {
 
 
 });
- /* ++++ Creacion de linea de separacion de puntos */
-function drawLine(marray) {
+
+
+ /*  ++++ Creacion de linea de separacion de puntos */
+/*function drawLine(marray) {
     var polyline = L.polyline(marray,{color: 'red'}).addTo(map);
     polyline.addTo(layerGroup);
-}
+}*/ 
 
 
 $("#ruta").click(function (){
@@ -239,7 +241,7 @@ function mostrar() {
 			"</td></tr><tr><td>Nivel: "+feature.properties.level+
 			"</td></tr><tr><td>Página: "+feature.properties.pagina+
 			"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
-			"</td></tr></table>";
+                "</td></tr></table>";
 
                        
         layer.bindPopup ("<div style=text-align:center><h3>"+feature.properties.name+

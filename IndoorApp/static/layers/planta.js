@@ -931,6 +931,7 @@ var hqDat = {
         "male": "yes",
         "name": "Baños",
         "ref": "baño de hombres",
+        "pref": "Arbol, Auditorio",
       },
       "geometry": {
         "type": "Polygon",
