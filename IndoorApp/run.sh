@@ -3,5 +3,5 @@ sleep 10
 
 #python3 manage.py migrate
 #python3 manage.py migrate
-python3 -u manage.py runserver 0.0.0.0:9500
-#gunicorn --bind :9000 IndoorApp.wsgi:application  --reload
+#python3 -u manage.py runserver 192.168.100.5:9500
+gunicorn --bind :9500 IndoorApp.wsgi:application  --reload

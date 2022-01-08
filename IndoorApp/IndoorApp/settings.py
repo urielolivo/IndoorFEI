@@ -23,10 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'n$q#6@gm7wb4)h*0k908@46e!(y_5mrjc(81++9a+*bfxly+o2'
 #SECRET_KEY = os.environ.get('llave')
 #SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+#ALLOWED_HOSTS = [ '7ad0-2806-2f0-7080-f411-181f-fc08-bffa-9389.ngrok.io', 'https://7ad0-2806-2f0-7080-f411-181f-fc08-bffa-9389.ngrok.io/','.localhost', '127.0.0.1', '192.168.100.5','[::1]' ]
 
 
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,8 +50,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'IndoorApp.urls'
 
+ROOT_URLCONF = 'IndoorApp.urls'
+#ROOT_URLCONF = 'over.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
