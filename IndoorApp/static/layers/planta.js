@@ -9,6 +9,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786274",
         "servicio": "acceso",
+        "servicio1": "entrada",
         "building": "university",
         "indoor": "room",
         "level": "1",
@@ -293,9 +294,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786279",
         "indoor": "room",
+        "servicio": "conferencias",
+        "servicio1": "platicas",
         "level": "1",
         "name": "Auditorio",
-        "pref": "Explanada, Aula 108"
+        "pref": "Explanada, Aula 108, Baños."
       },
       "geometry": {
         "type": "Polygon",
@@ -455,6 +458,7 @@ var hqDat = {
         "@id": "way/1002786288",
         "indoor": "corridor",
         "level": "1",
+        "pref":"Auditorio, Baños, Aula 108",
         "name": "corredor auditorio"
       },
       "geometry": {
