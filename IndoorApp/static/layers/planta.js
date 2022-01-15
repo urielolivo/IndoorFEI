@@ -774,6 +774,7 @@ var hqDat = {
         "@id": "way/1002786305",
         "indoor": "area",
         "level": "1",
+        "pref": "Auditorio, Corredor auditorio, Corredor principal",
         "name": "Jardinera2"
       },
       "geometry": {
@@ -809,12 +810,13 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786306",
-        "servicio": "acceso",
         "indoor": "room",
         "level": "1",
-        "name": "caja",
-        "ref":"pagos",
-        "pref":"Entrada estacionamiento"
+        "servicio": "pagos",
+        "servicio1": "extraordinario",
+        "servicio2": "titulo",
+        "pref":"Entrada estacionamiento, Explanada",
+        "name": "Caja"
       },
       "geometry": {
         "type": "Polygon",
