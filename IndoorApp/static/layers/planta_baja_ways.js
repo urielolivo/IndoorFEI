@@ -492,7 +492,8 @@ var hqData = {
       "properties": {
         "@id": "way/1002786291",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Prueba"
       },
       "geometry": {
         "type": "Polygon",
@@ -533,6 +534,7 @@ var hqData = {
         "@id": "way/1002786292",
         "indoor": "room",
         "level": "1",
+        "pref": "Arbol, Auditorio",
         "name": "Aula 107"
       },
       "geometry": {
@@ -2552,6 +2554,7 @@ var hqData = {
         "@id": "way/1008962856",
         "indoor": "room",
         "level": "1",
+        "pref": "Arbol, Auditorio",
         "name": "Aula 107",
         "ref": "107"
       },

@@ -495,7 +495,8 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786291",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Prueba"
       },
       "geometry": {
         "type": "Polygon",
@@ -573,6 +574,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786294",
         "servicio": "trámites",
+        "Personal": "a",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
