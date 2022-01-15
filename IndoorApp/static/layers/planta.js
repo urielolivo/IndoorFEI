@@ -574,7 +574,8 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786294",
         "servicio": "trámites",
-        "Personal": "a",
+        "servicio1": "reposición",
+        "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
@@ -635,6 +636,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
+        "pref":"Secretarias, Aula 103, Corredor principal",
         "name": "Aula 104"
       },
       "geometry": {
@@ -679,7 +681,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786302",
         "level": "1",
-        "name": "bosquesitoauditorio",
+        "name": "Bosque Auditorio",
         "natural": "wood"
       },
       "geometry": {

@@ -571,6 +571,8 @@ var hqData = {
       "properties": {
         "@id": "way/1002786294",
         "servicio": "trámites",
+        "servicio1": "reposición",
+        "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
         "name": "Secretarias"
@@ -630,6 +632,7 @@ var hqData = {
         "@id": "way/1002786296",
         "building": "university",
         "indoor": "room",
+        "pref":"Secretarias, Aula 103, Corredor principal",
         "level": "1",
         "name": "Aula 104"
       },
