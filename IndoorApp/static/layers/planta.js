@@ -2909,6 +2909,8 @@ var hqDat = {
         "servicio": "acceso",
         "servicio1": "prestamo equipo",
         "servicio2": "imprimir",
+        "ref": "CC FEI",
+        "pref": "Baños  Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor de entrada CC"
@@ -2946,6 +2948,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970347",
+        "pref":"Aula 217, Corredor izquierdo economia",
         "indoor": "room",
         "level": "2",
         "name": "Cubículos economía",
@@ -2993,9 +2996,14 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970348",
-        "servicio": "prestamo equipo",
+        "servicio": "acceso",
+        "servicio1": "prestamo equipo",
+        "servicio2": "impresiones",
+        "servicio3": "control cañon",
+        "ref": "CC",
         "indoor": "corridor",
         "level": "2",
+        "pref": "Escaleras CC, Baños. CC1",
         "name": "Corredor de centro de cómputo"
       },
       "geometry": {
@@ -3115,6 +3123,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970351",
         "servicio":"computo",
+        "servicio1":"centro de computo",
         "indoor": "room",
         "level": "2",
         "name": "CC3",
@@ -3160,8 +3169,8 @@ var hqDat = {
         "@id": "way/1008970352",
         "indoor": "corridor",
         "level": "2",
-        "name": "2 corredor izquierdo",
-        "ref": "2"
+        "name": "corredor izquierdo",
+        "ref": "corredorl2"
       },
       "geometry": {
         "type": "Polygon",
@@ -3205,7 +3214,7 @@ var hqDat = {
         "name": "Aula 201",
         "ref": "201",
         "room": "class",
-        "pref": "Baños de Damas"
+        "pref": "Baños"
       },
       "geometry": {
         "type": "Polygon",

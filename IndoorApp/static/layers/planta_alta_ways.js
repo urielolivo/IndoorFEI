@@ -10,6 +10,9 @@ var hqData2 = {
         "@id": "way/1008970346",
         "servicio": "acceso",
         "servicio1": "prestamo equipo",
+        "servicio2": "imprimir",
+        "ref": "CC FEI",
+        "pref": "Baños  Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor de entrada CC"
@@ -48,6 +51,7 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970347",
         "indoor": "room",
+        "pref":"Aula 217, Corredor izquierdo economia",
         "level": "2",
         "name": "Cubículos economía",
         "ref": "CubEco",
@@ -96,6 +100,8 @@ var hqData2 = {
         "@id": "way/1008970348",
         "servicio": "acceso",
         "servicio1": "prestamo equipo",
+        "servicio2": "impresiones",
+        "servicio3": "control cañon",
         "ref": "CC",
         "indoor": "corridor",
         "level": "2",
@@ -218,6 +224,7 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970351",
         "servicio":"computo",
+        "servicio1":"centro de computo",
         "indoor": "room",
         "level": "2",
         "name": "CC3",
@@ -263,8 +270,8 @@ var hqData2 = {
         "@id": "way/1008970352",
         "indoor": "corridor",
         "level": "2",
-        "name": "2 corredor izquierdo",
-        "ref": "2"
+        "name": " corredor izquierdo",
+        "ref": "corredorl2"
       },
       "geometry": {
         "type": "Polygon",
