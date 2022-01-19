@@ -3116,7 +3116,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC3",
-        "centro": "Centro de computo",
+        "centro": "Centro de cómputo",
         "ref": "3",
         "room": "laboratory"
       },
@@ -3751,7 +3751,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC4",
-        "centro": "Centro de computo",
+        "centro": "Centro de cómputo",
         "ref": "4",
         "room": "laboratory"
       },
@@ -4273,7 +4273,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC2",
-        "centro": "Centro de computo",
+        "centro": "Centro de cómputo",
         "ref": "2",
         "room": "laboratory"
       },
@@ -4314,7 +4314,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC1",
-         "centro": "Centro de computo", 
+         "centro": "Centro de cómputo", 
         "ref": "1",
         "room": "class"
       },
