@@ -65,6 +65,20 @@ var nivel3 = L.geoJSON(hqData, {
                 return {color: "#154F72"};
               },
    onEachFeature: function (feature, layer) {
+
+
+
+ document.getElementById("menu-bar").checked = true;				    
+
+        document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
+			"<h2></div>" + "<hr><table><tr><td> Referencia: "+feature.properties.ref+
+			"</td></tr><tr><td>Personal: "+feature.properties.personal+
+			"</td></tr><tr><td>Nivel: "+feature.properties.level+
+			"</td></tr><tr><td>Página: "+feature.properties.pagina+
+			"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
+                "</td></tr></table>";
+
+
     layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p>' + feature.properties.tags + "</dd>");
  }
 })
@@ -78,7 +92,11 @@ var nivel22 = L.geoJSON(hqData2, {
             },
 
   onEachFeature: function (feature, layer) {
-      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p><p>Página:  '+feature.properties.pagina+'</p>' + feature.properties.tags + "</dd>");
+
+    
+
+
+      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivelo: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p><p>Página:  '+feature.properties.pagina+'</p>' + feature.properties.tags + "</dd>");
  }
 })
 
@@ -142,15 +160,15 @@ L.control.layers(baseMaps, niveles).addTo(map);
 map.on('mouseover',  function (){
     console.log('el mouse esta en el mapa')
 });
-map.on('mousemove', function(e){
+/*map.on('mousemove', function(e){
    document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
   //  console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
-})
+}) */ 
 
 
 
 
-/* +++++ AGREGAR CAPAS DE RUTEO +++++ */
+/* +++++ AGREGAR CAPAS DE RUTEO +++++ 
 var  nmarker = 0;
 var layerGroup = L.layerGroup().addTo(map);
 var markerArray = [];
@@ -287,7 +305,7 @@ function mostrar() {
 				if(miSelect != "TODOS"){
 					var x = feature.properties.name == miSelect;
 					console.log(x);
-					return (feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
+					return (feature.properties.centro == miSelect || feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
 					//alert("hola");
 					}	else
 						return true;
