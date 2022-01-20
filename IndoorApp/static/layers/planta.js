@@ -4327,6 +4327,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC1",
+         "area": "Centro de cómputo", 
         "area": "Centro de cómputo",
         "ref": "1",
         "room": "class"
