@@ -67,7 +67,7 @@ var nivel3 = L.geoJSON(hqData, {
    onEachFeature: function (feature, layer) {
 
 
-    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p>' + feature.properties.tags + "</dd>");
+       layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p>' + '</p><p> Punto Cercanos : '+ feature.properties.pref  + "</dd>");
  }
 })
 
@@ -83,7 +83,7 @@ var nivel22 = L.geoJSON(hqData2, {
 
 
 
-      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivelo: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p><p>Página:  '+feature.properties.pagina+'</p>' + feature.properties.tags + "</dd>");
+      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p><p>Página:  '+'</p>' +   '</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
  }
 })
 
