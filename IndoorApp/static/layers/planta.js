@@ -2909,6 +2909,7 @@ var hqDat = {
         "servicio": "acceso",
         "servicio1": "prestamo equipo",
         "servicio2": "imprimir",
+        "area": "Centro de cómputo",
         "ref": "CC FEI",
         "pref": "Baños  Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
@@ -2948,11 +2949,11 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970347",
-        "pref":"Aula 217, Corredor izquierdo economia",
         "indoor": "room",
         "level": "2",
         "name": "Cubículos economía",
         "ref": "CubEco",
+        "pref": "Aula 2017, Aula 206, Corredor izquierdo economía",
         "room": "office"
       },
       "geometry": {
@@ -3086,6 +3087,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "Cuarto biblioteca",
+        "area":"Biblioteca",
         "ref": "cuabib",
         "room": "library"
       },
@@ -3123,11 +3125,10 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970351",
         "servicio":"computo",
-        "servicio1":"centro de computo",
         "indoor": "room",
         "level": "2",
         "name": "CC3",
-        "centro": "Centro de cómputo",
+        "area": "Centro de cómputo",
         "ref": "3",
         "room": "laboratory"
       },
@@ -3215,7 +3216,7 @@ var hqDat = {
         "name": "Aula 201",
         "ref": "201",
         "room": "class",
-        "pref": "Baños"
+        "pref": "Baños, Corredor izquierdo CCE"
       },
       "geometry": {
         "type": "Polygon",
@@ -3336,7 +3337,8 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor izquierdo CCE",
-        "ref": "Corrcce"
+        "ref": "Corrcce",
+        "pref": "Baños, Centro de Cómputo Economía, Escaleras izquierdas"
       },
       "geometry": {
         "type": "Polygon",
@@ -3376,7 +3378,7 @@ var hqDat = {
         "name": "Aula 203",
         "ref": "203",
         "room": "class",
-        "pref": "Baños de Damas, Pasillo CC"
+        "pref": "Baños de Damas, Corredor CC"
       },
       "geometry": {
         "type": "Polygon",
@@ -3455,7 +3457,7 @@ var hqDat = {
         "level": "2",
         "name": "Corredor derecho Geografía",
         "ref": "Cordergeo",
-        "pref":"Aula 205"
+        "pref":"Aula 205, LINAE, "
       },
       "geometry": {
         "type": "Polygon",
@@ -3762,7 +3764,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC4",
-        "centro": "Centro de cómputo",
+        "area": "Centro de cómputo",
         "ref": "4",
         "room": "laboratory"
       },
@@ -4284,7 +4286,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC2",
-        "centro": "Centro de cómputo",
+        "area": "Centro de cómputo",
         "ref": "2",
         "room": "laboratory"
       },
@@ -4325,7 +4327,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC1",
-         "centro": "Centro de cómputo", 
+        "area": "Centro de cómputo",
         "ref": "1",
         "room": "class"
       },
