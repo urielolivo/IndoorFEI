@@ -52,7 +52,6 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970347",
         "indoor": "room",
-        "pref":"Aula 217, Corredor izquierdo economia",
         "level": "2",
         "name": "Cubículos economía",
         "ref": "CubEco",
