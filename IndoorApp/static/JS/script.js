@@ -67,19 +67,7 @@ var nivel3 = L.geoJSON(hqData, {
    onEachFeature: function (feature, layer) {
 
 
-
- document.getElementById("menu-bar").checked = true;				    
-
-        document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
-			"<h2></div>" + "<hr><table><tr><td> Referencia: "+feature.properties.ref+
-			"</td></tr><tr><td>Personal: "+feature.properties.personal+
-			"</td></tr><tr><td>Nivel: "+feature.properties.level+
-			"</td></tr><tr><td>Página: "+feature.properties.pagina+
-			"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
-                "</td></tr></table>";
-
-
-    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p>' + feature.properties.tags + "</dd>");
+       layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p>' + '</p><p> Punto Cercanos : '+ feature.properties.pref  + "</dd>");
  }
 })
 
@@ -93,10 +81,9 @@ var nivel22 = L.geoJSON(hqData2, {
 
   onEachFeature: function (feature, layer) {
 
-    
 
 
-      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivelo: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p><p>Página:  '+feature.properties.pagina+'</p>' + feature.properties.tags + "</dd>");
+      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>Personal: '+feature.properties.personal+'</p><p>Página:  '+'</p>' +   '</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
  }
 })
 
