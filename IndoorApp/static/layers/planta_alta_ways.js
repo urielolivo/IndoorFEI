@@ -317,7 +317,6 @@ var hqData2 = {
         "name": "Aula 201",
         "ref": "201",
         "room": "class",
-        "pref": "Baños, Corredor izquierdo CCE",
         "pref": "Baños, Centro de Cómputo Economía, Escaleras izquierdas"
       },
       "geometry": {
@@ -1301,7 +1300,8 @@ var hqData2 = {
         "@id": "way/1008970379",
         "indoor": "room",
         "level": "2",
-        "name": "sala de exposiciones",
+        "servicio":"exposiciones",
+        "name": "Salon de exposiciones",
         "ref": "SALEXP",
         "room": "conference"
       },
