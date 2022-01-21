@@ -1617,7 +1617,8 @@ var hqDat = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "Escaleras CC-E"
+        "name": "Escaleras CC-E",
+        "service": "escaleras"
       },
       "geometry": {
         "type": "Polygon",
@@ -2384,7 +2385,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Escaleras principales",
-        "ref": "Escaleras"
+        "ref": "escpri1",
+        "service": "escaleras"
       },
       "geometry": {
         "type": "Polygon",
@@ -3706,6 +3708,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor principal",
+        "pref": "Escaleras principales, Salon de exposiciones",
         "ref": "2c"
       },
       "geometry": {
@@ -4072,9 +4075,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970376",
         "indoor": "room",
+        "area": "Centro de cómputo economía",
         "level": "2",
         "name": "Aula 220",
         "ref": "220",
+        "pref": "Recibidor CCE, Aula 2014",
         "room": "class"
       },
       "geometry": {
@@ -4206,8 +4211,9 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970379",
         "indoor": "room",
+        "servicio": "exposiciones",
         "level": "2",
-        "name": "sala de exposiciones",
+        "name": "Salon de exposiciones",
         "ref": "SALEXP",
         "room": "conference"
       },
@@ -4244,6 +4250,8 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970381",
+        "area": "Centro de cómputo economía",
+        "servicio": "prestamo equipo",
         "indoor": "room",
         "level": "2",
         "name": "Recibidor CCE",
@@ -4327,7 +4335,6 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC1",
-         "area": "Centro de cómputo", 
         "area": "Centro de cómputo",
         "ref": "1",
         "room": "class"
@@ -4368,6 +4375,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "Escaleras principales",
+        "pref": "Salon de exposiciones, Corredor principal",
+        "servicio": "escaleras",
         "ref": "escpri2",
         "room": "stairs"
       },
@@ -4531,6 +4540,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "Escaleras derechas",
+        "servicio": "escaleras",
+        "pref": "Centro de cómputo CC, Baños",
         "ref": "escder2",
         "room": "stairs"
       },
@@ -4858,9 +4869,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970395",
         "indoor": "room",
+        "area": "Centro de cómputo economía",
         "level": "2",
         "name": "Aula 214",
         "ref": "214",
+        "pref": "Recibidor CCE, Aula 220, Escaleras izquierdas",
         "room": "class"
       },
       "geometry": {
@@ -5575,7 +5588,8 @@ var hqDat = {
         "access": "yes",
         "highway": "steps",
         "level": "1",
-        "name": "Escaleras CC"
+        "name": "Escaleras CC",
+        "service": "escaleras",
       },
       "geometry": {
         "type": "LineString",

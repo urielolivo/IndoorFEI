@@ -1567,7 +1567,8 @@ var hqData = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "Escaleras CC-E"
+        "name": "Escaleras CC-E",
+        "service": "escaleras"
       },
       "geometry": {
         "type": "Polygon",
@@ -2853,7 +2854,8 @@ var hqData = {
       "properties": {
         "@id": "way/1002786273",
         "level": "1",
-        "name": "escaleras"
+        "name": "escaleras",
+        "service": "escaleras"
       },
       "geometry": {
         "type": "LineString",
@@ -3044,7 +3046,8 @@ var hqData = {
         "access": "yes",
         "highway": "steps",
         "level": "1",
-        "name": "Escaleras CC"
+        "name": "Escaleras CC",
+        "service": "escaleras",
       },
       "geometry": {
         "type": "LineString",
