@@ -241,11 +241,10 @@ function mostrar() {
             document.getElementById("menu-bar").checked = true;				    
 
         document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
-			"<h2></div>" + "<hr><table><tr><td> Referencia: "+feature.properties.ref+
-			"</td></tr><tr><td>Personal: "+feature.properties.personal+
-			"</td></tr><tr><td>Nivel: "+feature.properties.level+
-			"</td></tr><tr><td>Página: "+feature.properties.pagina+
-			"</td></tr><tr><td>Puntos Cercanos: "+feature.properties.pref+
+                "<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
+                "</td></tr><tr><td> <b> Nivel <b/>: "+feature.properties.level+
+			"</td></tr><tr><td>"+feature.properties.Descripcion+
+"</td></tr><tr><td> <b>Puntos Cercanos</b>: "+feature.properties.pref+
                 "</td></tr></table>";
 
                        
@@ -292,7 +291,7 @@ function mostrar() {
 				if(miSelect != "TODOS"){
 					var x = feature.properties.name == miSelect;
 					console.log(x);
-					return (feature.properties.centro == miSelect || feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
+					return (feature.properties.area == miSelect || feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
 					//alert("hola");
 					}	else
 						return true;

@@ -338,6 +338,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786280",
+        "name": "Prueba2",
         "indoor": "area",
         "level": "1"
       },
@@ -1141,7 +1142,8 @@ var hqData = {
         "@id": "way/1008962815",
         "access": "private",
         "amenity": "toilets",
-        "level": "1"
+        "level": "1",
+        "name":"Baño Privado"
       },
       "geometry": {
         "type": "Polygon",
@@ -1177,7 +1179,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962818",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"Prueba3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1213,7 +1216,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962819",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"prueba4"
       },
       "geometry": {
         "type": "Polygon",
@@ -1294,7 +1298,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962821",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "prueba5"
       },
       "geometry": {
         "type": "Polygon",
@@ -1415,7 +1420,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962824",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"prueba8"
       },
       "geometry": {
         "type": "Polygon",
@@ -1851,7 +1857,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962831",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name" : "prueba infinita"
       },
       "geometry": {
         "type": "Polygon",
@@ -1891,7 +1898,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962832",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Area Admin 3",
       },
       "geometry": {
         "type": "Polygon",
@@ -1965,7 +1973,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962835",
         "indoor": "corridor",
-        "level": "1"
+        "level": "1",
+        "name": "prueba infinita2"
       },
       "geometry": {
         "type": "Polygon",
@@ -2125,7 +2134,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962842",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name " :" Posbible Aula 109"
       },
       "geometry": {
         "type": "Polygon",
@@ -2258,7 +2268,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962846",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Aula 109",
       },
       "geometry": {
         "type": "Polygon",
@@ -2370,7 +2381,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962850",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name" : "Baño Privado"
       },
       "geometry": {
         "type": "Polygon",
@@ -2406,7 +2418,9 @@ var hqData = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name" : "Dirección de la FEI",
+        "personal": "Dr. Luis Gerardo Montané Jiménez"
       },
       "geometry": {
         "type": "Polygon",
@@ -2446,7 +2460,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962852",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Secretaria de Economia"
       },
       "geometry": {
         "type": "Polygon",
@@ -2602,6 +2617,7 @@ var hqData = {
         "area": "yes",
         "highway": "pedestrian",
         "indoor": "area",
+         "name" : "Area libre",
         "level": "1"
       },
       "geometry": {
@@ -2675,7 +2691,8 @@ var hqData = {
       "properties": {
         "@id": "way/1008962859",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"sin nombre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2814,7 +2831,8 @@ var hqData = {
         "area": "yes",
         "highway": "pedestrian",
         "indoor": "area",
-        "level": "1"
+        "level": "1",
+        "name":"Area libre"
       },
       "geometry": {
         "type": "Polygon",

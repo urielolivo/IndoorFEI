@@ -816,7 +816,10 @@ var hqDat = {
         "servicio1": "extraordinario",
         "servicio2": "titulo",
         "pref":"Entrada estacionamiento, Explanada",
-        "name": "Caja"
+        "name": "Caja",
+        "ref" : "Pagos",
+        "Descripcion": "<b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
+  
       },
       "geometry": {
         "type": "Polygon",
@@ -1980,7 +1983,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "caja",
-        "ref": "caja"
+        "ref": "caja",
+        "Descripcion":"     Bajas definitivas $58.00 • Bajas temporales por periodo escolar $58.00 • Certificado de estudios $300.00 • Constancias $12.00 • Cardex certificado $12.00 • Certificación de documentos $12.00 • Pagos de exámenes a) Exámenes extraordinarios $3.00 b) Exámenes a título de suficiencia $6.00  c) Exámenes de última oportunidad  ",
       },
       "geometry": {
         "type": "Polygon",
@@ -2458,7 +2462,10 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "ref": "Dirección",
+        "name":"Dirección de la FEI",
+        "Descripcion ":" </br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
       },
       "geometry": {
         "type": "Polygon",
@@ -2916,7 +2923,7 @@ var hqDat = {
         "pref": "Baños  Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
-        "name": "Corredor de entrada CC"
+        "name": "Recibidor Centro de Cómputo",
       },
       "geometry": {
         "type": "Polygon",
@@ -3007,7 +3014,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "pref": "Escaleras CC, Baños. CC1",
-        "name": "Corredor de centro de cómputo"
+        "name": "Corredor de centro de cómputo",
       },
       "geometry": {
         "type": "Polygon",
@@ -4337,7 +4344,9 @@ var hqDat = {
         "name": "CC1",
         "area": "Centro de cómputo",
         "ref": "1",
-        "room": "class"
+        "room": "class",
+        "Descripcion" : " <b>Descripción :</b> Zona para usar equipos de cómputo "
+
       },
       "geometry": {
         "type": "Polygon",
@@ -4967,9 +4976,11 @@ var hqDat = {
         "servicio2": "prestamo de equipo",
         "indoor": "room",
         "level": "2",
-        "name": "Laboratorio electrónica",
+        "name": "Laboratorio de Electrónica",
         "ref": "208",
-        "room": "laboratory"
+        "room": "laboratory",
+        "Descripcion": "<b>Descripción :</b> Area para realizar practicas de electronica  ",
+        "pref": "Corredor izquierdo CCE </br> Aula 207"
       },
       "geometry": {
         "type": "Polygon",
@@ -5468,7 +5479,9 @@ var hqDat = {
         "@id": "way/1002786298",
         "servicio": "trámites",
         "level": "1",
-        "name": "Secretaria"
+        "ref": "Dirección",
+       "name": "Dirección de FEI",
+       "Descripcion": "</br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
       },
       "geometry": {
         "type": "LineString",
@@ -5505,10 +5518,12 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786300",
-        "level": "1"
+        "level": "1",
+        "name": "Corredor de Dirección",
+         "pref": "Mine"
       },
       "geometry": {
-        "type": "LineString",
+        "type": "Polygon",
         "coordinates": [
           [
             -96.9271985,
@@ -5548,7 +5563,7 @@ var hqDat = {
         "@id": "way/1002786312",
         "servicio": "trámites",
         "level": "1",
-        "name": "Secretaria  Academica Estadistica"
+        "name": "Secretaria Academica Economía"
       },
       "geometry": {
         "type": "LineString",
