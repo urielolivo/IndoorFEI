@@ -2462,10 +2462,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
+        "pref": "Secretaria Académica  de la FEI </br> Secretaria Académica de Economía ",
         "level": "1",
         "ref": "Dirección",
         "name":"Dirección de la FEI",
-        "Descripcion ":" </br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
+        "Descripcion":" </br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5481,7 +5482,9 @@ var hqDat = {
         "level": "1",
         "ref": "Dirección",
        "name": "Dirección de FEI",
-       "Descripcion": "</br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
+       "Descripcion": "</br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez",
+        "pref": "Secretaria Académica  de la FEI </br> Secretaria Académica de Economía ",
+
       },
       "geometry": {
         "type": "LineString",

@@ -93,23 +93,11 @@ var nivel22 = L.geoJSON(hqData2, {
 nivel1 =L.geoJSON(hqData)
 nivel2 = L.geoJSON(hqData2)
 
-/*
-  //geoserver
-varÑ geo = L.tileLayer.wms("http://127.0.0.1:8080/geoserver/feindoor2/wms", {
-    layers: 'feindoor2:osm_line',
-    format: 'image/png',
-    transparent: true,
-    attribution: "wms test",
-});
-*/
-
 //marcador
 var marca = L.marker([19.5412371, -96.9271773], {draggable: true})
-var popup = marca.bindPopup('ubicacion poerson'+ marca.getLatLng()).openPopup()
 
 //console.log(marca.getLatLng());
     //marca.addTo(map);
-popup.addTo(map);
 
 
 
@@ -147,67 +135,12 @@ L.control.layers(baseMaps, niveles).addTo(map);
 map.on('mouseover',  function (){
     console.log('el mouse esta en el mapa')
 });
-/*map.on('mousemove', function(e){
-   document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
-  //  console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
-}) */ 
-
-
-
-
-/* +++++ AGREGAR CAPAS DE RUTEO +++++ 
-var  nmarker = 0;
-var layerGroup = L.layerGroup().addTo(map);
-var markerArray = [];
-map.on('dblclick', function(e) {
-   var popup3 = e.latlng;
-   if (nmarker< 2) {
-       var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
-       marker.addTo(layerGroup);
-       var coordinates = [marker.getLatLng().lat, marker.getLatLng().lng];
-       markerArray.push(coordinates);
-       drawLine(markerArray);
-       nmarker= nmarker+1
-   }else{
-	   swal.fire( 'Seleccione el boton de Limpiar selección','')
-	   console.info("son mas de dos"+ nmarker)
-   }
-
-
-});
-
-
- /*  ++++ Creacion de linea de separacion de puntos */
-/*function drawLine(marray) {
-    var polyline = L.polyline(marray,{color: 'red'}).addTo(map);
-    polyline.addTo(layerGroup);
-}*/ 
-
 
 $("#ruta").click(function (){
 		nmarker = 0;
 		map.removeLayer(layerGroup);
 	})
 
-
-/*
-map.on('click', function (e){
-    popupdata= [];
-    document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
-    if(popupc){
-        console.info("ya hay un marcadorc")
-        map.removerLayer(popupc)
-    }else
-   // popupdata.push('prueba lat: ' + e.latlng.lat, 'lng: ' + e.ltlng.lng)
-    console.log(popupdata)
-    //popupdata.addTo(map);
-    var marcac = L.marker([e.latlng.lat, e.latlng.lng], {draggable: true})
-    var popupc = marcac.bindPopup('ubicacion'+ marcac.getLatLng()).openPopup()
-    popupc.addTo(map);
-
-})
-
-*/
 
 
 function mostrar() {
@@ -290,7 +223,6 @@ function mostrar() {
 			filter: function(feature, layer) {
 				if(miSelect != "TODOS"){
 					var x = feature.properties.name == miSelect;
-					console.log(x);
 					return (feature.properties.area == miSelect || feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
 					//alert("hola");
 					}	else

@@ -47,6 +47,16 @@ body {
     font-size:19px;   
 }
 
+
+.posi {
+ margin-top: 5%;
+}
+
+.leaflet-control {
+margin-top:27%;
+font-size:180%;
+}
+
 /*#coordinate {
     position: relative;
     bottom: 10px;
