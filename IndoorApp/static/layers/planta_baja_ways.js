@@ -845,7 +845,8 @@ var hqData = {
         "servicio1": "entrada",
         "indoor": "room",
         "level": "1",
-        "name": "Recibidor"
+        "name": "Recibidor",
+        "pref": "Enfermeria, Corredor principal, Escaleras principales",
       },
       "geometry": {
         "type": "Polygon",
@@ -929,7 +930,8 @@ var hqData = {
         "@id": "way/1002786311",
         "indoor": "room",
         "level": "1",
-        "name": "Enfermería"
+        "name": "Enfermería",
+        "pref":  "Recibidor entrada principal, Corredor principal "
       },
       "geometry": {
         "type": "Polygon",
@@ -1089,7 +1091,8 @@ var hqData = {
         "indoor": "corridor",
         "pref":"Auditorio, Baños, Aula 108",
         "level": "1",
-        "name": "Corredor principal"
+        "name": "Corredor principal",
+        "pref": "Escaleras principales, Recibidor entrada principal"
       },
       "geometry": {
         "type": "Polygon",
@@ -1143,6 +1146,7 @@ var hqData = {
         "access": "private",
         "amenity": "toilets",
         "level": "1",
+        "pref":"Baños",
         "name":"Baño Privado"
       },
       "geometry": {
@@ -1254,7 +1258,8 @@ var hqData = {
         "@id": "way/1008962820",
         "indoor": "room",
         "level": "1",
-        "name": "recibidor"
+        "name": "Recibidor",
+        "pref": "Enfermeria, Corredor principal, Escaleras principales",
       },
       "geometry": {
         "type": "Polygon",
