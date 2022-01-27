@@ -1631,7 +1631,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Escaleras CC-E",
-        "service": "escaleras"
+        "service": "escaleras",
+        "pref": "Auditorio, Baños, Jardinera"
       },
       "geometry": {
         "type": "Polygon",
@@ -1680,7 +1681,13 @@ var hqDat = {
         "@id": "way/1008962829",
         "indoor": "room",
         "level": "1",
-        "name": "Biblioteca"
+        "servicio": "prestamo de libros",
+        "servicio1": "libros",
+        "servicio2":"contancia de no adeudo",
+        "servicio3": "estudio",
+        "name": "Biblioteca",
+        "pref": "Corredor principal, Escaleras principales,",
+        "Descripcion": "<b>Descripción: La entrada se encuentra a lado de secretaria. </b> <b>Servicios: Préstamos de libros </b><b>Constancia de no adeudo</b><b>Áreas de estudio</b>"
       },
       "geometry": {
         "type": "Polygon",
@@ -1994,7 +2001,7 @@ var hqDat = {
         "level": "1",
         "name": "caja",
         "ref": "caja",
-        "Descripcion":"     Bajas definitivas $58.00 • Bajas temporales por periodo escolar $58.00 • Certificado de estudios $300.00 • Constancias $12.00 • Cardex certificado $12.00 • Certificación de documentos $12.00 • Pagos de exámenes a) Exámenes extraordinarios $3.00 b) Exámenes a título de suficiencia $6.00  c) Exámenes de última oportunidad  ",
+        "Descripcion": "<b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
       },
       "geometry": {
         "type": "Polygon",
@@ -2030,7 +2037,8 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962835",
         "indoor": "corridor",
-        "level": "1"
+        "level": "1",
+        "name": "oki3"
       },
       "geometry": {
         "type": "Polygon",
@@ -2155,7 +2163,7 @@ var hqDat = {
         "@id": "way/1008962841",
         "indoor": "room",
         "level": "1",
-        "name": "aula108"
+        "name": "Aula 108"
       },
       "geometry": {
         "type": "Polygon",
@@ -2233,7 +2241,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Auditorio",
-        "pref":"Explanda, Escaleras"
+        "pref":"Explanada, Escaleras, Baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2400,6 +2408,7 @@ var hqDat = {
         "level": "1",
         "name": "Escaleras principales",
         "ref": "escpri1",
+        "pref": "Recibidor entrada principal, corredor principal, Entrada biblioteca",
         "service": "escaleras"
       },
       "geometry": {
@@ -2472,11 +2481,12 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
-        "pref": "Secretaria Académica  de la FEI </br> Secretaria Académica de Economía ",
+        "pref": "Secretaria Académica  de la FEI, Secretaria Académica de Economía, Corredor dirección ",
         "level": "1",
+        "servicio": "trámites",
         "ref": "Dirección",
         "name":"Dirección de la FEI",
-        "Descripcion":" </br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
+        "Descripcion":" <b> Personal: Dr. Luis Gerardo Montané Jiménez </b>"
       },
       "geometry": {
         "type": "Polygon",
@@ -2673,7 +2683,9 @@ var hqDat = {
         "area": "yes",
         "highway": "pedestrian",
         "indoor": "area",
-        "level": "1"
+        "level": "1",
+        "ref": "libre",
+        "name": "Área libre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2782,7 +2794,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962860",
-        "personal": "MGC. Minerva Reyes Félix",
+        "Descripcion": "Personal: MGC. Minerva Reyes Félix",
         "pe": "Minerva",
         "servicio": "trámites",
         "indoor": "room",
@@ -2887,7 +2899,9 @@ var hqDat = {
         "area": "yes",
         "highway": "pedestrian",
         "indoor": "area",
-        "level": "1"
+        "level": "1",
+        "ref":"libre",
+        "name": "Área libre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2929,12 +2943,14 @@ var hqDat = {
         "servicio": "acceso",
         "servicio1": "prestamo equipo",
         "servicio2": "imprimir",
+        "servicio3": "control proyector",
         "area": "Centro de cómputo",
         "ref": "CC FEI",
         "pref": "Baños  Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
         "name": "Recibidor Centro de Cómputo",
+        "Descripcion":"Descripción:Entrada del centro de cómṕuto.<b>Servicios: Acceso a salones, Préstamo de equiṕo, Impresiones, Préstamo de control de proyectores</b>"
       },
       "geometry": {
         "type": "Polygon",

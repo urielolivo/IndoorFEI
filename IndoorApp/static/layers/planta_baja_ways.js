@@ -1579,7 +1579,8 @@ var hqData = {
         "indoor": "room",
         "level": "1",
         "name": "Escaleras CC-E",
-        "service": "escaleras"
+        "service": "escaleras",
+        "pref": "Auditorio, Baños, Jardinera"
       },
       "geometry": {
         "type": "Polygon",
@@ -1628,7 +1629,12 @@ var hqData = {
         "@id": "way/1008962829",
         "indoor": "room",
         "level": "1",
-        "name": "Biblioteca"
+        "servicio": "prestamo de libros",
+        "servicio1": "libros",
+        "servicio2":"contancia de no adeudo",
+        "servicio3": "estudio",
+        "name": "Biblioteca",
+        "pref": "Corredor principal, Escaleras principales,"
       },
       "geometry": {
         "type": "Polygon",
@@ -2622,7 +2628,8 @@ var hqData = {
         "area": "yes",
         "highway": "pedestrian",
         "indoor": "area",
-         "name" : "Area libre",
+         "name" : "Área libre",
+        "ref": "libre",
         "level": "1"
       },
       "geometry": {
@@ -2837,7 +2844,8 @@ var hqData = {
         "highway": "pedestrian",
         "indoor": "area",
         "level": "1",
-        "name":"Area libre"
+        "ref": "libre",
+        "name":"Área libre"
       },
       "geometry": {
         "type": "Polygon",
