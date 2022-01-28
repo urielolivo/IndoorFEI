@@ -1308,7 +1308,8 @@ var hqData = {
         "@id": "way/1008962821",
         "indoor": "room",
         "level": "1",
-        "name": "prueba5"
+        "name": "Direccion Economía ",
+        "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
         "type": "Polygon",
@@ -1916,7 +1917,8 @@ var hqData = {
         "@id": "way/1008962832",
         "indoor": "room",
         "level": "1",
-        "name": "Area Admin 3",
+        "name": "Direccion Economía",
+        "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
         "type": "Polygon",
@@ -1991,7 +1993,7 @@ var hqData = {
         "@id": "way/1008962835",
         "indoor": "corridor",
         "level": "1",
-        "name": "prueba infinita2"
+        "name": "Corredor dirección"
       },
       "geometry": {
         "type": "Polygon",
@@ -2036,7 +2038,7 @@ var hqData = {
         "@id": "way/1008962836",
         "indoor": "room",
         "level": "1",
-        "name": "Direccion Economia"
+        "name": ""
       },
       "geometry": {
         "type": "Polygon",

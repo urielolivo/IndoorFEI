@@ -1361,7 +1361,9 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962821",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Direccion Economía",
+        "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
         "type": "Polygon",
@@ -1971,7 +1973,9 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962832",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "Direccion Economía",
+        "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
         "type": "Polygon",
@@ -2047,7 +2051,7 @@ var hqDat = {
         "@id": "way/1008962835",
         "indoor": "corridor",
         "level": "1",
-        "name": "oki3"
+        "name": "Corredor dirección"
       },
       "geometry": {
         "type": "Polygon",
@@ -2093,7 +2097,7 @@ var hqDat = {
         "servicio": ["trámites", "apoyo"],
         "indoor": "room",
         "level": "1",
-        "name": "Dirección Economía"
+        "name": ""
       },
       "geometry": {
         "type": "Polygon",
