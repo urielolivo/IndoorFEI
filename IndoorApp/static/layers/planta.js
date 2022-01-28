@@ -1237,7 +1237,9 @@ var hqDat = {
         "@id": "way/1008962818",
         "indoor": "room",
         "level": "1",
-        "name": "oki",
+        "name":"Cuarto de luces",
+        "ref":"privado",
+        "pref": "Corredor principal, Aula 105, Recibidor entrada pricipal, Escaleras principales"
       },
       "geometry": {
         "type": "Polygon",
@@ -1273,7 +1275,10 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962819",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"Área administrativa",
+        "ref": "Administración",
+        "pref": "Explanada, Caja ",
       },
       "geometry": {
         "type": "Polygon",
@@ -1478,7 +1483,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962824",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"Cuarto de Fotocopias",
+        "ref": "Copias",
+        "pref": "Recibidor entrada principal, Enfermeria, Corredor principal",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2645,7 +2654,8 @@ var hqDat = {
         "level": "1",
         "name": "Aula 107",
         "ref": "107",
-        "pref": "Baños de Hombres, Arbol, Pasillo Auditorio"
+        "pref": "Baños de Hombres, Área libre, Árbol, Aula 106",
+        "Descripcion": "Descripción: Aula de clases con equipo de cómputo"
       },
       "geometry": {
         "type": "Polygon",
