@@ -576,7 +576,10 @@ var hqData = {
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
-        "name": "Secretarias"
+        "name": "Área de Secretarias",
+        "pref": "Corredor principal, Entrada biblioteca, Aula 104, Área libre",
+        "Descripcion": "<b>Descripcion:</b> Área con personal de la Facultad de Estadística e Informática, así como de la Facultad de Economía",
+        "ref":"Secretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -1541,7 +1544,10 @@ var hqData = {
         "@id": "way/1008962827",
         "indoor": "room",
         "level": "1",
-        "name": "Salon de Maestría"
+        "name": "Salón de Maestría",
+        "ref": "Maestría",
+        "pref": "Baño privado, Aula 101, Área libre",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1579,7 +1585,8 @@ var hqData = {
         "indoor": "room",
         "level": "1",
         "name": "Escaleras CC-E",
-        "service": "escaleras"
+        "service": "escaleras",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2024,7 +2031,9 @@ var hqData = {
         "@id": "way/1008962836",
         "indoor": "room",
         "level": "1",
-        "name": "Direccion Economia"
+        "name": "Dirección Economia",
+        "ref": "Dirección",
+        "pref": "Secretaria Economía, Baño privado"
       },
       "geometry": {
         "type": "Polygon",
