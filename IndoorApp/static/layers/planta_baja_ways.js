@@ -1345,7 +1345,7 @@ var hqData = {
       "properties": {
         "@id": "way/1008962822",
         "indoor": "room",
-        "pref": "Baño Secretarias, Arbol",
+        "pref": "Baño Secretarias, Arbol, Aula 103",
         "level": "1",
         "name": "Aula 102",
         "ref": "102"
@@ -2438,8 +2438,10 @@ var hqData = {
         "@id": "way/1008962851",
         "indoor": "room",
         "level": "1",
+        "personal":"Dr. Luis Gerardo Montané Jiménez",
         "name" : "Dirección de la FEI",
-        "personal": "Dr. Luis Gerardo Montané Jiménez"
+        "pref": "Secretaria Académica  de la FEI, Secretaria Académica de Economía, Corredor dirección ",
+        "Descripcion":" <b> Personal: Dr. Luis Gerardo Montané Jiménez </b>"
       },
       "geometry": {
         "type": "Polygon",
