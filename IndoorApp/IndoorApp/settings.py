@@ -117,20 +117,19 @@ USE_TZ = True
 
 PATH_PREFIX = os.environ.get('PATH_PREFIX', '')
 if PATH_PREFIX and not PATH_PREFIX.endswith('/'): 
-    PATH_PREFIX += '/'
+   PATH_PREFIX += '/'
 
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_ROOT = ''
-STATIC_URL = '/static/'
 
 
 
 STATIC_URL = '/static/'
 if PATH_PREFIX: 
-    STATIC_URL = f'/{PATH_PREFIX}static/' 
+   STATIC_URL = f'/{PATH_PREFIX}static/' 
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
