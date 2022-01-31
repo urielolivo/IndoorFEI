@@ -1593,7 +1593,9 @@ var hqDat = {
         "@id": "way/1008962827",
         "indoor": "room",
         "level": "1",
-        "name": "Salon de Maestría"
+        "name": "Salón de Maestría",
+        "ref": "Maestría",
+        "pref": "Baño privado, Aula 101, Área libre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2076,7 +2078,9 @@ var hqDat = {
         "servicio": ["trámites", "apoyo"],
         "indoor": "room",
         "level": "1",
-        "name": "Dirección Economía"
+        "name": "Dirección Economía",
+        "ref": "Dirección",
+        "pref": "Secretaria Economía, Baño privado"
       },
       "geometry": {
         "type": "Polygon",
@@ -2472,11 +2476,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
-        "pref": "Secretaria Académica  de la FEI </br> Secretaria Académica de Economía ",
+        "pref": "Secretaria Académica  de la FEI, Secretaria Académica de Economía ",
         "level": "1",
         "ref": "Dirección",
         "name":"Dirección de la FEI",
-        "Descripcion":" </br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
+        "Descripcion":" <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez"
       },
       "geometry": {
         "type": "Polygon",
@@ -2787,7 +2791,8 @@ var hqDat = {
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "Secretaria Académica"
+        "name": "Secretaria Académica FEI",
+
       },
       "geometry": {
         "type": "Polygon",
@@ -2829,7 +2834,10 @@ var hqDat = {
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "Secretarias"
+        "name": "Área de Secretarias",
+        "pref": "Corredor principal, Entrada biblioteca, Aula 104, Área libre",
+        "Descripcion": "<b>Descripcion:</b> Área con personal de la Facultad de Estadística e Informática, así como de la Facultad de Economía",
+        "ref":"Secretarias"
       },
       "geometry": {
         "type": "Polygon",
