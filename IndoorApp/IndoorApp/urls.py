@@ -17,7 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from FEIndoor.views import over
 from IndoorApp import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('%s' % settings.PATH_PREFIX, over , name='' ),
     
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

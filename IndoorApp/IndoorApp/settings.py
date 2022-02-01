@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os 
+import mimetypes
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 #BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,6 +28,8 @@ SECRET_KEY = 'n$q#6@gm7wb4)h*0k908@46e!(y_5mrjc(81++9a+*bfxly+o2'
 DEBUG = True
 #ALLOWED_HOSTS = [ '7ad0-2806-2f0-7080-f411-181f-fc08-bffa-9389.ngrok.io', 'https://7ad0-2806-2f0-7080-f411-181f-fc08-bffa-9389.ngrok.io/','.localhost', '127.0.0.1', '192.168.100.5','[::1]' ]
 
+mimetypes.add_type("text/html", ".html", True)
+mimetypes.add_type("text/css", ".css", True)
 
 ALLOWED_HOSTS = ['*']
 # Application definition
@@ -123,13 +127,13 @@ if PATH_PREFIX and not PATH_PREFIX.endswith('/'):
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = ''
+STATIC_ROOT = f'/{PATH_PREFIX}/static/' 
 
 
 
 STATIC_URL = '/static/'
 if PATH_PREFIX: 
-   STATIC_URL = f'/{PATH_PREFIX}static/' 
+   STATIC_URL = f'/{PATH_PREFIX}/static/' 
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
