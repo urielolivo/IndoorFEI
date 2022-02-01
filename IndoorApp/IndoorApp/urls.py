@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from FEIndoor.views import over 
+from FEIndoor.views import over
+from IndoorApp import settings
 urlpatterns = [
-    path('',over ),
+    path('%s' % settings.PATH_PREFIX, over , name='' ),
     
 ]

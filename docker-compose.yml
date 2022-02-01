@@ -4,11 +4,12 @@ services:
   fei:
     environment: 
       llave: ${llave}
-      PATH_PREFIX: examenesEscritos
+      PATH_PREFIX: IndoorApp
     build: ./IndoorApp
     restart: always
     volumes: 
       - ./IndoorApp:/code
+ 
   nginx:
     image: nginx
     restart: always
@@ -23,5 +24,5 @@ services:
       - 9000:80
       - 9100:443
     environment: 
-      PATH_PREFIX: examenesEscritos
+        PATH_PREFIX: IndoorApp
 
