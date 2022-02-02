@@ -127,7 +127,7 @@ if PATH_PREFIX and not PATH_PREFIX.endswith('/'):
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = f'/{PATH_PREFIX}static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 
