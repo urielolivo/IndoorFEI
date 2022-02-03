@@ -2773,7 +2773,10 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962859",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name":"Cubículo",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2813,7 +2816,7 @@ var hqDat = {
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "Secretaria Académica"
+        "name": "Secretaria Académica de FEI"
       },
       "geometry": {
         "type": "Polygon",
@@ -2855,7 +2858,10 @@ var hqDat = {
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "Secretarias"
+        "name": "Área de secretarias",
+        "ref": "secretarias",
+        "Descripcion": "Descripción: Área donde se encuentran las secretarias de las licenciaturas de la Facultad de Estadística e Informática y de la Facultad de Economía<br> Trámites: <b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
+        "pref": "Biblioteca, Corredor principal, Aula 104, Área libre"
       },
       "geometry": {
         "type": "Polygon",
@@ -5606,7 +5612,9 @@ var hqDat = {
         "@id": "way/1002786312",
         "servicio": "trámites",
         "level": "1",
-        "name": "Secretaria Academica Economía"
+        "name": "Secretaría Académica Economía",
+        "pref": " Corredor Dirección, Secretaria académica FEI",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "LineString",

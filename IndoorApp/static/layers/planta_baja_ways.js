@@ -769,7 +769,8 @@ var hqData = {
         "servicio1": "extraordinario",
         "servicio2": "titulo",
         "pref":"Entrada estacionamiento, Explanada",
-        "name": "caja"
+        "name": "Caja",
+        "ref" : "Pagos",
       },
       "geometry": {
         "type": "Polygon",
@@ -2482,7 +2483,9 @@ var hqData = {
         "@id": "way/1008962852",
         "indoor": "room",
         "level": "1",
-        "name": "Secretaria de Economia"
+        "name": "Secretaría Académica Economía",
+        "pref": " Corredor Dirección, Secretaria académica FEI",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2715,7 +2718,9 @@ var hqData = {
         "@id": "way/1008962859",
         "indoor": "room",
         "level": "1",
-        "name":"sin nombre"
+        "name":"Cubículo",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2750,7 +2755,7 @@ var hqData = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962860",
-        "personal": "MGC. Minerva Reyes Félix",
+        "Descripcion": "MGC. Minerva Reyes Félix",
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
@@ -3048,7 +3053,9 @@ var hqData = {
       "properties": {
         "@id": "way/1002786312",
         "level": "1",
-        "name": "SecreatriaEsta"
+        "name": "Área de secretarias",
+        "ref": "secretarias",
+        "pref": "Biblioteca, Corredor principal, Aula 104, Área libre"
       },
       "geometry": {
         "type": "LineString",
