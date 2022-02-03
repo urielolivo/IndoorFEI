@@ -2706,7 +2706,7 @@ var hqData = {
         "@id": "way/1008962859",
         "indoor": "room",
         "level": "1",
-        "name":"sin nombre"
+        "name":"sin"
       },
       "geometry": {
         "type": "Polygon",

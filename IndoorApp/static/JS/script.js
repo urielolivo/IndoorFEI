@@ -67,7 +67,7 @@ var nivel3 = L.geoJSON(hqData, {
    onEachFeature: function (feature, layer) {
 
 
-       layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p> '+feature.properties.Descripcion+'</p>' + '</p><p> Punto Cercanos : '+ feature.properties.pref  + "</dd>");
+       layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>'+feature.properties.Descripcion+'</p>' + '</p><p> Punto Cercanos : '+ feature.properties.pref  + "</dd>");
  }
 })
 
@@ -83,7 +83,7 @@ var nivel22 = L.geoJSON(hqData2, {
 
 
 
-      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>'+feature.properties.Descripcion+'</p><p>Página:  '+'</p>' +   '</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
+      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p></p> '+feature.properties.Descripcion+'</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
  }
 })
 
@@ -153,59 +153,57 @@ function mostrar() {
 
 
 
-var salamancaMonumental = L.layerGroup().addTo(map);
-function colorPuntos(d) {
-	return d == "aula102" ? '#FF0000' :
-		'#FF0000';
-};
+	 var salamancaMonumental = L.layerGroup().addTo(map);
 
-function estilo_monumentos (feature) {
-	return{
-		radius: 7,
-		fillColor: colorPuntos(feature.properties.name),
-		color: colorPuntos(feature.properties.name),
-		weight: 1,
-		opacity : 1,
-		fillOpacity : 0.5
-	};
-};
+	 			function colorPuntos(d) { 
+					return d == "aula102" ? '#FF0000' : 
+						'#FF0000'; 
+				};
 
-function popup_monumentos (feature, layer) {
-	document.getElementById("menu-bar").checked = true;
-	console.log('prueba en busqueda')
-	document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
-		"<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
-		"</td></tr><tr><td> <b> Nivel <b/>: "+feature.properties.level+
-		"</td></tr><tr><td>"+feature.properties.Descripcion+
-		"</td></tr><tr><td> <b>Puntos Cercanos</b>: "+feature.properties.pref+
-		"</td></tr></table>";
+				function estilo_monumentos (feature) {
+					return{
+						radius: 7,
+						fillColor: colorPuntos(feature.properties.name), 
+			    		color: colorPuntos(feature.properties.name), 
+						weight: 1,
+						opacity : 1,
+						fillOpacity : 0.5
+					};
+				};
+				function popup_monumentos (feature, layer) {
+            document.getElementById("menu-bar").checked = true;				    
 
+        document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
+                "<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
+                "</td></tr><tr><td> <b> Nivel <b/>: "+feature.properties.level+
+			"</td></tr><tr><td>"+feature.properties.Descripcion+
+"</td></tr><tr><td> <b>Puntos Cercanos</b>: "+feature.properties.pref+
+                "</td></tr></table>";
 
-	layer.bindPopup ("<div style=text-align:center><h3>"+feature.properties.name+
-		"</td></tr></table>",
-		{minWidth: 150, maxWidth: 200});
-	console.log('prueba en busqueda dos')
+                       
+        layer.bindPopup ("<div style=text-align:center><h3>"+feature.properties.name+
+						"</td></tr></table>",
+            {minWidth: 150, maxWidth: 200});
+				};
 
-};
-
-var MarkerOptions = {
-	radius: 8,
-	fillColor: "#ff7800",
-	color: "#000",
-	weight: 1,
-	opacity: 1,
-	fillOpacity: 0.8
-};
+				var MarkerOptions = {
+				    radius: 8,
+				    fillColor: "#ff7800",
+				    color: "#000",
+				    weight: 1,
+				    opacity: 1,
+				    fillOpacity: 0.8
+					};
 
 
-function myFunction() {
-	var monumentos = L.geoJSON(hqDat, {
-		pointToLayer: function (feature, latlng) {
-			return L.circleMarker(latlng, MarkerOptions);
-			},
-		style:estilo_monumentos,
-		onEachFeature: popup_monumentos
-	});
+	function myFunction() { 
+			 	var monumentos = L.geoJSON(hqDat, {
+							pointToLayer: function (feature, latlng) {
+									return L.circleMarker(latlng, MarkerOptions);
+								},	
+							style:estilo_monumentos,
+							onEachFeature: popup_monumentos	
+					});		
 
 			 	//salamancaMonumental.addLayer(monumentos);	
 	
