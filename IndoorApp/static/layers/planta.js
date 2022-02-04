@@ -895,7 +895,10 @@ var hqDat = {
         "servicio1": "entrada",
         "indoor": "room",
         "level": "1",
-        "name": "Recibidor",
+        "name": "Entrada Principal",
+        "ref": "Entrada",
+        "servicio":"Recibidor",
+        "Descripcion":"",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
         "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> "
       },

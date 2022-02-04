@@ -1634,6 +1634,7 @@ var hqData2 = {
         "name": "Escaleras derechas",
         "servicio": "escaleras",
         "pref": "Centro de cómputo CC, Baños",
+        "servicio1":"Escaleras",
         "ref": "escder2",
         "room": "stairs"
       },
@@ -2264,7 +2265,9 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "name": "Escaleras izquierdas",
-        "ref": "escizq2",
+        "ref": "sizq2",
+        "servicio": "Escaleras",
+        "servicio1":"escaleras",
         "rooms": "stairs"
       },
       "geometry": {

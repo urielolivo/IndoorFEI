@@ -846,7 +846,10 @@ var hqData = {
         "servicio1": "entrada",
         "indoor": "room",
         "level": "1",
-        "name": "Recibidor",
+        "name": "Entrada Principal",
+        "ref": "Entrada",
+        "servicio":"Recibidor",
+        "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> ",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
       },
       "geometry": {
@@ -1263,8 +1266,14 @@ var hqData = {
         "@id": "way/1008962820",
         "indoor": "room",
         "level": "1",
-        "name": "Recibidor",
+       "name": "Entrada Principal",
+        "ref": "Entrada",
+        "servicio":"Recibidor",
+        "Descripcion":"",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
+        "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> "
+     
+
       },
       "geometry": {
         "type": "Polygon",
@@ -1586,8 +1595,9 @@ var hqData = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "Escaleras CC-E",
-        "service": "escaleras",
+        "name": "Escaleras derechas",
+        "servicio1":"Escaleras",
+        "servicio":"escaleras",
         "pref": "Auditorio, Baños, Jardinera"
       },
       "geometry": {
