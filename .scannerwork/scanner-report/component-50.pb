@@ -1,1 +1,0 @@
-2 2pyXhrIndoorApp/FEIndoor/views.py

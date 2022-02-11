@@ -1,1 +1,0 @@
-! 2jsXóhr+IndoorApp/static/layers/planta_baja_ways.js

@@ -1,1 +1,0 @@
-. 2pyX{hrIndoorApp/IndoorApp/settings.py
