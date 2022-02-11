@@ -1,4 +1,5 @@
 var map = L.map('map', {
+
     maxZoom: 21,
     minZoom: 18,
     maxBounds: [
@@ -7,7 +8,10 @@ var map = L.map('map', {
         //north east
         [19.54230, -96.92665]
         ], 
-}).setView([19.54126, -96.2720], 20);
+}).setView([19.54126, -96.2720], 20); 
+
+
+
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -36,6 +40,11 @@ var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png
 OpenStreetMap_Mapnik.addTo(map);
 
     //osm_de
+
+
+
+
+
 var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',{    
     maxNativeZoom: 19,
     minZoom: 19,
@@ -109,14 +118,17 @@ var baseMaps ={
     "OSM_Mapnik" : OpenStreetMap_Mapnik,
     "OSM_DE" : OpenStreetMap_DE,
     "Google Hybrid" : googleHybrid,
+
     //"wms" : geo,
 
-};
+};  
 
 var niveles = {
     "Nivel 1" : nivel3,
     "Nivel 2": nivel22,
 }
+
+
 
 //var overlayMaps = {
   //  "Marker" : marca,  //

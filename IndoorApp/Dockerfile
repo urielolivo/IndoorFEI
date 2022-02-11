@@ -3,7 +3,7 @@ COPY  ./requirements.txt /tmp
 
 RUN pip install -r /tmp/requirements.txt
 
-ENV llave="marialadelbarrio"
+ENV llave=""
 ENV PATH_PREFIX=""
 RUN mkdir /code 
 RUN mkdir /start 
