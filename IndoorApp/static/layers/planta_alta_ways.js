@@ -2012,6 +2012,7 @@ var hqData2 = {
         "indoor": "room",
         "area": "Centro de cómputo economía",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 214",
         "ref": "214",
         "pref": "Recibidor CCE, Aula 220, Escaleras izquierdas",
@@ -2068,6 +2069,7 @@ var hqData2 = {
         "@id": "way/1008970396",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Bodega",
         "room": "storage"
       },
@@ -2106,8 +2108,12 @@ var hqData2 = {
         "@id": "way/1008970397",
         "indoor": "room",
         "level": "2",
+        "servicio": "practicas",
+        "servicio2": "prestamo de equipo",
         "name": "Laboratorio electrónica",
         "ref": "208",
+        "Descripcion": "<b>Descripción :</b> Area para realizar practicas de electronica  ",
+        "pref": "Corredor izquierdo CCE, Aula 207",
         "room": "laboratory"
       },
       "geometry": {
@@ -2154,6 +2160,7 @@ var hqData2 = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Cuarto biblioteca",
         "ref": "cuabib",
         "room": "library"
@@ -2191,7 +2198,7 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970400",
-        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Pagina: https://www.uv.mx/linae/",
+        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
         "indoor": "room",
         "level": "2",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
@@ -2233,7 +2240,8 @@ var hqData2 = {
         "@id": "way/1008970401",
         "indoor": "room",
         "level": "2",
-        "name": "cubículos geografía",
+        "Descripcion": "",
+        "name": "Cubículos geografía",
         "ref": "CubGeo",
         "room": "office"
       },
@@ -2274,6 +2282,7 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCCC",
         "room": "toilet"
@@ -2313,7 +2322,8 @@ var hqData2 = {
         "@id": "way/1008970403",
         "indoor": "room",
         "level": "2",
-        "name": "Escaleras izquierdas",
+        "Descripcion": "",
+        "name": "Escaleras izquierdas7",
         "ref": "sizq2",
         "servicio": "Escaleras",
         "servicio1":"escaleras",
@@ -2372,6 +2382,7 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCECO",
         "room": "toilet"
@@ -2460,6 +2471,7 @@ var hqData2 = {
         "@id": "way/1008970406",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 206",
         "ref": "206",
         "room": "class"
@@ -2499,7 +2511,8 @@ var hqData2 = {
         "@id": "way/1008970407",
         "indoor": "room",
         "level": "2",
-        "name": "Coordinación tutorias",
+        "Descripcion": "",
+        "name": "Coordinación tutorías",
         "ref": "CorTut",
         "room": "office"
       },
@@ -2536,7 +2549,8 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970354",
-        "level": "2"
+        "level": "2",
+        "name" : "sin dato"
       },
       "geometry": {
         "type": "LineString",
@@ -2569,7 +2583,8 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970365",
-        "level": "2"
+        "level": "2",
+        "name": "sin datos"
       },
       "geometry": {
         "type": "LineString",
@@ -2606,7 +2621,8 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970380",
-        "level": "2"
+        "level": "2",
+        "name" : "dato11"
       },
       "geometry": {
         "type": "LineString",

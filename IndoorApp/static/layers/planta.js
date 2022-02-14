@@ -5037,6 +5037,7 @@ var hqDat = {
         "@id": "way/1008970396",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Bodega",
         "room": "storage"
       },
@@ -5081,7 +5082,7 @@ var hqDat = {
         "ref": "208",
         "room": "laboratory",
         "Descripcion": "<b>Descripción :</b> Area para realizar practicas de electronica  ",
-        "pref": "Corredor izquierdo CCE </br> Aula 207"
+        "pref": "Corredor izquierdo CCE, Aula 207"
       },
       "geometry": {
         "type": "Polygon",
@@ -5126,6 +5127,7 @@ var hqDat = {
         "@id": "way/1008970398",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Cuarto biblioteca",
         "ref": "cuabib",
         "room": "library"
@@ -5163,10 +5165,9 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970400",
-        "pagina": "https://www.uv.mx/linae/",
-        "personal":"L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez",
         "indoor": "room",
         "level": "2",
+        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
         "ref": "LINAE",
         "room": "laboratory"
@@ -5206,7 +5207,8 @@ var hqDat = {
         "@id": "way/1008970401",
         "indoor": "room",
         "level": "2",
-        "name": "cubículos geografía",
+        "Descripcion": "",
+        "name": "Cubículos geografía",
         "ref": "CubGeo",
         "room": "office"
       },
@@ -5247,6 +5249,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCCC",
         "room": "toilet"
@@ -5343,6 +5346,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCECO",
         "room": "toilet"
@@ -5385,9 +5389,9 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970405",
         "servicio": "técnicos",
-        "personal": "Dr. José Luis Soto",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "Personal: Dr. José Luis Soto",
         "name": "Jefatura de Centro de cómputo",
         "ref": "JefCc",
         "room": "technical"
@@ -5431,6 +5435,7 @@ var hqDat = {
         "@id": "way/1008970406",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 206",
         "ref": "206",
         "room": "class"
@@ -5756,7 +5761,8 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970354",
-        "level": "2"
+        "level": "2",
+        "name": "sin dato"
       },
       "geometry": {
         "type": "LineString",
@@ -5789,7 +5795,8 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970365",
-        "level": "2"
+        "level": "2",
+        "name": "sin datos"
       },
       "geometry": {
         "type": "LineString",
@@ -5822,7 +5829,8 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970380",
-        "level": "2"
+        "level": "2",
+        "name": "dato11"
       },
       "geometry": {
         "type": "LineString",
