@@ -165,7 +165,7 @@ function mostrar() {
 
 
 
-	 var salamancaMonumental = L.layerGroup().addTo(map);
+	 var IndoorFei = L.layerGroup().addTo(map);
 
 	 			function colorPuntos(d) { 
 					return d == "aula102" ? '#FF0000' : 
@@ -243,8 +243,8 @@ function mostrar() {
 			style:estilo_puntos,
 			onEachFeature: popup_puntos
 		});
-		salamancaMonumental.clearLayers();
-		salamancaMonumental.addLayer(puntos);
+		IndoorFei.clearLayers();
+		IndoorFei.addLayer(puntos);
 	});
 
 
