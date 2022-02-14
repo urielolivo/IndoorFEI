@@ -803,7 +803,7 @@ var hqData2 = {
         "indoor": "corridor",
         "level": "2",
         "name": "Corredor principal",
-        "pref": "Escaleras principales, Salon de exposiciones",
+        "pref": "Escaleras principales, Salón de exposiciones",
         "ref": "2c"
       },
       "geometry": {
@@ -1304,7 +1304,7 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "servicio":"exposiciones",
-        "name": "Salon de exposiciones",
+        "name": "Salón de exposiciones",
         "ref": "SALEXP",
         "room": "conference"
       },
@@ -1463,7 +1463,7 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "name": "Escaleras principales",
-        "pref": "Salon de exposiciones, Corredor principal",
+        "pref": "Salón de exposiciones, Corredor principal",
         "servicio": "escaleras",
         "ref": "escpri2",
         "room": "stairs"
@@ -2141,8 +2141,7 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970400",
-        "pagina": "https://www.uv.mx/linae/",
-        "personal":"L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez",
+        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Pagina: https://www.uv.mx/linae/",
         "indoor": "room",
         "level": "2",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
@@ -2365,7 +2364,7 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970405",
         "servicio": "técnicos",
-        "personal": "Dr. José Luis Soto",
+        "Descripcion": "Personal: Dr. José Luis Soto",
         "indoor": "room",
         "level": "2",
         "name": "Jefatura de Centro de cómputo",
