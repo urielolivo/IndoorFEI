@@ -172,7 +172,7 @@ function mostrar() {
 						'#FF0000'; 
 				};
 
-				function estilo_monumentos (feature) {
+				function estilo_puntos (feature) {
 					return{
 						radius: 7,
 						fillColor: colorPuntos(feature.properties.name), 
@@ -182,7 +182,7 @@ function mostrar() {
 						fillOpacity : 0.5
 					};
 				};
-				function popup_monumentos (feature, layer) {
+				function popup_puntos (feature, layer) {
             document.getElementById("menu-bar").checked = true;				    
 
         document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
@@ -209,12 +209,12 @@ function mostrar() {
 
 
 	function myFunction() { 
-			 	var monumentos = L.geoJSON(hqDat, {
+			 	var puntos = L.geoJSON(hqDat, {
 							pointToLayer: function (feature, latlng) {
 									return L.circleMarker(latlng, MarkerOptions);
 								},	
-							style:estilo_monumentos,
-							onEachFeature: popup_monumentos	
+							style:estilo_puntos,
+							onEachFeature: popup_puntos	
 					});		
 
 			 	//salamancaMonumental.addLayer(monumentos);	
@@ -228,7 +228,7 @@ function mostrar() {
 			swal.fire( 'El contenido no puede ir vacio')
 
 		}
-		var monumentos = L.geoJSON(hqDat, {
+		var puntos = L.geoJSON(hqDat, {
 			pointToLayer: function (feature, latlng) {
 				return L.circleMarker(latlng, MarkerOptions);
 				},
@@ -240,11 +240,11 @@ function mostrar() {
 					}	else
 						return true;
 				},
-			style:estilo_monumentos,
-			onEachFeature: popup_monumentos
+			style:estilo_puntos,
+			onEachFeature: popup_puntos
 		});
 		salamancaMonumental.clearLayers();
-		salamancaMonumental.addLayer(monumentos);
+		salamancaMonumental.addLayer(puntos);
 	});
 
 
