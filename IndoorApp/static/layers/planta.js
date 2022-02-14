@@ -1147,6 +1147,7 @@ var hqDat = {
         "@id": "way/1008962814",
         "indoor": "corridor",
         "level": "1",
+        "Descripcion": "",
         "name": "corredor principal",
         "pref": "Escaleras principales, Recibidor entrada principal"
       },
@@ -3012,6 +3013,7 @@ var hqDat = {
         "level": "2",
         "name": "Cubículos economía",
         "ref": "CubEco",
+        "Descripcion": "",
         "pref": "Aula 2017, Aula 206, Corredor izquierdo economía",
         "room": "office"
       },
@@ -3060,6 +3062,7 @@ var hqDat = {
         "servicio1": "prestamo equipo",
         "servicio2": "impresiones",
         "servicio3": "control cañon",
+        "Descripcion": "",
         "ref": "CC",
         "indoor": "corridor",
         "level": "2",
@@ -3103,6 +3106,7 @@ var hqDat = {
         "level": "2",
         "name": "Aula 209",
         "ref": "209",
+        "Descripcion": "",
         "room": "class"
       },
       "geometry": {
@@ -3147,6 +3151,7 @@ var hqDat = {
         "level": "2",
         "name": "Cuarto biblioteca",
         "area":"Biblioteca",
+        "Descripcion": "",
         "ref": "cuabib",
         "room": "library"
       },
@@ -3189,6 +3194,8 @@ var hqDat = {
         "name": "CC3",
         "area": "Centro de cómputo",
         "ref": "3",
+        "Descripcion": "",
+        "pref": "Centro de cómputo, CC2, Mantenimiento de centro de cómputo",
         "room": "laboratory"
       },
       "geometry": {
@@ -3231,6 +3238,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "name": "corredor izquierdo",
+        "Descripcion": "",
         "ref": "corredorl2"
       },
       "geometry": {
@@ -3272,6 +3280,7 @@ var hqDat = {
         "@id": "way/1008970353",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 201",
         "ref": "201",
         "room": "class",
@@ -3316,6 +3325,7 @@ var hqDat = {
         "@id": "way/1008970355",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 217",
         "ref": "217",
         "room": "class"
@@ -3356,6 +3366,7 @@ var hqDat = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "CC biblioteca",
         "ref": "cuabib",
         "room": "library"
@@ -3395,6 +3406,7 @@ var hqDat = {
         "@id": "way/1008970357",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor izquierdo CCE",
         "ref": "Corrcce",
         "pref": "Baños, Centro de Cómputo Economía, Escaleras izquierdas"
@@ -3434,6 +3446,7 @@ var hqDat = {
         "@id": "way/1008970358",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 203",
         "ref": "203",
         "room": "class",
@@ -3474,6 +3487,7 @@ var hqDat = {
         "@id": "way/1008970359",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 205",
         "ref": "205",
         "room": "class",
@@ -3514,6 +3528,7 @@ var hqDat = {
         "@id": "way/1008970360",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor derecho Geografía",
         "ref": "Cordergeo",
         "pref":"Aula 205, LINAE, "
@@ -3563,6 +3578,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCGEO",
         "room": "toilet",
@@ -3603,6 +3619,7 @@ var hqDat = {
         "@id": "way/1008970362",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Centro de computo bodega",
         "ref": "CcBod",
         "room": "storage"
@@ -3642,6 +3659,7 @@ var hqDat = {
         "@id": "way/1008970363",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "cubículo",
         "room": "office",
         "rooms": "aula"
@@ -3681,6 +3699,7 @@ var hqDat = {
         "@id": "way/1008970364",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 205",
         "ref": "205",
         "room": "class",
@@ -3725,6 +3744,7 @@ var hqDat = {
         "@id": "way/1008970366",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Escaleras de la biblioteca",
         "ref": "escbib2",
         "room": "stairs"
@@ -3764,6 +3784,7 @@ var hqDat = {
         "@id": "way/1008970368",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor principal",
         "pref": "Escaleras principales, Salon de exposiciones",
         "ref": "2c"
@@ -3823,9 +3844,11 @@ var hqDat = {
         "@id": "way/1008970369",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "CC4",
         "area": "Centro de cómputo",
         "ref": "4",
+        "pref": " Centro de cómputo, CC3, CC2",
         "room": "laboratory"
       },
       "geometry": {
@@ -3875,6 +3898,7 @@ var hqDat = {
         "@id": "way/1008970370",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor izquierdo economía"
       },
       "geometry": {
@@ -3920,6 +3944,7 @@ var hqDat = {
         "@id": "way/1008970371",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 216",
         "ref": "216",
         "room": "class",
@@ -3960,6 +3985,7 @@ var hqDat = {
         "@id": "way/1008970372",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "SITE",
         "ref": "CCsit",
         "room": "office"
@@ -4009,6 +4035,7 @@ var hqDat = {
         "name" : "Aula 202",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "ref": "202",
         "room": "class",
         "pref": "Pasillo CC, Baños Damas "
@@ -4056,6 +4083,7 @@ var hqDat = {
         "@id": "way/1008970374",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Jefatura Geografía",
         "room": "office",
         "pref":"Aula 203"
@@ -4095,6 +4123,7 @@ var hqDat = {
         "@id": "way/1008970375",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor derecho",
         "ref": "Corrder"
       },
@@ -4134,6 +4163,7 @@ var hqDat = {
         "indoor": "room",
         "area": "Centro de cómputo economía",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 220",
         "ref": "220",
         "pref": "Recibidor CCE, Aula 2014",
@@ -4190,6 +4220,7 @@ var hqDat = {
         "@id": "way/1008970377",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Centro de cómputo bodega",
         "ref": "CcBod",
         "room": "storage"
@@ -4230,6 +4261,7 @@ var hqDat = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Cuarto biblioteca",
         "ref": "cuabib",
         "room": "library"
@@ -4269,7 +4301,9 @@ var hqDat = {
         "@id": "way/1008970379",
         "indoor": "room",
         "servicio": "exposiciones",
+        "servicio1": "confrencia",
         "level": "2",
+        "Descripcion": "",
         "name": "Salon de exposiciones",
         "ref": "SALEXP",
         "room": "conference"
@@ -4311,6 +4345,7 @@ var hqDat = {
         "servicio": "prestamo equipo",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Recibidor CCE",
         "room": "office"
       },
@@ -4350,9 +4385,11 @@ var hqDat = {
         "servicio":"computo",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "CC2",
         "area": "Centro de cómputo",
         "ref": "2",
+        "pref": "Centro de cómputo, CC1, Recibidor CC",
         "room": "laboratory"
       },
       "geometry": {

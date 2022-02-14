@@ -55,6 +55,7 @@ var hqData2 = {
         "level": "2",
         "name": "Cubículos economía",
         "ref": "CubEco",
+        "Descripcion": "",
         "pref": "Aula 2017, Aula 206, Corredor izquierdo economía",
         "room": "office"
       },
@@ -104,9 +105,10 @@ var hqData2 = {
         "servicio2": "impresiones",
         "servicio3": "control cañon",
         "ref": "CC",
+        "Descripcion": "",
         "indoor": "corridor",
         "level": "2",
-        "name": "Corredor de centro de cómputo1"
+        "name": "Corredor de centro de cómputo"
       },
       "geometry": {
         "type": "Polygon",
@@ -145,7 +147,8 @@ var hqData2 = {
         "level": "2",
         "name": "Aula 209",
         "ref": "209",
-        "room": "class"
+        "room": "class",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -190,6 +193,7 @@ var hqData2 = {
         "area":"Biblioteca",
         "name": "Cuarto biblioteca",
         "ref": "cuabib",
+        "Descripcion": "",
         "room": "library"
       },
       "geometry": {
@@ -231,6 +235,8 @@ var hqData2 = {
         "level": "2",
         "name": "CC3",
         "ref": "3",
+        "Descripcion": "",
+        "pref": "Centro de cómputo, CC2, Mantenimiento de centro de cómputo",
         "room": "laboratory"
       },
       "geometry": {
@@ -272,6 +278,7 @@ var hqData2 = {
         "@id": "way/1008970352",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": " corredor izquierdo",
         "ref": "corredorl2"
       },
@@ -314,6 +321,7 @@ var hqData2 = {
         "@id": "way/1008970353",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 201",
         "ref": "201",
         "room": "class",
@@ -358,6 +366,7 @@ var hqData2 = {
         "@id": "way/1008970355",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 217",
         "ref": "217",
         "room": "class"
@@ -398,6 +407,7 @@ var hqData2 = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "CC biblioteca",
         "ref": "cuabib",
         "room": "library"
@@ -437,6 +447,7 @@ var hqData2 = {
         "@id": "way/1008970357",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor izquierdo CCE",
         "ref": "Corrcce",
         "pref": "Baños, Centro de Cómputo Economía, Escaleras izquierdas"
@@ -476,6 +487,7 @@ var hqData2 = {
         "@id": "way/1008970358",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 203",
         "ref": "203",
         "room": "class",
@@ -516,6 +528,7 @@ var hqData2 = {
         "@id": "way/1008970359",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 205",
         "ref": "205",
         "room": "class"
@@ -555,6 +568,7 @@ var hqData2 = {
         "@id": "way/1008970360",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor derecho Geografía",
         "ref": "Cordergeo"
       },
@@ -603,6 +617,7 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCGEO",
         "room": "toilet"
@@ -642,6 +657,7 @@ var hqData2 = {
         "@id": "way/1008970362",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Centro de computo bodega",
         "ref": "CcBod",
         "room": "storage"
@@ -681,6 +697,7 @@ var hqData2 = {
         "@id": "way/1008970363",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "cubículo",
         "room": "office",
         "rooms": "aula"
@@ -720,6 +737,7 @@ var hqData2 = {
         "@id": "way/1008970364",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 205",
         "ref": "205",
         "room": "class"
@@ -763,6 +781,7 @@ var hqData2 = {
         "@id": "way/1008970366",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Escaleras de la biblioteca",
         "ref": "escbib2",
         "room": "stairs"
@@ -802,6 +821,7 @@ var hqData2 = {
         "@id": "way/1008970368",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor principal",
         "pref": "Escaleras principales, Salón de exposiciones",
         "ref": "2c"
@@ -862,8 +882,10 @@ var hqData2 = {
         "servicio":"computo",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "CC4",
         "ref": "4",
+        "pref": "Centro de cómputo,CC3, CC2",
         "room": "laboratory"
       },
       "geometry": {
@@ -913,6 +935,7 @@ var hqData2 = {
         "@id": "way/1008970370",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor izquierdo economía"
       },
       "geometry": {
@@ -958,6 +981,7 @@ var hqData2 = {
         "@id": "way/1008970371",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 216",
         "ref": "216",
         "room": "class"
@@ -997,6 +1021,7 @@ var hqData2 = {
         "@id": "way/1008970372",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "SITE",
         "ref": "CCsit",
         "room": "office"
@@ -1045,6 +1070,7 @@ var hqData2 = {
         "alt_name": "Facultad de Estadística e Informática",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "ref": "202",
         "room": "class"
       },
@@ -1091,6 +1117,7 @@ var hqData2 = {
         "@id": "way/1008970374",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Jefatura Geografía",
         "room": "office"
       },
@@ -1129,6 +1156,7 @@ var hqData2 = {
         "@id": "way/1008970375",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor derecho",
         "ref": "Corrder"
       },
@@ -1168,6 +1196,7 @@ var hqData2 = {
         "indoor": "room",
         "area": "Centro de cómputo economía",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 220",
         "ref": "220",
         "pref": "Recibidor CCE, Aula 214",
@@ -1224,6 +1253,7 @@ var hqData2 = {
         "@id": "way/1008970377",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Centro de cómputo bodega",
         "ref": "CcBod",
         "room": "storage"
@@ -1264,6 +1294,7 @@ var hqData2 = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Cuarto biblioteca",
         "ref": "cuabib",
         "room": "library"
@@ -1304,6 +1335,8 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "servicio":"exposiciones",
+        "servicio1": "conferncia",
+        "Descripcion": "",
         "name": "Salón de exposiciones",
         "ref": "SALEXP",
         "room": "conference"
@@ -1345,6 +1378,7 @@ var hqData2 = {
         "level": "2",
         "area": "Centro de cómputo economía",
         "servicio": "prestamo equipo",
+        "Descripcion": "",
         "name": "Recibidor CCE",
         "room": "office"
       },
@@ -1384,8 +1418,10 @@ var hqData2 = {
         "servicio":"computo",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "CC2",
         "ref": "2",
+        "pref": "Recibidor centro de cómputo, CC1, Recibidor centro de cómputo ",
         "room": "laboratory"
       },
       "geometry": {
