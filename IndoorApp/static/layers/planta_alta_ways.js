@@ -1459,8 +1459,10 @@ var hqData2 = {
         "@id": "way/1008970383",
         "indoor": "room",
         "level": "2",
+        "Descripcion" : " <b>Descripción :</b> Aula para usar equipos de cómputo ",
         "name": "CC1",
         "ref": "1",
+        "pref": "Centro de cómputo, Recibidor CC, CC2, Baños",
         "room": "class"
       },
       "geometry": {
@@ -1498,6 +1500,7 @@ var hqData2 = {
         "@id": "way/1008970384",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Escaleras principales",
         "pref": "Salón de exposiciones, Corredor principal",
         "servicio": "escaleras",
@@ -1541,6 +1544,7 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Baños",
         "ref": "WCLE",
         "room": "toilet"
@@ -1584,7 +1588,9 @@ var hqData2 = {
         "@id": "way/1008970386",
         "indoor": "room",
         "level": "2",
-        "name": "Coordinación tutorias",
+        "Descripcion": "",
+        "servicio": "tutorias",
+        "name": "Coordinación tutorías",
         "ref": "CorTut",
         "room": "office"
       },
@@ -1623,6 +1629,7 @@ var hqData2 = {
         "@id": "way/1008970387",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 204",
         "ref": "204",
         "room": "class",
@@ -1667,6 +1674,7 @@ var hqData2 = {
         "@id": "way/1008970388",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Escaleras derechas",
         "servicio": "escaleras",
         "pref": "Centro de cómputo CC, Baños",
@@ -1729,6 +1737,7 @@ var hqData2 = {
         "@id": "way/1008970389",
         "indoor": "corridor",
         "level": "2",
+        "Descripcion": "",
         "name": "Corredor derecho CC",
         "ref": "Corrdercc"
       },
@@ -1767,6 +1776,7 @@ var hqData2 = {
         "@id": "way/1008970390",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Proyectos SIG",
         "ref": "221",
         "room": "laboratory"
@@ -1814,6 +1824,7 @@ var hqData2 = {
         "@id": "way/1008970391",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "<b>Descripción: La entrada se encuentra a lado de secretaria. </b> <b>Servicios: Préstamos de libros </b><b>Constancia de no adeudo</b><b>Áreas de estudio</b>",
         "name": "Biblioteca",
         "room": "library"
       },
@@ -1864,6 +1875,7 @@ var hqData2 = {
         "@id": "way/1008970392",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula 207",
         "ref": "207",
         "room": "class"
@@ -1903,7 +1915,8 @@ var hqData2 = {
         "@id": "way/1008970393",
         "indoor": "room",
         "level": "2",
-        "name": "Coordinación tutorias",
+        "Descripcion": "",
+        "name": "Coordinación tutorías",
         "ref": "CorTut",
         "room": "office"
       },
@@ -1942,6 +1955,7 @@ var hqData2 = {
         "@id": "way/1008970394",
         "indoor": "room",
         "level": "2",
+        "Descripcion": "",
         "name": "Aula de reparación y mantenimiento",
         "ref": "Ccarm",
         "room": "technical"
