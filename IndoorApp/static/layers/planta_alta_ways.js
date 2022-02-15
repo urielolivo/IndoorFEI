@@ -657,8 +657,9 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Centro de computo bodega",
+        "name": "Bodega",
         "ref": "CcBod",
+        "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
         "room": "storage"
       },
       "geometry": {
@@ -1255,7 +1256,7 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Centro de cómputo bodega",
+        "name": "Bodega",
         "ref": "CcBod",
         "room": "storage"
       },
@@ -1593,6 +1594,8 @@ var hqData2 = {
         "Descripcion": "",
         "servicio": "tutorias",
         "name": "Coordinación tutorías",
+        "area": "coordinacion tutorias",
+        "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
         "ref": "CorTut",
         "room": "office"
       },
@@ -1919,7 +1922,9 @@ var hqData2 = {
         "level": "2",
         "Descripcion": "",
         "name": "Coordinación tutorías",
+        "area": "coordinacion tutorias",
         "ref": "CorTut",
+        "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
         "room": "office"
       },
       "geometry": {
@@ -2073,6 +2078,7 @@ var hqData2 = {
         "level": "2",
         "Descripcion": "",
         "name": "Bodega",
+        "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
         "room": "storage"
       },
       "geometry": {
@@ -2114,7 +2120,7 @@ var hqData2 = {
         "servicio2": "prestamo de equipo",
         "name": "Laboratorio electrónica",
         "ref": "208",
-        "Descripcion": "<b>Descripción :</b> Area para realizar practicas de electronica  ",
+        "Descripcion": "<b>Descripción :</b> Área para realizar prácticas de electrónica  ",
         "pref": "Corredor izquierdo CCE, Aula 207",
         "room": "laboratory"
       },
@@ -2515,7 +2521,9 @@ var hqData2 = {
         "level": "2",
         "Descripcion": "",
         "name": "Coordinación tutorías",
+        "area": "coordinacion tutorias",
         "ref": "CorTut",
+        "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
         "room": "office"
       },
       "geometry": {
