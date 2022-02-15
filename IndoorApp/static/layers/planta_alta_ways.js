@@ -368,6 +368,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Aula 217",
         "ref": "217",
+        "pref":"Corredor principal, Aula 216, Corredor izquierdo",
         "room": "class"
       },
       "geometry": {
@@ -528,8 +529,9 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 205",
-        "ref": "205",
+        "name": "Aula 215",
+        "ref": "215",
+        "pref": "",
         "room": "class"
       },
       "geometry": {
@@ -984,6 +986,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Aula 216",
         "ref": "216",
+        "pref": "Corredor izquierdo, Aula 206, Aula 217",
         "room": "class"
       },
       "geometry": {
@@ -1121,6 +1124,7 @@ var hqData2 = {
         "level": "2",
         "Descripcion": "",
         "name": "Jefatura Geografía",
+        "pref": "Corredor derecho, LINAE, Aula 204",
         "room": "office"
       },
       "geometry": {

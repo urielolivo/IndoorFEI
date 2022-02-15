@@ -3014,7 +3014,7 @@ var hqDat = {
         "name": "Cubículos economía",
         "ref": "CubEco",
         "Descripcion": "",
-        "pref": "Aula 2017, Aula 206, Corredor izquierdo economía",
+        "pref": "Aula 217, Aula 206, Corredor izquierdo economía",
         "room": "office"
       },
       "geometry": {
@@ -3324,6 +3324,7 @@ var hqDat = {
         "Descripcion": "",
         "name": "Aula 217",
         "ref": "217",
+        "pref":"Corredor principal, Aula 216, Corredor izquierdo",
         "room": "class"
       },
       "geometry": {
@@ -3484,10 +3485,10 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 205",
-        "ref": "205",
+        "name": "Aula 215",
+        "ref": "215",
         "room": "class",
-        "pref": "Aula 204"
+        "pref": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -3945,7 +3946,7 @@ var hqDat = {
         "name": "Aula 216",
         "ref": "216",
         "room": "class",
-        "pref":"Corredor Izquierdo"
+        "pref": "Corredor izquierdo, Aula 206, Aula 217",
       },
       "geometry": {
         "type": "Polygon",
@@ -4082,7 +4083,7 @@ var hqDat = {
         "Descripcion": "",
         "name": "Jefatura Geografía",
         "room": "office",
-        "pref":"Aula 203"
+        "pref": "Corredor derecho, LINAE, Aula 204",
       },
       "geometry": {
         "type": "Polygon",
