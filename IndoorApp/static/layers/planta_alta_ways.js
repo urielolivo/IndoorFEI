@@ -146,6 +146,7 @@ var hqData2 = {
         "level": "2",
         "name": "Aula 209",
         "ref": "209",
+        "pref": "Corredor izquierdo CCE, Baños, Escaleras izquierdas",
         "room": "class",
         "Descripcion": "",
       },
@@ -1387,6 +1388,7 @@ var hqData2 = {
         "servicio": "prestamo equipo",
         "Descripcion": "",
         "name": "Recibidor CCE",
+        "pref": "Escaleras izquierdas, corredor izquierdo, Proyectos SIG",
         "room": "office"
       },
       "geometry": {
@@ -1641,6 +1643,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Aula 204",
         "ref": "204",
+        "pref": "Corredor principal, corredor derecho, salón de exposiciones, LINAE",
         "room": "class",
         "rooms": "aula"
       },
@@ -1788,6 +1791,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Proyectos SIG",
         "ref": "221",
+        "pref": "Baños, recibidor CCE, corredor izquierdo",
         "room": "laboratory"
       },
       "geometry": {
@@ -1833,8 +1837,9 @@ var hqData2 = {
         "@id": "way/1008970391",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "<b>Descripción: La entrada se encuentra a lado de secretaria. </b> <b>Servicios: Préstamos de libros </b><b>Constancia de no adeudo</b><b>Áreas de estudio</b>",
+        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros<br> Constancia de no adeudo<br>Áreas de estudio",
         "name": "Biblioteca",
+        "pref": "Corredor principal, Escaleras principales,",
         "room": "library"
       },
       "geometry": {
@@ -1887,6 +1892,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Aula 207",
         "ref": "207",
+        "pref": "Laboratorio de electrónica, corredor izquierdo, aula 206",
         "room": "class"
       },
       "geometry": {
@@ -2215,6 +2221,7 @@ var hqData2 = {
         "level": "2",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
         "ref": "LINAE",
+        "pref":"Corredor derecho, Aula 203, Jefatura de geografía",
         "room": "laboratory"
       },
       "geometry": {
@@ -2255,6 +2262,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Cubículos geografía",
         "ref": "CubGeo",
+        "pref": "Corredor derecho, Jefatura de geografía",
         "room": "office"
       },
       "geometry": {
@@ -2335,10 +2343,11 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Escaleras izquierdas7",
+        "name": "Escaleras izquierdas",
         "ref": "sizq2",
         "servicio": "Escaleras",
         "servicio1":"escaleras",
+        "pref":"corredor izquierdo CCE ,baño, aula 209",
         "rooms": "stairs"
       },
       "geometry": {
@@ -2486,6 +2495,7 @@ var hqData2 = {
         "Descripcion": "",
         "name": "Aula 206",
         "ref": "206",
+        "pref": "corredor izquierdo, Aula 207, Aula 216",
         "room": "class"
       },
       "geometry": {

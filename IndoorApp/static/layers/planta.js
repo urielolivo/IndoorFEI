@@ -1702,7 +1702,7 @@ var hqDat = {
         "servicio3": "estudio",
         "name": "Biblioteca",
         "pref": "Corredor principal, Escaleras principales,",
-        "Descripcion": "<b>Descripción: La entrada se encuentra a lado de secretaria. </b> <b>Servicios: Préstamos de libros </b><b>Constancia de no adeudo</b><b>Áreas de estudio</b>"
+        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros <br> Constancia de no adeudo<br>Áreas de estudio",
       },
       "geometry": {
         "type": "Polygon",
@@ -3102,6 +3102,7 @@ var hqDat = {
         "level": "2",
         "name": "Aula 209",
         "ref": "209",
+        "pref": "Corredor izquierdo CCE, Baños, Escaleras izquierdas",
         "Descripcion": "",
         "room": "class"
       },
@@ -4346,6 +4347,7 @@ var hqDat = {
         "level": "2",
         "Descripcion": "",
         "name": "Recibidor CCE",
+        "pref": "Escaleras izquierdas, corredor izquierdo, Proyectos SIG",
         "room": "office"
       },
       "geometry": {
@@ -4599,6 +4601,7 @@ var hqDat = {
         "level": "2",
         "name": "Aula 204",
         "ref": "204",
+        "pref": "Corredor principal, corredor derecho, salón de exposiciones, LINAE",
         "room": "class",
         "rooms": "aula"
       },
@@ -4747,6 +4750,7 @@ var hqDat = {
         "Descripcion": "",
         "name": "Proyectos SIG",
         "ref": "221",
+        "pref": "Baños, recibidor CCE, corredor izquierdo",
         "room": "laboratory"
       },
       "geometry": {
@@ -4846,6 +4850,7 @@ var hqDat = {
         "Descripcion": "",
         "name": "Aula 207",
         "ref": "207",
+        "pref": "Laboratorio de electrónica, corredor izquierdo, aula 206",
         "room": "class"
       },
       "geometry": {
@@ -5174,6 +5179,7 @@ var hqDat = {
         "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
         "ref": "LINAE",
+        "pref":"Corredor derecho, Aula 203, Jefatura de geografía",
         "room": "laboratory"
       },
       "geometry": {
@@ -5214,6 +5220,7 @@ var hqDat = {
         "Descripcion": "",
         "name": "Cubículos geografía",
         "ref": "CubGeo",
+        "pref": "Corredor derecho, Jefatura de geografía",
         "room": "office"
       },
       "geometry": {
@@ -5293,8 +5300,11 @@ var hqDat = {
         "@id": "way/1008970403",
         "indoor": "room",
         "level": "2",
-        "name": "Escaleras derechas",
+        "servicio": "Escaleras",
+        "servicio1":"escaleras",
+        "name": "Escaleras izquierdas",
         "ref": "escizq2",
+        "pref":"corredor izquierdo CCE ,baño, aula 209",
         "rooms": "stairs"
       },
       "geometry": {
@@ -5442,6 +5452,7 @@ var hqDat = {
         "Descripcion": "",
         "name": "Aula 206",
         "ref": "206",
+        "pref": "corredor izquierdo, Aula 207, Aula 216",
         "room": "class"
       },
       "geometry": {
