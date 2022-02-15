@@ -2970,11 +2970,11 @@ var hqDat = {
         "servicio3": "control proyector",
         "area": "Centro de cómputo",
         "ref": "CC FEI",
-        "pref": "Baños  Aula 201, Baños, Escaleras derechas ",
+        "pref": "Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
         "name": "Recibidor Centro de Cómputo",
-        "Descripcion":"Descripción:Entrada del centro de cómṕuto.<b>Servicios: Acceso a salones, Préstamo de equiṕo, Impresiones, Préstamo de control de proyectores</b>"
+        "Descripcion":"<b>Descripción:</b> Entrada del centro de cómṕuto.<br> <b>Servicios:</b> Acceso a salones, Préstamo de equiṕo, Impresiones, Préstamo de control de proyectores</b>"
       },
       "geometry": {
         "type": "Polygon",
@@ -3058,16 +3058,12 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970348",
-        "servicio": "acceso",
-        "servicio1": "prestamo equipo",
-        "servicio2": "impresiones",
-        "servicio3": "control cañon",
         "Descripcion": "",
-        "ref": "CC",
+        "ref": "CCcorredor",
         "indoor": "corridor",
         "level": "2",
-        "pref": "Escaleras CC, Baños. CC1",
-        "name": "Corredor de centro de cómputo",
+        "pref": "Jefatura de CC, SITE, Aula de reparación y mantenimiento",
+        "name": "Corredor CC",
       },
       "geometry": {
         "type": "Polygon",
@@ -4031,7 +4027,6 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970373",
-        "alt_name": "Facultad de Estadística e Informática",
         "name" : "Aula 202",
         "indoor": "room",
         "level": "2",
@@ -4301,11 +4296,12 @@ var hqDat = {
         "@id": "way/1008970379",
         "indoor": "room",
         "servicio": "exposiciones",
-        "servicio1": "confrencia",
+        "servicio1": "conferencia",
         "level": "2",
         "Descripcion": "",
-        "name": "Salon de exposiciones",
+        "name": "Salón de exposiciones",
         "ref": "SALEXP",
+        "pref":"Corredor principal, Escaleras principales, Aula 204",
         "room": "conference"
       },
       "geometry": {
@@ -5761,8 +5757,6 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970354",
-        "level": "2",
-        "name": "sin dato"
       },
       "geometry": {
         "type": "LineString",
@@ -5795,8 +5789,6 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970365",
-        "level": "2",
-        "name": "sin datos"
       },
       "geometry": {
         "type": "LineString",
@@ -5829,8 +5821,6 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970380",
-        "level": "2",
-        "name": "dato11"
       },
       "geometry": {
         "type": "LineString",
