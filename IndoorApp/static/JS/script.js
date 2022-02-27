@@ -9,7 +9,7 @@ var map = L.map('map', {
         [19.54230, -96.92665]
         ], 
 }).setView([19.54126, -96.2720], 20); 
-
+map.doubleClickZoom.disable(); 
 
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -219,7 +219,10 @@ $("#buscar").click(function(){
 		filter: function(feature, layer) {
 			if(miSelect != "TODOS"){
 				var x = feature.properties.name == miSelect;
-				return (feature.properties.area == miSelect || feature.properties.name == miSelect || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
+          
+         let result = miSelect.toString().toLowerCase();;
+           console.log(result);
+				return (feature.properties.area == result || feature.properties.name == result || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
 				//alert("hola");
 			}	else
 				return true;
