@@ -211,7 +211,7 @@ var hqDat = {
         "@id": "way/1002786277",
         "amenity": "toilets",
         "level": "1",
-        "name": "Baños"
+        "name": "baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -297,7 +297,7 @@ var hqDat = {
         "servicio": "conferencias",
         "servicio1": "platicas",
         "level": "1",
-        "name": "Auditorio",
+        "name": "auditorio",
         "pref": "Explanada, Aula 108, Baños."
       },
       "geometry": {
@@ -420,7 +420,7 @@ var hqDat = {
         "@id": "way/1002786287",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 105",
+        "name": "aula 105",
         "pref": "Arbol, Baños de hombres",
       },
       "geometry": {
@@ -947,7 +947,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "Baños",
+        "name": "baños",
         "ref": "baño de hombres",
         "pref": "Arbol, Auditorio",
       },
@@ -1203,7 +1203,7 @@ var hqDat = {
         "access": "private",
         "amenity": "toilets",
         "level": "1",
-        "pref": "Baños",
+        "pref": "baños",
         "name": "Baño privado"
       },
       "geometry": {
@@ -1404,7 +1404,7 @@ var hqDat = {
         "@id": "way/1008962822",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 102",
+        "name": "aula 102",
         "ref": "102",
         "pref": "Baños Secretarias"
       },
@@ -1530,7 +1530,7 @@ var hqDat = {
         "@id": "way/1008962825",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 105",
+        "name": "aula 105",
         "ref": "105",
         "pref": "Arbol, Baños Hombres"
       },

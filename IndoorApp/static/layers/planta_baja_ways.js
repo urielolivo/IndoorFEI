@@ -209,7 +209,7 @@ var hqData = {
         "@id": "way/1002786277",
         "amenity": "toilets",
         "level": "1",
-        "name": "Baños"
+        "name":"baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -897,7 +897,7 @@ var hqData = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "Baños"
+        "name": "baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -1150,7 +1150,7 @@ var hqData = {
         "access": "private",
         "amenity": "toilets",
         "level": "1",
-        "pref":"Baños",
+        "pref":"baños",
         "name":"Baño Privado"
       },
       "geometry": {
