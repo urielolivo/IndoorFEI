@@ -12,7 +12,6 @@ var map = L.map('map', {
 
 
 
-
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }) .addTo(map);
@@ -36,7 +35,7 @@ var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
-
+//
 OpenStreetMap_Mapnik.addTo(map);
 
     //osm_de
