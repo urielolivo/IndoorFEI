@@ -8,7 +8,7 @@ var map = L.map('map', {
         //north east
         [19.54230, -96.92665]
         ], 
-}).setView([19.54126, -96.2720], 20); 
+}).setView([19.54126, -96.2720], 19); 
 map.doubleClickZoom.disable(); 
 
 
