@@ -13,8 +13,8 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Biblioteca",
-        "pref": "Entrada principal"
+        "name": "biblioteca",
+        "pref": "entrada principal"
       },
       "geometry": {
         "type": "Polygon",
@@ -249,7 +249,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 102",
+        "name": "aula 102",
         "pref": "Baño Secretarias, Arbol",
       },
       "geometry": {
@@ -496,7 +496,7 @@ var hqDat = {
         "@id": "way/1002786291",
         "indoor": "room",
         "level": "1",
-        "name": "Prueba"
+        "name": "prueba"
       },
       "geometry": {
         "type": "Polygon",
@@ -537,7 +537,7 @@ var hqDat = {
         "@id": "way/1002786292",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 107",
+        "name": "aula 107",
         "pref": "Arbol, Auditorio"
       },
       "geometry": {
@@ -578,7 +578,7 @@ var hqDat = {
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
-        "name": "Secretarias"
+        "name": "secretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -637,7 +637,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "pref":"Secretarias, Aula 103, Corredor principal",
-        "name": "Aula 104"
+        "name": "aula 104"
       },
       "geometry": {
         "type": "Polygon",
@@ -681,7 +681,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786302",
         "level": "1",
-        "name": "Bosque Auditorio",
+        "name": "bosque auditorio",
         "natural": "wood"
       },
       "geometry": {
@@ -730,7 +730,7 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
-        "name": "Baño Secretarias",
+        "name": "baño secretarias",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -775,7 +775,7 @@ var hqDat = {
         "indoor": "area",
         "level": "1",
         "pref": "Auditorio, Corredor auditorio, Corredor principal",
-        "name": "Jardinera2"
+        "name": "jardinera"
       },
       "geometry": {
         "type": "Polygon",
@@ -816,8 +816,8 @@ var hqDat = {
         "servicio1": "extraordinario",
         "servicio2": "titulo",
         "pref":"Entrada estacionamiento, Explanada",
-        "name": "Caja",
-        "ref" : "Pagos",
+        "name": "caja",
+        "ref" : "pagos",
         "Descripcion": "<b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
   
       },
@@ -856,7 +856,8 @@ var hqDat = {
         "@id": "way/1002786307",
         "indoor": "area",
         "level": "1",
-        "name": "Arbol_jardinera"
+        "pref": "árbol",
+        "name": "árbol jardinera"
       },
       "geometry": {
         "type": "Polygon",
@@ -895,9 +896,9 @@ var hqDat = {
         "servicio1": "entrada",
         "indoor": "room",
         "level": "1",
-        "name": "Entrada Principal",
-        "ref": "Entrada",
-        "servicio":"Recibidor",
+        "name": "entrada principal",
+        "ref": "entrada",
+        "servicio":"recibidor",
         "Descripcion":"",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
         "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> "
@@ -986,8 +987,8 @@ var hqDat = {
         "@id": "way/1002786311",
         "indoor": "room",
         "level": "1",
-        "name": "Enfermería",
-        "ref": "Enfermeria",
+        "name": "enfermería",
+        "ref": "enfermeria",
         "pref":  "Recibidor entrada principal, Corredor principal "
       },
       "geometry": {
@@ -1025,7 +1026,7 @@ var hqDat = {
         "@id": "way/1002786313",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 106"
+        "name": "aula 106"
       },
       "geometry": {
         "type": "Polygon",
@@ -1063,7 +1064,7 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 103",
+        "name": "aula 103",
       },
       "geometry": {
         "type": "Polygon",
@@ -1103,7 +1104,7 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
-        "name": "Baño Secretarias",
+        "name": "baño secretarias",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -1204,7 +1205,7 @@ var hqDat = {
         "amenity": "toilets",
         "level": "1",
         "pref": "baños",
-        "name": "Baño privado"
+        "name": "baño privado"
       },
       "geometry": {
         "type": "Polygon",
@@ -1241,7 +1242,7 @@ var hqDat = {
         "@id": "way/1008962818",
         "indoor": "room",
         "level": "1",
-        "name":"Cuarto de luces",
+        "name":"cuarto de luces",
         "ref":"privado",
         "pref": "Corredor principal, Aula 105, Recibidor entrada pricipal, Escaleras principales"
       },
@@ -1280,7 +1281,7 @@ var hqDat = {
         "@id": "way/1008962819",
         "indoor": "room",
         "level": "1",
-        "name":"Área administrativa",
+        "name":"área administrativa",
         "ref": "Administración",
         "pref": "Explanada, Caja ",
       },
@@ -1319,7 +1320,7 @@ var hqDat = {
         "@id": "way/1008962820",
         "indoor": "room",
         "level": "1",
-        "name": "Recibidor",
+        "name": "recibidor",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
         "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> "
       },
@@ -1366,7 +1367,7 @@ var hqDat = {
         "@id": "way/1008962821",
         "indoor": "room",
         "level": "1",
-        "name": "Direccion Economía",
+        "name": "direccion Economía",
         "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
@@ -1571,7 +1572,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "Baños"
+        "name": "baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -1608,7 +1609,7 @@ var hqDat = {
         "@id": "way/1008962827",
         "indoor": "room",
         "level": "1",
-        "name": "Salon de Maestría"
+        "name": "salón de maestría"
       },
       "geometry": {
         "type": "Polygon",
@@ -1645,7 +1646,7 @@ var hqDat = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "Escaleras CC-E",
+        "name": "escaleras cc-e",
         "service": "escaleras",
         "pref": "Auditorio, Baños, Jardinera"
       },
@@ -1700,7 +1701,7 @@ var hqDat = {
         "servicio1": "libros",
         "servicio2":"contancia de no adeudo",
         "servicio3": "estudio",
-        "name": "Biblioteca",
+        "name": "biblioteca",
         "pref": "Corredor principal, Escaleras principales,",
         "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros <br> Constancia de no adeudo<br>Áreas de estudio",
       },
@@ -1899,7 +1900,7 @@ var hqDat = {
         "@id": "way/1008962830",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 106",
+        "name": "aula 106",
         "ref": "106",
         "pref":"Arbol, Baños Hombres"
       },
@@ -1978,7 +1979,7 @@ var hqDat = {
         "@id": "way/1008962832",
         "indoor": "room",
         "level": "1",
-        "name": "Direccion Economía",
+        "name": "dirección economía",
         "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
@@ -2055,7 +2056,7 @@ var hqDat = {
         "@id": "way/1008962835",
         "indoor": "corridor",
         "level": "1",
-        "name": "Corredor dirección"
+        "name": "corredor dirección"
       },
       "geometry": {
         "type": "Polygon",
@@ -2098,7 +2099,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962836",
-        "servicio": ["trámites", "apoyo"],
+        "servicio": "",
         "indoor": "room",
         "level": "1",
         "name": ""
@@ -2143,7 +2144,7 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "1",
-        "name": "Baños"
+        "name": "baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2180,7 +2181,7 @@ var hqDat = {
         "@id": "way/1008962841",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 108"
+        "name": "aula 108"
       },
       "geometry": {
         "type": "Polygon",
@@ -2257,7 +2258,7 @@ var hqDat = {
         "@id": "way/1008962843",
         "indoor": "room",
         "level": "1",
-        "name": "Auditorio",
+        "name": "auditorio",
         "pref":"Explanada, Escaleras, Baños"
       },
       "geometry": {
@@ -2303,7 +2304,7 @@ var hqDat = {
         "@id": "way/1008962845",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 104",
+        "name": "aula 104",
         "pref": "Secretarias, Arbol, Baño de Secretarias",
       },
       "geometry": {
@@ -2385,7 +2386,7 @@ var hqDat = {
         "@id": "way/1008962847",
         "indoor": "room",
         "level": "1",
-        "name": "Enfermería"
+        "name": "enfermería"
       },
       "geometry": {
         "type": "Polygon",
@@ -2423,7 +2424,7 @@ var hqDat = {
         "access": "yes",
         "indoor": "room",
         "level": "1",
-        "name": "Escaleras principales",
+        "name": "escaleras principales",
         "ref": "escpri1",
         "pref": "Recibidor entrada principal, corredor principal, Entrada biblioteca",
         "service": "escaleras"
@@ -2501,8 +2502,8 @@ var hqDat = {
         "pref": "Secretaria Académica  de la FEI, Secretaria Académica de Economía, Corredor dirección ",
         "level": "1",
         "servicio": "trámites",
-        "ref": "Dirección",
-        "name":"Dirección de la FEI",
+        "ref": "dirección",
+        "name":"dirección de la FEI",
         "Descripcion":" <b> Personal: Dr. Luis Gerardo Montané Jiménez </b>"
       },
       "geometry": {
@@ -2584,7 +2585,7 @@ var hqDat = {
         "@id": "way/1008962853",
         "indoor": "area",
         "level": "1",
-        "name": "Jardinera2"
+        "name": "jardinera"
       },
       "geometry": {
         "type": "Polygon",
@@ -2621,7 +2622,7 @@ var hqDat = {
         "@id": "way/1008962855",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 101",
+        "name": "aula 101",
         "room": "indoor",
         "pref":"Baños Secretarias, Escaleras CC"
       },
@@ -2660,7 +2661,7 @@ var hqDat = {
         "@id": "way/1008962856",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 107",
+        "name": "aula 107",
         "ref": "107",
         "pref": "Baños de Hombres, Área libre, Árbol, Aula 106",
         "Descripcion": "Descripción: Aula de clases con equipo de cómputo"
@@ -2703,7 +2704,7 @@ var hqDat = {
         "indoor": "area",
         "level": "1",
         "ref": "libre",
-        "name": "Área libre"
+        "name": "área libre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2820,7 +2821,7 @@ var hqDat = {
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "Secretaria Académica de FEI"
+        "name": "secretaria académica de FEI"
       },
       "geometry": {
         "type": "Polygon",
@@ -2862,7 +2863,7 @@ var hqDat = {
         "servicio": "trámites",
         "indoor": "room",
         "level": "1",
-        "name": "Área de secretarias",
+        "name": "área de secretarias",
         "ref": "secretarias",
         "Descripcion": "Descripción: Área donde se encuentran las secretarias de las licenciaturas de la Facultad de Estadística e Informática y de la Facultad de Economía<br> Trámites: <b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
         "pref": "Biblioteca, Corredor principal, Aula 104, Área libre"
@@ -2925,7 +2926,7 @@ var hqDat = {
         "indoor": "area",
         "level": "1",
         "ref":"libre",
-        "name": "Área libre"
+        "name": "área libre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2968,12 +2969,12 @@ var hqDat = {
         "servicio1": "prestamo equipo",
         "servicio2": "imprimir",
         "servicio3": "control proyector",
-        "area": "Centro de cómputo",
+        "area": "centro de cómputo",
         "ref": "CC FEI",
         "pref": "Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
-        "name": "Recibidor Centro de Cómputo",
+        "name": "recibidor centro de cómputo",
         "Descripcion":"<b>Descripción:</b> Entrada del centro de cómṕuto.<br> <b>Servicios:</b> Acceso a salones, Préstamo de equiṕo, Impresiones, Préstamo de control de proyectores</b>"
       },
       "geometry": {
@@ -3011,7 +3012,7 @@ var hqDat = {
         "@id": "way/1008970347",
         "indoor": "room",
         "level": "2",
-        "name": "Cubículos economía",
+        "name": "cubículos economía",
         "ref": "CubEco",
         "Descripcion": "",
         "pref": "Aula 217, Aula 206, Corredor izquierdo economía",
@@ -3062,8 +3063,9 @@ var hqDat = {
         "ref": "CCcorredor",
         "indoor": "corridor",
         "level": "2",
+        "servicio": "corredor",
         "pref": "Jefatura de CC, SITE, Aula de reparación y mantenimiento",
-        "name": "Corredor CC",
+        "name": "corredor CC",
       },
       "geometry": {
         "type": "Polygon",
@@ -3100,7 +3102,7 @@ var hqDat = {
         "@id": "way/1008970349",
         "indoor": "room",
         "level": "2",
-        "name": "Aula 209",
+        "name": "aula 209",
         "ref": "209",
         "pref": "Corredor izquierdo CCE, Baños, Escaleras izquierdas",
         "Descripcion": "",
@@ -3146,8 +3148,8 @@ var hqDat = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
-        "name": "Cuarto biblioteca",
-        "area":"Biblioteca",
+        "name": "cuarto biblioteca",
+        "area":"biblioteca",
         "Descripcion": "",
         "ref": "cuabib",
         "room": "library"
@@ -3188,8 +3190,8 @@ var hqDat = {
         "servicio":"computo",
         "indoor": "room",
         "level": "2",
-        "name": "CC3",
-        "area": "Centro de cómputo",
+        "name": "cc3",
+        "area": "centro de cómputo",
         "ref": "3",
         "Descripcion": "",
         "pref": "Centro de cómputo, CC2, Mantenimiento de centro de cómputo",
@@ -3278,7 +3280,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 201",
+        "name": "aula 201",
         "ref": "201",
         "room": "class",
         "pref": "Baños, Corredor izquierdo CCE"
@@ -3323,7 +3325,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 217",
+        "name": "aula 217",
         "ref": "217",
         "pref":"Corredor principal, Aula 216, Corredor izquierdo",
         "room": "class"
@@ -3365,7 +3367,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "CC biblioteca",
+        "name": "cc biblioteca",
         "ref": "cuabib",
         "room": "library"
       },
@@ -3405,7 +3407,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "Descripcion": "",
-        "name": "Corredor izquierdo CCE",
+        "name": "corredor izquierdo cce",
         "ref": "Corrcce",
         "pref": "Baños, Centro de Cómputo Economía, Escaleras izquierdas"
       },
@@ -3445,7 +3447,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 203",
+        "name": "aula 203",
         "ref": "203",
         "room": "class",
         "pref": "Baños de Damas, Corredor CC"
@@ -3486,7 +3488,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 215",
+        "name": "aula 215",
         "ref": "215",
         "room": "class",
         "pref": ""
@@ -3527,7 +3529,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "Descripcion": "",
-        "name": "Corredor derecho Geografía",
+        "name": "corredor derecho geografía",
         "ref": "Cordergeo",
         "pref":"Aula 205, LINAE, "
       },
@@ -3577,7 +3579,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Baños",
+        "servicio":"baño",
+        "name": "baños",
         "ref": "WCGEO",
         "room": "toilet",
         "pref": "Pasillo CC"
@@ -3618,7 +3621,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Bodega",
+        "name": "bodega",
         "ref": "CcBod",
         "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
         "room": "storage"
@@ -3699,7 +3702,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 205",
+        "name": "aula 205",
         "ref": "205",
         "room": "class",
         "pref" : "Corredor Derecho Geografía"
@@ -3744,7 +3747,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Escaleras de la biblioteca",
+        "name": "escaleras de la biblioteca",
         "ref": "escbib2",
         "room": "stairs"
       },
@@ -3784,7 +3787,8 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "Descripcion": "",
-        "name": "Corredor principal",
+        "servicio":"corredor",
+        "name": "corredor principal",
         "pref": "Escaleras principales, Salon de exposiciones",
         "ref": "2c"
       },
@@ -3844,8 +3848,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "CC4",
-        "area": "Centro de cómputo",
+        "name": "cc4",
+        "area": "centro de cómputo",
         "ref": "4",
         "pref": " Centro de cómputo, CC3, CC2",
         "room": "laboratory"
@@ -3898,7 +3902,8 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "Descripcion": "",
-        "name": "Corredor izquierdo economía"
+        "servicio": "corredor",
+        "name": "corredor izquierdo economía"
       },
       "geometry": {
         "type": "Polygon",
@@ -3944,7 +3949,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 216",
+        "name": "aula 216",
         "ref": "216",
         "room": "class",
         "pref": "Corredor izquierdo, Aula 206, Aula 217",
@@ -3985,6 +3990,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
+        "servicio": "site",
         "name": "SITE",
         "ref": "CCsit",
         "room": "office"
@@ -4030,7 +4036,7 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970373",
-        "name" : "Aula 202",
+        "name" : "aula 202",
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
@@ -4082,6 +4088,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
+        "servicio": "jefatura de geografía",
         "name": "Jefatura Geografía",
         "room": "office",
         "pref": "Corredor derecho, LINAE, Aula 204",
@@ -4122,7 +4129,8 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "Descripcion": "",
-        "name": "Corredor derecho",
+        "servicio": "corredor",
+        "name": "corredor derecho",
         "ref": "Corrder"
       },
       "geometry": {
@@ -4159,7 +4167,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970376",
         "indoor": "room",
-        "area": "Centro de cómputo economía",
+        "area": "centro de cómputo economía",
         "level": "2",
         "Descripcion": "",
         "name": "Aula 220",
@@ -4219,7 +4227,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Bodega",
+        "name": "bodega",
         "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
         "ref": "CcBod",
         "room": "storage"
@@ -4261,7 +4269,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Cuarto biblioteca",
+        "name": "cuarto biblioteca",
         "ref": "cuabib",
         "room": "library"
       },
@@ -4303,7 +4311,7 @@ var hqDat = {
         "servicio1": "conferencia",
         "level": "2",
         "Descripcion": "",
-        "name": "Salón de exposiciones",
+        "name": "salón de exposiciones",
         "ref": "SALEXP",
         "pref":"Corredor principal, Escaleras principales, Aula 204",
         "room": "conference"
@@ -4341,12 +4349,12 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970381",
-        "area": "Centro de cómputo economía",
+        "area": "centro de cómputo economía",
         "servicio": "prestamo equipo",
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Recibidor CCE",
+        "name": "recibidor CCE",
         "pref": "Escaleras izquierdas, corredor izquierdo, Proyectos SIG",
         "room": "office"
       },
@@ -4388,7 +4396,7 @@ var hqDat = {
         "level": "2",
         "Descripcion": "",
         "name": "CC2",
-        "area": "Centro de cómputo",
+        "area": "centro de cómputo",
         "ref": "2",
         "pref": "Centro de cómputo, CC1, Recibidor CC",
         "room": "laboratory"
@@ -4430,7 +4438,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "name": "CC1",
-        "area": "Centro de cómputo",
+        "area": "centro de cómputo",
         "ref": "1",
         "pref": "Centro de cómputo, Recibidor CC, CC2, Baños",
         "room": "class",
@@ -4473,7 +4481,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Escaleras principales",
+        "name": "escaleras principales",
         "pref": "Salon de exposiciones, Corredor principal",
         "servicio": "escaleras",
         "ref": "escpri2",
@@ -4517,7 +4525,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Baños",
+        "servicio":"baño",
+        "name": "baños",
         "ref": "WCLE",
         "room": "toilet"
       },
@@ -4558,7 +4567,7 @@ var hqDat = {
         "level": "2",
         "Descripcion": "",
         "servicio": "tutorias",
-        "name": "Coordinación tutorías",
+        "name": "coordinación tutorías",
         "area": "coordinacion tutorias",
         "ref": "CorTut",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
@@ -4599,7 +4608,7 @@ var hqDat = {
         "@id": "way/1008970387",
         "indoor": "room",
         "level": "2",
-        "name": "Aula 204",
+        "name": "aula 204",
         "ref": "204",
         "pref": "Corredor principal, corredor derecho, salón de exposiciones, LINAE",
         "room": "class",
@@ -4645,7 +4654,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Escaleras derechas",
+        "name": "escaleras derechas",
         "servicio": "escaleras",
         "pref": "Centro de cómputo CC, Baños",
         "ref": "escder2",
@@ -4707,7 +4716,8 @@ var hqDat = {
         "indoor": "corridor",
         "level": "2",
         "Descripcion": "",
-        "name": "Corredor derecho CC",
+        "servicio": "corredor",
+        "name": "corredor derecho cc",
         "ref": "Corrdercc"
       },
       "geometry": {
@@ -4744,7 +4754,8 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970390",
         "servicio": "practicas",
-        "servicio2": "prestamo de equipo",
+        "servicio1": "prestamo de equipo",
+        "Servicio2":"proyectos sig",
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
@@ -4797,7 +4808,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "<b>Descripción: La entrada se encuentra a lado de secretaria. </b> <b>Servicios: Préstamos de libros </b><b>Constancia de no adeudo</b><b>Áreas de estudio</b>",
-        "name": "Biblioteca",
+        "name": "biblioteca",
         "room": "library"
       },
       "geometry": {
@@ -4848,7 +4859,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 207",
+        "name": "aula 207",
         "ref": "207",
         "pref": "Laboratorio de electrónica, corredor izquierdo, aula 206",
         "room": "class"
@@ -4890,7 +4901,7 @@ var hqDat = {
         "level": "2",
         "Descripcion": "",
         "servicio": "tutorias",
-        "name": "Coordinación tutorías",
+        "name": "coordinación tutorías",
         "area": "coordinacion tutorias",
         "ref": "CorTut",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
@@ -4932,7 +4943,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula de reparación y mantenimiento",
+        "name": "aula de reparación y mantenimiento",
         "ref": "Ccarm",
         "room": "technical"
       },
@@ -4986,7 +4997,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1008970395",
         "indoor": "room",
-        "area": "Centro de cómputo economía",
+        "area": "centro de cómputo economía",
         "level": "2",
         "Descripcion": "",
         "name": "Aula 214",
@@ -5046,7 +5057,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Bodega",
+        "name": "bodega",
         "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
         "room": "storage"
       },
@@ -5087,7 +5098,7 @@ var hqDat = {
         "servicio2": "prestamo de equipo",
         "indoor": "room",
         "level": "2",
-        "name": "Laboratorio de electrónica",
+        "name": "laboratorio de electrónica",
         "ref": "208",
         "room": "laboratory",
         "Descripcion": "<b>Descripción :</b> Área para realizar prácticas de electrónica  ",
@@ -5137,7 +5148,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Cuarto biblioteca",
+        "name": "cuarto biblioteca",
         "ref": "cuabib",
         "room": "library"
       },
@@ -5177,6 +5188,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
+        "servicio":"laboratorio de investigación y asesoría estadística",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
         "ref": "LINAE",
         "pref":"Corredor derecho, Aula 203, Jefatura de geografía",
@@ -5218,7 +5230,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Cubículos geografía",
+        "name": "cubículos geografía",
         "ref": "CubGeo",
         "pref": "Corredor derecho, Jefatura de geografía",
         "room": "office"
@@ -5261,7 +5273,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Baños",
+        "servicio": "baño",
+        "name": "baños",
         "ref": "WCCC",
         "room": "toilet"
       },
@@ -5361,7 +5374,8 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Baños",
+        "servicio":"baño",
+        "name": "baños",
         "ref": "WCECO",
         "room": "toilet"
       },
@@ -5406,7 +5420,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "Personal: Dr. José Luis Soto",
-        "name": "Jefatura de Centro de cómputo",
+        "name": "jefatura de centro de cómputo",
         "ref": "JefCc",
         "room": "technical"
       },
@@ -5450,7 +5464,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "Aula 206",
+        "name": "aula 206",
         "ref": "206",
         "pref": "corredor izquierdo, Aula 207, Aula 216",
         "room": "class"
@@ -5492,7 +5506,7 @@ var hqDat = {
         "level": "2",
         "Descripcion": "",
         "servicio": "tutorias",
-        "name": "Coordinación tutorías",
+        "name": "coordinación tutorías",
         "area": "coordinacion tutorias",
         "ref": "CorTut",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
@@ -5603,6 +5617,7 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786298",
         "servicio": "trámites",
+        "servicio":"dirección",
         "level": "1",
         "ref": "Dirección",
        "name": "Dirección de FEI",
@@ -5646,8 +5661,9 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786300",
         "level": "1",
-        "name": "Corredor de Dirección",
-         "pref": "Mine"
+        "servicio": "corredor",
+        "name": "corredor de dirección",
+        "pref": "Mine"
       },
       "geometry": {
         "type": "Polygon",
@@ -5690,7 +5706,7 @@ var hqDat = {
         "@id": "way/1002786312",
         "servicio": "trámites",
         "level": "1",
-        "name": "Secretaría Académica Economía",
+        "name": "secretaría académica economía",
         "pref": " Corredor Dirección, Secretaria académica FEI",
         "Descripcion": ""
       },
@@ -5732,7 +5748,7 @@ var hqDat = {
         "access": "yes",
         "highway": "steps",
         "level": "1",
-        "name": "Escaleras CC",
+        "name": "escaleras cc",
         "service": "escaleras",
       },
       "geometry": {
