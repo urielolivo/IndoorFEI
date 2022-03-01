@@ -9,12 +9,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786274",
         "servicio": "acceso",
-        "servicio1": "entrada",
         "building": "university",
         "indoor": "room",
         "level": "1",
         "name": "biblioteca",
-        "pref": "entrada principal"
+        "pref": "Entrada principal, corredor principal, área de secretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -578,7 +577,8 @@ var hqDat = {
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
-        "name": "secretarias"
+        "ref": "secretarias",
+        "name": "área de secretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -730,6 +730,7 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
+        "servicio": "baño",
         "name": "baño secretarias",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
@@ -1104,6 +1105,7 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
+        "servicio": "baño",
         "name": "baño secretarias",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
@@ -1367,7 +1369,7 @@ var hqDat = {
         "@id": "way/1008962821",
         "indoor": "room",
         "level": "1",
-        "name": "direccion Economía",
+        "name": "dirección Economía",
         "pref": "Baño privado, Corredor dirección, Salón maestría"
       },
       "geometry": {
@@ -2499,11 +2501,12 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
-        "pref": "Secretaria Académica  de la FEI, Secretaria Académica de Economía, Corredor dirección ",
+        "pref": "Secretaria Académica de la FEI,Secretaria Académica de Economía y Corredor dirección ",
         "level": "1",
         "servicio": "trámites",
+        "servicio1": "director",
         "ref": "dirección",
-        "name":"dirección de la FEI",
+        "name":"Dirección de la FEI",
         "Descripcion":" <b> Personal: Dr. Luis Gerardo Montané Jiménez </b>"
       },
       "geometry": {
@@ -2819,9 +2822,12 @@ var hqDat = {
         "Descripcion": "Personal: MGC. Minerva Reyes Félix",
         "pe": "Minerva",
         "servicio": "trámites",
+        "servicio1": "secretaria",
         "indoor": "room",
         "level": "1",
-        "name": "secretaria académica de FEI"
+        "name": "Secretaria académica de FEI",
+        "ref": "secretaria académica",
+        "pref": "Dirección de la FEI, corredor dirección, área de sercretarias"
       },
       "geometry": {
         "type": "Polygon",
@@ -4395,7 +4401,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "name": "CC2",
+        "name": "cc2",
         "area": "centro de cómputo",
         "ref": "2",
         "pref": "Centro de cómputo, CC1, Recibidor CC",
@@ -4437,7 +4443,7 @@ var hqDat = {
         "servicio":"computo",
         "indoor": "room",
         "level": "2",
-        "name": "CC1",
+        "name": "cc1",
         "area": "centro de cómputo",
         "ref": "1",
         "pref": "Centro de cómputo, Recibidor CC, CC2, Baños",
@@ -5617,9 +5623,9 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786298",
         "servicio": "trámites",
-        "servicio":"dirección",
+        "servicio1":"director",
         "level": "1",
-        "ref": "Dirección",
+        "ref": "dirección",
        "name": "Dirección de FEI",
        "Descripcion": "</br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez",
         "pref": "Secretaria Académica  de la FEI </br> Secretaria Académica de Economía ",

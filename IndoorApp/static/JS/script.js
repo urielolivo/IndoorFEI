@@ -1,6 +1,6 @@
 var map = L.map('map', {
 
-    maxZoom: 21,
+    maxZoom: 20,
     minZoom: 18,
     maxBounds: [
         //sur oeste
@@ -8,7 +8,7 @@ var map = L.map('map', {
         //north east
         [19.54230, -96.92665]
         ], 
-}).setView([19.54126, -96.2720], 19); 
+}).setView([19.54126, -96.2720], 19);
 map.doubleClickZoom.disable(); 
 
 
@@ -47,14 +47,15 @@ OpenStreetMap_Mapnik.addTo(map);
 var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',{    
     maxNativeZoom: 19,
     minZoom: 19,
-    bbox: [19.54126, -19.54126],
-    maxZoom: 30,
+    //bbox: [19.54126, -19.54126],
+    maxZoom: 35,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
     //google street
 let googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-    minZoom: 19,
+    maxNativeZoom: 19,
+	minZoom: 19,
     maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
 });
@@ -62,7 +63,8 @@ let googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={
 // google hybrid
 
 let googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
-    minZoom:19,
+    maxNativeZoom: 19,
+	minZoom:19,
     maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
 });
