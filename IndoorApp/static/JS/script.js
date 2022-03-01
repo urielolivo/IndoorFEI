@@ -38,7 +38,6 @@ var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png
 //
 OpenStreetMap_Mapnik.addTo(map);
 
-    //osm_de
 
 
 
@@ -48,7 +47,7 @@ var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmd
     maxNativeZoom: 19,
     minZoom: 19,
     //bbox: [19.54126, -19.54126],
-    maxZoom: 35,
+    maxZoom: 30,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
@@ -98,10 +97,17 @@ var nivel22 = L.geoJSON(hqData2, {
 })
 
 
-//+++++++ niveles capas ++++
+var nivel00 = L.geoJSON(hqdatab, {
+    style: function (feature) {
+              return {color: "#16B1C7"};
+            },
 
-nivel1 =L.geoJSON(hqData)
-nivel2 = L.geoJSON(hqData2)
+  onEachFeature: function (feature, layer) {
+      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p></p> '+feature.properties.Descripcion+'</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
+ }
+})
+nivel00.addTo(map);
+
 
 //marcador
 /*var marca = L.marker([19.5412371, -96.9271773], {draggable: true})
@@ -124,8 +130,10 @@ var baseMaps ={
 };  
 
 var niveles = {
-    "Nivel 1" : nivel3,
+    "Nivel 0": nivel00,
+	"Nivel 1" : nivel3,
     "Nivel 2": nivel22,
+
 }
 
 /// control de capas
@@ -224,8 +232,8 @@ $("#buscar").click(function(){
           
          let result = miSelect.toString().toLowerCase();;
            console.log(result);
-				return (feature.properties.area == result || feature.properties.name == result || feature.properties.pe == miSelect || feature.properties.ref == miSelect || feature.properties.servicio == miSelect  || feature.properties.personal == miSelect || feature.properties.servicio1 == miSelect || feature.properties.servicio2 == miSelect);
-				//alert("hola");
+				return (feature.properties.area == result || feature.properties.name == result || feature.properties.pe == result || feature.properties.ref == result || feature.properties.servicio == result  || feature.properties.personal == result || feature.properties.servicio1 == result || feature.properties.servicio2 == result);
+				//
 			}	else
 				return true;
 			},
