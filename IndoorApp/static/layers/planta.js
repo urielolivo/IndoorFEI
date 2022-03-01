@@ -210,7 +210,8 @@ var hqDat = {
         "@id": "way/1002786277",
         "amenity": "toilets",
         "level": "1",
-        "name": "baños"
+        "name": "baños",
+        "pref": "Auditorio, aula 109, aula 108"
       },
       "geometry": {
         "type": "Polygon",
@@ -1206,7 +1207,7 @@ var hqDat = {
         "access": "private",
         "amenity": "toilets",
         "level": "1",
-        "pref": "baños",
+        "pref": "baño",
         "name": "baño privado"
       },
       "geometry": {
@@ -1409,7 +1410,7 @@ var hqDat = {
         "level": "1",
         "name": "aula 102",
         "ref": "102",
-        "pref": "Baños Secretarias"
+        "pref": "Baños Secretarias,aula 101, aula 103"
       },
       "geometry": {
         "type": "Polygon",
@@ -1574,6 +1575,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
+        "servicio": "baños",
         "name": "baños"
       },
       "geometry": {
@@ -3585,7 +3587,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "servicio":"baño",
+        "servicio":"baños",
         "name": "baños",
         "ref": "WCGEO",
         "room": "toilet",
@@ -4531,7 +4533,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "servicio":"baño",
+        "servicio":"baños",
         "name": "baños",
         "ref": "WCLE",
         "room": "toilet"
@@ -5279,7 +5281,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "servicio": "baño",
+        "servicio": "baños",
         "name": "baños",
         "ref": "WCCC",
         "room": "toilet"
@@ -5380,7 +5382,7 @@ var hqDat = {
         "indoor": "room",
         "level": "2",
         "Descripcion": "",
-        "servicio":"baño",
+        "servicio":"baños",
         "name": "baños",
         "ref": "WCECO",
         "room": "toilet"
