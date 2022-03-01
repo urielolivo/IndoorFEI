@@ -3,6 +3,10 @@
     display:none;    
 }
 
+close {
+
+    color: #ffff
+}
 .icono i {
     font-size: 400px;
 }

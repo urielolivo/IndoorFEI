@@ -219,7 +219,14 @@ function myFunction() {
 $("#buscar").click(function(){
 	var miSelect = document.getElementById("nombres").value;
 	if (miSelect == ""){
-		swal.fire( 'El contenido no puede ir vacio')
+      swal.fire({
+      title: 'Error!',
+       text: 'el contenido no puede ir vacio.',
+        imageUrl:'https://c.tenor.com/wJIKa8hqsacAAAAC/cxyduck-cxydck.gif',     
+         imageWidth: 200,
+  imageHeight: 200,
+      })
+
 	}
 
 	var puntos = L.geoJSON(hqDat, {
