@@ -181,6 +181,10 @@ function estilo_puntos (feature) {
 	};
 };
 
+
+	
+
+
 function popup_puntos (feature, layer) {
 	document.getElementById("menu-bar").checked = true;
 	document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
@@ -216,7 +220,19 @@ function myFunction() {
 }
 
 
+
+
+
+$("#nombres").keypress(function(event) {                    if (event.keyCode === 13) {
+            $("#buscar").click();
+        }
+});
+   
+
+
+
 $("#buscar").click(function(){
+  
 	var miSelect = document.getElementById("nombres").value;
 	if (miSelect == ""){
       swal.fire({
@@ -236,9 +252,7 @@ $("#buscar").click(function(){
 		filter: function(feature, layer) {
 			if(miSelect != "TODOS"){
 				var x = feature.properties.name == miSelect;
-          
          let result = miSelect.toString().toLowerCase();;
-           console.log(result);
 				return (feature.properties.area == result || feature.properties.name == result || feature.properties.pe == result || feature.properties.ref == result || feature.properties.servicio == result  || feature.properties.personal == result || feature.properties.servicio1 == result || feature.properties.servicio2 == result);
 				//
 			}	else
@@ -249,6 +263,10 @@ $("#buscar").click(function(){
 	});
 	IndoorFei.clearLayers();
 	IndoorFei.addLayer(puntos);
+
 });
+
+
+
 
 
