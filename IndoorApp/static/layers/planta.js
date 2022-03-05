@@ -983,9 +983,11 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "male": "yes",
-        "name": "baños",
-        "ref": "baño de hombres",
-        "pref": "Arbol, Auditorio",
+        "name": "Baños",
+        "extra": "baños de hombres",
+        "ref": "baños",
+        "pref": "Auditorio, aula 108, aula 109",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1022,9 +1024,10 @@ var hqDat = {
         "@id": "way/1002786311",
         "indoor": "room",
         "level": "1",
-        "name": "enfermería",
+        "name": "Enfermería",
         "ref": "enfermeria",
-        "pref":  "Recibidor entrada principal, Corredor principal "
+        "pref":  "Recibidor entrada principal, Corredor principal ",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1061,7 +1064,10 @@ var hqDat = {
         "@id": "way/1002786313",
         "indoor": "room",
         "level": "1",
-        "name": "aula 106"
+        "name": "aula 106",
+        "ref": "106",
+        "pref": " aula 105, aula 107,área libre",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1100,6 +1106,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "aula 103",
+        "ref": "103",
+        "pref": "aula 102, aula 104, área libre",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1139,8 +1148,10 @@ var hqDat = {
         "fee": "no",
         "female": "yes",
         "level": "1",
-        "servicio": "baño",
         "name": "baño secretarias",
+        "ref": "baño",
+        "pref": "",
+        "Descripcion":"",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -1184,9 +1195,10 @@ var hqDat = {
         "@id": "way/1008962814",
         "indoor": "corridor",
         "level": "1",
-        "Descripcion": "",
         "name": "corredor principal",
-        "pref": "Escaleras principales, Recibidor entrada principal"
+        "ref": "corrprinl1",
+        "pref": "Escaleras principales, Recibidor entrada principal",
+        "Descripcion":"",
       },
       "geometry": {
         "type": "Polygon",
@@ -1240,8 +1252,10 @@ var hqDat = {
         "access": "private",
         "amenity": "toilets",
         "level": "1",
-        "pref": "baño",
-        "name": "baño privado"
+        "name": "baño privado",
+        "ref": "baño",
+        "pref": "",
+        "Descripcion":"",
       },
       "geometry": {
         "type": "Polygon",
@@ -1279,8 +1293,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name":"cuarto de luces",
-        "ref":"privado",
-        "pref": "Corredor principal, Aula 105, Recibidor entrada pricipal, Escaleras principales"
+        "ref":"adminluz",
+        "pref": "Corredor principal, Aula 105, Recibidor entrada pricipal, Escaleras principales",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1318,8 +1333,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name":"área administrativa",
-        "ref": "Administración",
+        "ref": "administración",
         "pref": "Explanada, Caja ",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1356,9 +1372,11 @@ var hqDat = {
         "@id": "way/1008962820",
         "indoor": "room",
         "level": "1",
-        "name": "recibidor",
+        "servicio": "recibidor",
+        "name": "entrada principal",
+        "ref": "entrada",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
-        "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> "
+        "Descripcion": "<b> Descripción:</b> Entrada principal al edificio A"
       },
       "geometry": {
         "type": "Polygon",
@@ -1403,8 +1421,11 @@ var hqDat = {
         "@id": "way/1008962821",
         "indoor": "room",
         "level": "1",
-        "name": "dirección Economía",
-        "pref": "Baño privado, Corredor dirección, Salón maestría"
+        "area": "economía",
+        "name": "dirección economía",
+        "ref": "direeco",
+        "pref": "Baño privado, Corredor dirección, Salón maestría",
+        "Descripcion:": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1443,7 +1464,8 @@ var hqDat = {
         "level": "1",
         "name": "aula 102",
         "ref": "102",
-        "pref": "Baños Secretarias,aula 101, aula 103"
+        "pref": "Baños Secretarias,aula 101, aula 103",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1488,9 +1510,10 @@ var hqDat = {
         "@id": "way/1008962823",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 103",
+        "name": "aula 103",
         "ref": "103",
-        "pref": "Aula 102, Secretarias"
+        "pref": "aula 102, aula 104, área libre",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1527,8 +1550,9 @@ var hqDat = {
         "@id": "way/1008962824",
         "indoor": "room",
         "level": "1",
-        "name":"Cuarto de Fotocopias",
-        "ref": "Copias",
+        "servicio": "fotocopias",
+        "name":"cuarto de fotocopias",
+        "ref": "copias",
         "pref": "Recibidor entrada principal, Enfermeria, Corredor principal",
         "Descripcion": ""
       },
@@ -1569,7 +1593,8 @@ var hqDat = {
         "level": "1",
         "name": "aula 105",
         "ref": "105",
-        "pref": "Arbol, Baños Hombres"
+        "pref": "Arbol, Baños Hombres",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1609,7 +1634,10 @@ var hqDat = {
         "level": "1",
         "male": "yes",
         "servicio": "baños",
-        "name": "baños"
+        "name": "baños",
+        "ref": "baños",
+        "pref":"",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1646,7 +1674,10 @@ var hqDat = {
         "@id": "way/1008962827",
         "indoor": "room",
         "level": "1",
-        "name": "salón de maestría"
+        "name": "salón de maestría",
+        "ref": "maestría",
+        "pref":"baño privado, área libre, aula 101",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1683,9 +1714,11 @@ var hqDat = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "escaleras cc-e",
-        "service": "escaleras",
-        "pref": "Auditorio, Baños, Jardinera"
+        "name": "escaleras izquierdas",
+        "ref": "escaizql1",
+        "servicio": "escaleras",
+        "pref": "Auditorio, Baños, Jardinera",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1739,6 +1772,7 @@ var hqDat = {
         "servicio2":"contancia de no adeudo",
         "servicio3": "estudio",
         "name": "biblioteca",
+        "ref": "bibll1",
         "pref": "Corredor principal, Escaleras principales,",
         "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros <br> Constancia de no adeudo<br>Áreas de estudio",
       },
@@ -1939,7 +1973,8 @@ var hqDat = {
         "level": "1",
         "name": "aula 106",
         "ref": "106",
-        "pref":"Arbol, Baños Hombres"
+        "pref":"Arbol, Baños Hombres",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1975,7 +2010,8 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962831",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "extra": "area de baño extra"
       },
       "geometry": {
         "type": "Polygon",
@@ -2017,7 +2053,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "dirección economía",
-        "pref": "Baño privado, Corredor dirección, Salón maestría"
+        "ref": "direecon",
+        "pref": "Baño privado, Corredor dirección, Salón maestría",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2054,8 +2092,9 @@ var hqDat = {
         "@id": "way/1008962833",
         "indoor": "room",
         "level": "1",
-        "name": "caja",
+        "name": "Caja",
         "ref": "caja",
+        "pref": "área administrativa, explanada",
         "Descripcion": "<b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
       },
       "geometry": {
@@ -2093,7 +2132,10 @@ var hqDat = {
         "@id": "way/1008962835",
         "indoor": "corridor",
         "level": "1",
-        "name": "corredor dirección"
+        "name": "corredor dirección",
+        "ref": "",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
