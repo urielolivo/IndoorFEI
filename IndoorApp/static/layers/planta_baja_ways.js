@@ -12,7 +12,9 @@ var hqData = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Biblioteca"
+        "name": "Biblioteca",
+        "ref": "biblioteca-n1",
+        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros<br> Constancia de no adeudo<br>Áreas de estudio",
       },
       "geometry": {
         "type": "Polygon",
@@ -209,7 +211,10 @@ var hqData = {
         "@id": "way/1002786277",
         "amenity": "toilets",
         "level": "1",
-        "name":"baños"
+        "name":"baños",
+        "ref": "baño_l1",
+        "Descripcion": "",
+        "pref": "Auditorio, aula 109, aula 108"
       },
       "geometry": {
         "type": "Polygon",
@@ -247,7 +252,9 @@ var hqData = {
         "building": "university",
         "indoor": "room",
         "level": "1",
-        "name": "Aula 102"
+        "name": "Aula 102",
+        "ref": "102",
+        "pref": "Baño Secretarias, Arbol, aula 103",
       },
       "geometry": {
         "type": "Polygon",
@@ -293,9 +300,11 @@ var hqData = {
         "indoor": "room",
         "servicio": "conferencias",
         "servicio1": "platicas",
-        "pref": "Explanada, Aula 108, Baños.",
         "level": "1",
         "name": "Auditorio",
+        "ref": "",
+        "Descripcion": "",
+        "pref": "Explanada, Aula 108, Baños."
       },
       "geometry": {
         "type": "Polygon",
@@ -418,8 +427,10 @@ var hqData = {
         "@id": "way/1002786287",
         "indoor": "room",
         "level": "1",
+        "name": "Aula 105",
+        "ref": "105",
         "pref": "Arbol, Baños de hombres",
-        "name": "Aula 105"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -456,8 +467,10 @@ var hqData = {
         "@id": "way/1002786288",
         "indoor": "corridor",
         "level": "1",
+        "name": "corredor auditorio",
+        "ref": "",
         "pref":"Auditorio, Baños, Aula 108",
-        "name": "corredor auditorio"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -494,7 +507,11 @@ var hqData = {
         "@id": "way/1002786291",
         "indoor": "room",
         "level": "1",
-        "name": "Prueba"
+        "extra": "anteriormente era ocupado por una jefatura",
+        "name": "",
+        "ref":"",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -535,8 +552,10 @@ var hqData = {
         "@id": "way/1002786292",
         "indoor": "room",
         "level": "1",
-        "pref": "Arbol, Auditorio",
-        "name": "Aula 107"
+        "name": "aula 107",
+        "ref": "107",
+        "pref": "Baños de Hombres, Área libre, Árbol, Aula 106",
+        "Descripcion": "Descripción: Aula de clases con equipo de cómputo"
       },
       "geometry": {
         "type": "Polygon",
@@ -576,7 +595,10 @@ var hqData = {
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
-        "name": "Secretarias"
+        "name": "área de secretarias",
+        "ref": "secretarias",
+        "pref": "Biblioteca, aula 104, área libre",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -633,9 +655,11 @@ var hqData = {
         "@id": "way/1002786296",
         "building": "university",
         "indoor": "room",
-        "pref":"Secretarias, Aula 103, Corredor principal",
         "level": "1",
-        "name": "Aula 104"
+        "name": "Aula 104",
+        "ref": "104",
+        "pref":"Secretarias, Aula 103, Corredor principal",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -674,6 +698,54 @@ var hqData = {
       },
       "id": "way/1002786296"
     },
+      {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002786302",
+        "level": "1",
+        "name": "bosque auditorio",
+        "ref": "bosque",
+        "pref": "Auditorio, explanada",
+        "Descripcion": "",
+        "natural": "wood"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.9273398,
+              19.5411297
+            ],
+            [
+              -96.9273424,
+              19.5409984
+            ],
+            [
+              -96.9273129,
+              19.5409981
+            ],
+            [
+              -96.927313,
+              19.5409935
+            ],
+            [
+              -96.9272559,
+              19.5409946
+            ],
+            [
+              -96.927255,
+              19.5411283
+            ],
+            [
+              -96.9273398,
+              19.5411297
+            ]
+          ]
+        ]
+      },
+      "id": "way/1002786302"
+    },
     {
       "type": "Feature",
       "properties": {
@@ -684,6 +756,9 @@ var hqData = {
         "female": "yes",
         "level": "1",
         "name": "Baño_Secretarias",
+        "ref": "baño",
+        "pref": "Aula 101, aula 102, aula 103",
+        "Descripcion": "",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -727,8 +802,10 @@ var hqData = {
         "@id": "way/1002786305",
         "indoor": "area",
         "level": "1",
+        "name": "jardinera",
+        "ref": "",
         "pref": "Auditorio, Corredor auditorio, Corredor principal",
-        "name": "Jardinera2"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -768,9 +845,10 @@ var hqData = {
         "servicio": "pagos",
         "servicio1": "extraordinario",
         "servicio2": "titulo",
-        "pref":"Entrada estacionamiento, Explanada",
         "name": "Caja",
-        "ref" : "Pagos",
+        "ref" : "caja",
+        "pref":"Entrada estacionamiento, Explanada",
+        "Descripcion": "<b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
       },
       "geometry": {
         "type": "Polygon",
@@ -807,7 +885,10 @@ var hqData = {
         "@id": "way/1002786307",
         "indoor": "area",
         "level": "1",
-        "name": "Arbol_jardinera"
+        "name": "árbol jardinera",
+        "ref": "árbol",
+        "pref": "área libre, aula 103, aula 102, área secretarias,  corredor dirección ",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",

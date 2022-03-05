@@ -1837,8 +1837,8 @@ var hqData2 = {
         "@id": "way/1008970391",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros<br> Constancia de no adeudo<br>Áreas de estudio",
         "name": "Biblioteca",
+        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros<br> Constancia de no adeudo<br>Áreas de estudio",
         "pref": "Corredor principal, Escaleras principales,",
         "room": "library"
       },

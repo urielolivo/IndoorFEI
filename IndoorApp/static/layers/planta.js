@@ -8,11 +8,15 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1002786274",
-        "servicio": "acceso",
+        "servicio": "estudio",
+        "servicio1": "libros",
+        "servicio2": "constancia no adeudo",
         "building": "university",
         "indoor": "room",
         "level": "1",
         "name": "biblioteca",
+        "ref": "biblioteca-n1",
+        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros<br> Constancia de no adeudo<br>Áreas de estudio",
         "pref": "Entrada principal, corredor principal, área de secretarias"
       },
       "geometry": {
@@ -211,6 +215,8 @@ var hqDat = {
         "amenity": "toilets",
         "level": "1",
         "name": "baños",
+        "ref": "baño_l1",
+        "Descripcion": "",
         "pref": "Auditorio, aula 109, aula 108"
       },
       "geometry": {
@@ -250,7 +256,8 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "aula 102",
-        "pref": "Baño Secretarias, Arbol",
+        "ref": "102",
+        "pref": "Baño Secretarias, Arbol, aula 103",
       },
       "geometry": {
         "type": "Polygon",
@@ -296,8 +303,11 @@ var hqDat = {
         "indoor": "room",
         "servicio": "conferencias",
         "servicio1": "platicas",
+        "servicio2": "exposiciones",
         "level": "1",
         "name": "auditorio",
+        "ref":"",
+        "Descripcion": "",
         "pref": "Explanada, Aula 108, Baños."
       },
       "geometry": {
@@ -421,7 +431,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "aula 105",
+        "ref": "105",
         "pref": "Arbol, Baños de hombres",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -458,8 +470,10 @@ var hqDat = {
         "@id": "way/1002786288",
         "indoor": "corridor",
         "level": "1",
+        "name": "corredor auditorio",
+        "ref": "",
         "pref":"Auditorio, Baños, Aula 108",
-        "name": "corredor auditorio"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -496,7 +510,11 @@ var hqDat = {
         "@id": "way/1002786291",
         "indoor": "room",
         "level": "1",
-        "name": "prueba"
+        "extra": "anteriormente era ocupado por una jefatura",
+        "name": "",
+        "ref":"",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -538,7 +556,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "aula 107",
-        "pref": "Arbol, Auditorio"
+        "ref": "107",
+        "pref": "Baños de Hombres, Área libre, Árbol, Aula 106",
+        "Descripcion": "Descripción: Aula de clases con equipo de cómputo"
       },
       "geometry": {
         "type": "Polygon",
@@ -578,8 +598,10 @@ var hqDat = {
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
+        "name": "área de secretarias",
         "ref": "secretarias",
-        "name": "área de secretarias"
+        "pref": "Biblioteca, aula 104, área libre",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -637,8 +659,10 @@ var hqDat = {
         "building": "university",
         "indoor": "room",
         "level": "1",
+        "name": "aula 104",
+        "ref": "104",
         "pref":"Secretarias, Aula 103, Corredor principal",
-        "name": "aula 104"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -683,6 +707,9 @@ var hqDat = {
         "@id": "way/1002786302",
         "level": "1",
         "name": "bosque auditorio",
+        "ref": "bosque",
+        "pref": "Auditorio, explanada",
+        "Descripcion": "",
         "natural": "wood"
       },
       "geometry": {
@@ -733,6 +760,9 @@ var hqDat = {
         "level": "1",
         "servicio": "baño",
         "name": "baño secretarias",
+        "ref": "baño",
+        "pref": "Aula 101, aula 102, aula 103",
+        "Descripcion": "",
         "toilets:disposal": "flush",
         "toilets:position": "seated",
         "wheelchair": "no"
@@ -776,8 +806,10 @@ var hqDat = {
         "@id": "way/1002786305",
         "indoor": "area",
         "level": "1",
+        "name": "jardinera",
+        "ref": "",
         "pref": "Auditorio, Corredor auditorio, Corredor principal",
-        "name": "jardinera"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -818,10 +850,10 @@ var hqDat = {
         "servicio1": "extraordinario",
         "servicio2": "titulo",
         "pref":"Entrada estacionamiento, Explanada",
-        "name": "caja",
-        "ref" : "pagos",
+        "name": "Caja",
+        "ref" : "caja",
+        "pref":"Entrada estacionamiento, Explanada",
         "Descripcion": "<b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
-  
       },
       "geometry": {
         "type": "Polygon",
@@ -858,8 +890,10 @@ var hqDat = {
         "@id": "way/1002786307",
         "indoor": "area",
         "level": "1",
-        "pref": "árbol",
-        "name": "árbol jardinera"
+        "name": "árbol jardinera",
+        "ref": "árbol",
+        "pref": "área libre, aula 103, aula 102, área secretarias,  corredor dirección ",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -896,14 +930,13 @@ var hqDat = {
         "@id": "way/1002786308",
         "servicio": "acceso",
         "servicio1": "entrada",
+        "servicio2":"recibidor",
         "indoor": "room",
         "level": "1",
         "name": "entrada principal",
         "ref": "entrada",
-        "servicio":"recibidor",
-        "Descripcion":"",
         "pref": "Enfermeria, Corredor principal, Escaleras principales",
-        "Descripcion": "<b> Descripción:</b> <b>Entrada principal al edificio A </b> "
+        "Descripcion": "<b> Descripción:</b> Entrada principal al edificio A"
       },
       "geometry": {
         "type": "Polygon",
