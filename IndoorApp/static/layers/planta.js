@@ -2178,10 +2178,12 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962836",
-        "servicio": "",
         "indoor": "room",
         "level": "1",
-        "name": ""
+        "name": "",
+        "ref":"",
+        "pref":"",
+        "Descripcion":""
       },
       "geometry": {
         "type": "Polygon",
@@ -2223,7 +2225,10 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "1",
-        "name": "baños"
+        "name": "Baños",
+        "ref":"baños",
+        "pref":"",
+        "Descripcion":""
       },
       "geometry": {
         "type": "Polygon",
@@ -2260,7 +2265,10 @@ var hqDat = {
         "@id": "way/1008962841",
         "indoor": "room",
         "level": "1",
-        "name": "aula 108"
+        "name": "aula 108",
+        "ref":"108",
+        "pref":"Auditorio, baños, aula 109",
+        "Descripcion":""
       },
       "geometry": {
         "type": "Polygon",
@@ -2296,7 +2304,12 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962842",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "extra": "area junto a direccion",
+        "name " :"",
+        "ref": "",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2337,8 +2350,13 @@ var hqDat = {
         "@id": "way/1008962843",
         "indoor": "room",
         "level": "1",
-        "name": "auditorio",
-        "pref":"Explanada, Escaleras, Baños"
+        "servicio": "conferencias",
+        "servicio1": "platicas",
+        "servicio2": "exposiciones",
+        "name": "Auditorio",
+        "ref": "auditorio",
+        "pref": "Explanada, aula 108, baños",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2384,7 +2402,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "aula 104",
+        "ref": "104",
         "pref": "Secretarias, Arbol, Baño de Secretarias",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2428,7 +2448,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962846",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name": "aula 109",
+        "ref": "109",
+        "pref": "aula 108, baños, área libre, baños",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2465,7 +2489,10 @@ var hqDat = {
         "@id": "way/1008962847",
         "indoor": "room",
         "level": "1",
-        "name": "enfermería"
+        "name": "Enfermería",
+        "ref": "enfermeria",
+        "pref": "entrada principal, cuato de fotocopias, corredor principal",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2503,10 +2530,11 @@ var hqDat = {
         "access": "yes",
         "indoor": "room",
         "level": "1",
+        "service": "escaleras",
         "name": "escaleras principales",
         "ref": "escpri1",
         "pref": "Recibidor entrada principal, corredor principal, Entrada biblioteca",
-        "service": "escaleras"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2542,7 +2570,11 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962850",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "name" : "baño privado",
+        "ref": "baño",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2578,13 +2610,15 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962851",
         "indoor": "room",
-        "pref": "Secretaria Académica de la FEI,Secretaria Académica de Economía y Corredor dirección ",
         "level": "1",
+        "personal":"Dr. Luis Gerardo Montané Jiménez",
         "servicio": "trámites",
         "servicio1": "director",
-        "ref": "dirección",
+        "servicio2": "director de la fei",
         "name":"Dirección de la FEI",
-        "Descripcion":" <b> Personal: Dr. Luis Gerardo Montané Jiménez </b>"
+        "ref": "dirección",
+        "pref": "Secretaria Académica de la FEI,Secretaria Académica de Economía y Corredor dirección ",
+        "Descripcion":" <b> Personal:</b> Dr. Luis Gerardo Montané Jiménez "
       },
       "geometry": {
         "type": "Polygon",
@@ -2624,7 +2658,12 @@ var hqDat = {
       "properties": {
         "@id": "way/1008962852",
         "indoor": "room",
-        "level": "1"
+        "level": "1",
+        "servicio": "secretaria académica economía",
+        "name": "Secretaría académica economía",
+        "ref": "secracec",
+        "pref": " Corredor Dirección, Secretaria académica FEI",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2665,7 +2704,10 @@ var hqDat = {
         "@id": "way/1008962853",
         "indoor": "area",
         "level": "1",
-        "name": "jardinera"
+        "name": "jardinera",
+        "ref": "jard1",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2702,9 +2744,11 @@ var hqDat = {
         "@id": "way/1008962855",
         "indoor": "room",
         "level": "1",
-        "name": "aula 101",
         "room": "indoor",
-        "pref":"Baños Secretarias, Escaleras CC"
+        "name": "aula 101",
+        "ref": "101",
+        "pref":"Baños Secretarias, Escaleras CC",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2783,8 +2827,11 @@ var hqDat = {
         "highway": "pedestrian",
         "indoor": "area",
         "level": "1",
-        "ref": "libre",
-        "name": "área libre"
+        "servicio": "libre",
+        "name": "área libre",
+        "ref": "areali",
+        "pref": "",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2821,8 +2868,10 @@ var hqDat = {
         "@id": "way/1008962858",
         "indoor": "area",
         "level": "1",
-        "name": "Jardinea",
-        "pref": "Arbol",
+        "name": "jardinera",
+        "ref": "jard2",
+        "pref": "árbol",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2859,7 +2908,9 @@ var hqDat = {
         "@id": "way/1008962859",
         "indoor": "room",
         "level": "1",
+        "servicio": "cubículo",
         "name":"Cubículo",
+        "ref": "cubi1",
         "pref": "",
         "Descripcion": ""
       },
@@ -2896,15 +2947,16 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962860",
-        "Descripcion": "Personal: MGC. Minerva Reyes Félix",
         "pe": "Minerva",
-        "servicio": "trámites",
-        "servicio1": "secretaria",
         "indoor": "room",
         "level": "1",
-        "name": "Secretaria académica de FEI",
+        "servicio": "trámites",
+        "servicio1": "secretaria",
+        "servicio2": "minerva",
+        "name": "Secretaria académica FEI",
         "ref": "secretaria académica",
-        "pref": "Dirección de la FEI, corredor dirección, área de sercretarias"
+        "pref": "Dirección de la FEI, corredor dirección, área de sercretarias",
+        "Descripcion": "Personal: MGC. Minerva Reyes Félix",
       },
       "geometry": {
         "type": "Polygon",
@@ -2943,13 +2995,13 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008962861",
-        "servicio": "trámites",
         "indoor": "room",
         "level": "1",
+        "servicio": "trámites",
         "name": "área de secretarias",
         "ref": "secretarias",
-        "Descripcion": "Descripción: Área donde se encuentran las secretarias de las licenciaturas de la Facultad de Estadística e Informática y de la Facultad de Economía<br> Trámites: <b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
-        "pref": "Biblioteca, Corredor principal, Aula 104, Área libre"
+        "pref": "Biblioteca, Corredor principal, Aula 104, Área libre",
+        "Descripcion": "<b>Descripción: </b> Área donde se encuentran las secretarias de las licenciaturas de la Facultad de Estadística e Informática y de la Facultad de Economía<br> Trámites: <b> Servicios:</b> Bajas definitivas  </br> • Bajas temporales </br>  • Certificado de estudios  </br> • Constancias • Cardex  </br>  • Certificación de documentos </br> Pagos de exámenes  </br> a) Exámenes extraordinarios  b) Exámenes a título  c) Exámenes de última oportunidad  ",
       },
       "geometry": {
         "type": "Polygon",
@@ -3008,8 +3060,10 @@ var hqDat = {
         "highway": "pedestrian",
         "indoor": "area",
         "level": "1",
+        "name": "área libre",
         "ref":"libre",
-        "name": "área libre"
+        "pref": "areali2",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -3044,6 +3098,8 @@ var hqDat = {
       },
       "id": "way/1008962862"
     },
+
+
     {
       "type": "Feature",
       "properties": {
@@ -3053,11 +3109,11 @@ var hqDat = {
         "servicio2": "imprimir",
         "servicio3": "control proyector",
         "area": "centro de cómputo",
-        "ref": "CC FEI",
-        "pref": "Aula 201, Baños, Escaleras derechas ",
         "indoor": "corridor",
         "level": "2",
         "name": "recibidor centro de cómputo",
+        "ref": "CC FEI",
+        "pref": "Aula 201, Baños, Escaleras derechas ",
         "Descripcion":"<b>Descripción:</b> Entrada del centro de cómṕuto.<br> <b>Servicios:</b> Acceso a salones, Préstamo de equiṕo, Impresiones, Préstamo de control de proyectores</b>"
       },
       "geometry": {
