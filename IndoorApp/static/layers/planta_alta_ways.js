@@ -952,8 +952,11 @@ var hqData2 = {
         "@id": "way/1008970370",
         "indoor": "corridor",
         "level": "2",
+        "servicio": "corredor",
+        "name": "corredor izquierdo economía",
+        "ref": "corrizqec",
+        "pref": "Corredor principal,corredor izquierda, aula 215, aula 2016",
         "Descripcion": "",
-        "name": "Corredor izquierdo economía"
       },
       "geometry": {
         "type": "Polygon",
@@ -998,11 +1001,11 @@ var hqData2 = {
         "@id": "way/1008970371",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Aula 216",
+        "room": "class",
+        "name": "aula 216",
         "ref": "216",
         "pref": "Corredor izquierdo, Aula 206, Aula 217",
-        "room": "class"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1039,10 +1042,12 @@ var hqData2 = {
         "@id": "way/1008970372",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "servicio": "site",
+        "room": "office",
         "name": "SITE",
         "ref": "CCsit",
-        "room": "office"
+        "pref": "centro de cómputo, aula de reparación y mantenimiento",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1085,14 +1090,13 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970373",
-        "alt_name": "Facultad de Estadística e Informática",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "class",
         "name": "Aula 202",
         "ref": "202",
         "pref": "Pasillo CC, Baños Damas ",
-        "room": "class"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1137,10 +1141,12 @@ var hqData2 = {
         "@id": "way/1008970374",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "office",
+        "servicio": "jefatura de geografía",
         "name": "Jefatura Geografía",
+        "ref": "jefage",
         "pref": "Corredor derecho, LINAE, Aula 204",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1177,9 +1183,11 @@ var hqData2 = {
         "@id": "way/1008970375",
         "indoor": "corridor",
         "level": "2",
+        "servicio": "corredor",
+        "name": "corredor derecho",
+        "ref": "Corrder",
+        "pref": "",
         "Descripcion": "",
-        "name": "Corredor derecho",
-        "ref": "Corrder"
       },
       "geometry": {
         "type": "Polygon",
@@ -1215,13 +1223,13 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970376",
         "indoor": "room",
-        "area": "Centro de cómputo economía",
         "level": "2",
-        "Descripcion": "",
-        "name": "Aula 220",
+        "room": "class",
+        "area": "centro de cómputo economía",
+        "name": "aula 220",
         "ref": "220",
-        "pref": "Recibidor CCE, Aula 214",
-        "room": "class"
+        "pref": "Recibidor CCE, Aula 2014",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1274,10 +1282,11 @@ var hqData2 = {
         "@id": "way/1008970377",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Bodega",
+        "room": "storage",
+        "name": "bodega",
         "ref": "CcBod",
-        "room": "storage"
+        "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1315,10 +1324,12 @@ var hqData2 = {
         "servicio":"estudio",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Cuarto biblioteca",
+        "room": "library",
+        "area": "biblioteca",
+        "name": "cuarto biblioteca",
         "ref": "cuabib",
-        "room": "library"
+        "pref": "",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1355,13 +1366,11 @@ var hqData2 = {
         "@id": "way/1008970379",
         "indoor": "room",
         "level": "2",
-        "servicio":"exposiciones",
-        "servicio1": "conferencia",
-        "Descripcion": "",
-        "name": "Salón de exposiciones",
-        "ref": "SALEXP",
+        "room": "conference",
+        "name": "salón de exposiciones",
+        "ref": "salexp",
         "pref":"Corredor principal, Escaleras principales, Aula 204",
-        "room": "conference"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1396,14 +1405,16 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970381",
-        "indoor": "room",
+        "area": "centro de cómputo economía",
         "level": "2",
-        "area": "Centro de cómputo economía",
+        "room": "office",
         "servicio": "prestamo equipo",
-        "Descripcion": "",
+        "servicio1": "recibidor cce",
+        "indoor": "room",
         "name": "Recibidor CCE",
+        "ref": "recicce",
         "pref": "Escaleras izquierdas, corredor izquierdo, Proyectos SIG",
-        "room": "office"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1441,11 +1452,12 @@ var hqData2 = {
         "servicio":"computo",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "laboratory",
+        "area": "centro de cómputo",
         "name": "CC2",
-        "ref": "2",
-        "pref": "Recibidor centro de cómputo, CC1, Recibidor centro de cómputo ",
-        "room": "laboratory"
+        "ref": "cc2",
+        "pref": "Centro de cómputo, CC1, Recibidor CC",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1480,13 +1492,15 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970383",
+        "servicio":"computo",
         "indoor": "room",
         "level": "2",
-        "Descripcion" : " <b>Descripción :</b> Aula para usar equipos de cómputo ",
-        "name": "CC1",
+        "area": "centro de cómputo",
+        "room": "class",
+        "name": "cc1",
         "ref": "1",
         "pref": "Centro de cómputo, Recibidor CC, CC2, Baños",
-        "room": "class"
+        "Descripcion" : " <b>Descripción :</b> Aula para usar equipos de cómputo "
       },
       "geometry": {
         "type": "Polygon",
@@ -1523,12 +1537,12 @@ var hqData2 = {
         "@id": "way/1008970384",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Escaleras principales",
-        "pref": "Salón de exposiciones, Corredor principal",
+        "room": "stairs",
         "servicio": "escaleras",
+        "name": "escaleras principales",
         "ref": "escpri2",
-        "room": "stairs"
+        "pref": "Salon de exposiciones, Corredor principal",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1567,10 +1581,12 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Baños",
+        "room": "toilet",
+        "servicio":"baños",
+        "name": "baños",
         "ref": "WCLE",
-        "room": "toilet"
+        "pref": "",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1611,13 +1627,13 @@ var hqData2 = {
         "@id": "way/1008970386",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "office",
         "servicio": "tutorias",
-        "name": "Coordinación tutorías",
+        "name": "coordinación tutorías",
         "area": "coordinacion tutorias",
+        "ref": "cortut1",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
-        "ref": "CorTut",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1654,12 +1670,12 @@ var hqData2 = {
         "@id": "way/1008970387",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Aula 204",
+        "room": "class",
+        "rooms": "aula",
+        "name": "aula 204",
         "ref": "204",
         "pref": "Corredor principal, corredor derecho, salón de exposiciones, LINAE",
-        "room": "class",
-        "rooms": "aula"
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1700,13 +1716,12 @@ var hqData2 = {
         "@id": "way/1008970388",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Escaleras derechas",
+        "room": "stairs",
         "servicio": "escaleras",
+        "name": "escaleras derechas",
         "pref": "Centro de cómputo CC, Baños",
-        "servicio1":"Escaleras",
         "ref": "escder2",
-        "room": "stairs"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1763,9 +1778,11 @@ var hqData2 = {
         "@id": "way/1008970389",
         "indoor": "corridor",
         "level": "2",
+        "servicio": "corredor",
+        "name": "corredor derecho cc",
+        "ref": "corrdercc",
+        "pref": "",
         "Descripcion": "",
-        "name": "Corredor derecho CC",
-        "ref": "Corrdercc"
       },
       "geometry": {
         "type": "Polygon",
@@ -1800,13 +1817,16 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970390",
+        "servicio": "prácticas",
+        "servicio1": "préstamo de equipo",
+        "Servicio2":"proyectos sig",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "laboratory",
         "name": "Proyectos SIG",
         "ref": "221",
         "pref": "Baños, recibidor CCE, corredor izquierdo",
-        "room": "laboratory"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1851,10 +1871,12 @@ var hqData2 = {
         "@id": "way/1008970391",
         "indoor": "room",
         "level": "2",
-        "name": "Biblioteca",
-        "Descripcion": "<b>Descripción:</b> La entrada se encuentra a lado de secretaria. <br> <b>Servicios:</b> Préstamos de libros<br> Constancia de no adeudo<br>Áreas de estudio",
-        "pref": "Corredor principal, Escaleras principales,",
-        "room": "library"
+        "room": "library",
+        "area": "biblioteca",
+        "name": "área de estudio",
+        "ref": "areaesl2",
+        "pref": "",
+        "Descripcion": "<b>Descripción: Área con mesas para el auto-estudio y leer, además de libreros.",
       },
       "geometry": {
         "type": "Polygon",
@@ -1903,11 +1925,11 @@ var hqData2 = {
         "@id": "way/1008970392",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Aula 207",
+        "room": "class",
+        "name": "aula 207",
         "ref": "207",
         "pref": "Laboratorio de electrónica, corredor izquierdo, aula 206",
-        "room": "class"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1944,12 +1966,13 @@ var hqData2 = {
         "@id": "way/1008970393",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Coordinación tutorías",
+        "room": "office",
         "area": "coordinacion tutorias",
-        "ref": "CorTut",
+        "servicio": "tutorias",
+        "name": "Coordinación tutorías",
+        "ref": "cortut2",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1986,10 +2009,11 @@ var hqData2 = {
         "@id": "way/1008970394",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "technical",
         "name": "Aula de reparación y mantenimiento",
         "ref": "Ccarm",
-        "room": "technical"
+        "pref": "centro de cómputo, CC4, Coordinación de tutorias",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2041,13 +2065,13 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970395",
         "indoor": "room",
-        "area": "Centro de cómputo economía",
+        "area": "centro de cómputo economía",
         "level": "2",
-        "Descripcion": "",
-        "name": "Aula 214",
+        "room": "class",
+        "name": "aula 214",
         "ref": "214",
         "pref": "Recibidor CCE, Aula 220, Escaleras izquierdas",
-        "room": "class"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2100,10 +2124,11 @@ var hqData2 = {
         "@id": "way/1008970396",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "storage",
         "name": "Bodega",
+        "ref": "",
         "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
-        "room": "storage"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
