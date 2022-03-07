@@ -3087,45 +3087,6 @@ var hqData = {
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1002786298",
-        "servicio": "trámites",
-        "level": "1",
-        "name": "Secretaria"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272474,
-            19.5414316
-          ],
-          [
-            -96.9272047,
-            19.541431
-          ],
-          [
-            -96.9272051,
-            19.5413888
-          ],
-          [
-            -96.927205,
-            19.5413802
-          ],
-          [
-            -96.9272485,
-            19.5413803
-          ],
-          [
-            -96.9272474,
-            19.5414316
-          ]
-        ]
-      },
-      "id": "way/1002786298"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/1002786300",
         "level": "1"
       },
@@ -3163,46 +3124,6 @@ var hqData = {
         ]
       },
       "id": "way/1002786300"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786312",
-        "level": "1",
-        "name": "Área de secretarias",
-        "ref": "secretarias",
-        "pref": "Biblioteca, Corredor principal, Aula 104, Área libre"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272471,
-            19.5414762
-          ],
-          [
-            -96.9272041,
-            19.5414762
-          ],
-          [
-            -96.9272047,
-            19.5414412
-          ],
-          [
-            -96.9272048,
-            19.5414327
-          ],
-          [
-            -96.9272475,
-            19.5414334
-          ],
-          [
-            -96.9272471,
-            19.5414762
-          ]
-        ]
-      },
-      "id": "way/1002786312"
     },
     {
       "type": "Feature",
