@@ -350,84 +350,6 @@ var hqDat = {
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1002786280",
-        "indoor": "area",
-        "level": "1",
-        "name": "pp7"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -96.9271849,
-              19.5410829
-            ],
-            [
-              -96.9271865,
-              19.5409925
-            ],
-            [
-              -96.9270739,
-              19.5409919
-            ],
-            [
-              -96.9270718,
-              19.5410829
-            ],
-            [
-              -96.9271849,
-              19.5410829
-            ]
-          ]
-        ]
-      },
-      "id": "way/1002786280"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786282",
-        "area": "1",
-        "indoor": "area",
-        "level": "1"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -96.9270667,
-              19.5415228
-            ],
-            [
-              -96.9271808,
-              19.5415237
-            ],
-            [
-              -96.9271808,
-              19.5414935
-            ],
-            [
-              -96.9271809,
-              19.5414303
-            ],
-            [
-              -96.9270685,
-              19.5414303
-            ],
-            [
-              -96.9270667,
-              19.5415228
-            ]
-          ]
-        ]
-      },
-      "id": "way/1002786282"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/1002786287",
         "indoor": "room",
         "level": "1",
@@ -5716,23 +5638,35 @@ var hqDat = {
       "@id": "way/1024801",
         "amenity": "parking",
         "name": "estacionamiento",
+        "ref": "esta",
+        "pref": "cafetería, edificio b, cancha ",
+        "Descripcion": "",
         "leisure": null,
-        "level": 0 },
-      "geometry": { "type": "Polygon",
-        "coordinates": [ [ [ -96.9275505, 19.5417343 ],
+        "level": 0
+      },
+      "geometry": {
+      "type": "Polygon",
+        "coordinates": [[
+            [ -96.9275505, 19.5417343 ],
           [ -96.9275473, 19.5416359 ],
           [ -96.9270206, 19.5416395 ],
           [ -96.9270171, 19.5417406 ],
           [ -96.9275505, 19.5417343 ]
         ] ] }
     },
-    { "type": "Feature", "properties": {
+    { "type": "Feature",
+      "properties": {
       "@id": "way/102478",
         "name": "cancha",
+        "ref":"canc",
+        "pref": "estacionamiento, edificio b, área verde",
+        "Descripcion": "",
         "sport": "basketball",
         "leisure": "pitch",
-        "level": "0" },
-      "geometry": { "type": "Polygon",
+        "level": "0"
+      },
+      "geometry": {
+      "type": "Polygon",
         "coordinates": [ [ [ -96.9272647, 19.5420441 ],
           [ -96.9272635, 19.5417457 ],
           [ -96.9270183, 19.5417507 ],
@@ -5745,6 +5679,9 @@ var hqDat = {
       "@id": "way/102479",
         "building": "university",
         "name": "edificio b",
+        "ref": "edif",
+        "pref": "cafetería, estacionamiento, área verde",
+        "Descripcion": "",
         "indoor": "Room",
         "level": "0" },
       "geometry": { "type": "Polygon",
