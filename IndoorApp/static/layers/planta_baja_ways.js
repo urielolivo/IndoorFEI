@@ -349,7 +349,8 @@ var hqData = {
         "@id": "way/1002786280",
         "name": "Prueba2",
         "indoor": "area",
-        "level": "1"
+        "level": "1",
+        "name": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1707,8 +1708,10 @@ var hqData = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "Escaleras izquierdas",
-        "ref":"escaizql1",
+        "servicio": "escaleras izquierdas",
+        "servicio1": "escaleras",
+        "name": "escaleras cce",
+        "ref": "escaizql1",
         "pref": "Auditorio, Baños, Jardinera",
         "Descripcion": ""
       },
@@ -2120,8 +2123,8 @@ var hqData = {
         "@id": "way/1008962835",
         "indoor": "corridor",
         "level": "1",
-        "name": "corredor dirección",
-        "ref": "",
+        "name": "Corredor dirección",
+        "ref": "corrdi",
         "pref": "",
         "Descripcion": ""
       },

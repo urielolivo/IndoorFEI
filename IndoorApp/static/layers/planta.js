@@ -352,7 +352,8 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786280",
         "indoor": "area",
-        "level": "1"
+        "level": "1",
+        "name": "pp7"
       },
       "geometry": {
         "type": "Polygon",
@@ -1714,9 +1715,10 @@ var hqDat = {
         "@id": "way/1008962828",
         "indoor": "room",
         "level": "1",
-        "name": "escaleras izquierdas",
+        "servicio": "escaleras izquierdas",
+        "servicio1": "escaleras",
+        "name": "escaleras cce",
         "ref": "escaizql1",
-        "servicio": "escaleras",
         "pref": "Auditorio, Baños, Jardinera",
         "Descripcion": ""
       },
@@ -2133,7 +2135,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "1",
         "name": "corredor dirección",
-        "ref": "",
+        "ref": "corrdi",
         "pref": "",
         "Descripcion": ""
       },
@@ -4812,7 +4814,8 @@ var hqDat = {
         "level": "2",
         "room": "stairs",
         "servicio": "escaleras",
-        "name": "escaleras derechas",
+        "servicio1": "escaleras derechas",
+        "name": "escaleras cc",
         "pref": "Centro de cómputo CC, Baños",
         "ref": "escder2",
         "Descripcion": "",
@@ -4970,7 +4973,7 @@ var hqDat = {
         "name": "área de estudio",
         "ref": "areaesl2",
         "pref": "",
-        "Descripcion": "<b>Descripción: Área con mesas para el auto-estudio y leer, además de libreros.",
+        "Descripcion": "<b>Descripción:</b> Área con mesas para el auto-estudio y leer, además de libreros.",
       },
       "geometry": {
         "type": "Polygon",
@@ -5218,10 +5221,11 @@ var hqDat = {
         "@id": "way/1008970396",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "storage",
         "name": "bodega",
+        "ref": "bode2",
         "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
-        "room": "storage"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5256,15 +5260,15 @@ var hqDat = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970397",
-        "servicio": "practicas",
-        "servicio2": "prestamo de equipo",
+        "servicio": "prácticas",
+        "servicio2": "préstamo de equipo",
         "indoor": "room",
         "level": "2",
+        "room": "laboratory",
         "name": "laboratorio de electrónica",
         "ref": "208",
-        "room": "laboratory",
+        "pref": "Corredor izquierdo CCE, Aula 207",
         "Descripcion": "<b>Descripción :</b> Área para realizar prácticas de electrónica  ",
-        "pref": "Corredor izquierdo CCE, Aula 207"
       },
       "geometry": {
         "type": "Polygon",
@@ -5309,10 +5313,11 @@ var hqDat = {
         "@id": "way/1008970398",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "library",
         "name": "cuarto biblioteca",
-        "ref": "cuabib",
-        "room": "library"
+        "ref": "cuabib2",
+        "pref": "",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5349,12 +5354,13 @@ var hqDat = {
         "@id": "way/1008970400",
         "indoor": "room",
         "level": "2",
-        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
         "servicio":"laboratorio de investigación y asesoría estadística",
+        "servicio1": "linae",
+        "room": "laboratory",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
         "ref": "LINAE",
         "pref":"Corredor derecho, Aula 203, Jefatura de geografía",
-        "room": "laboratory"
+        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
       },
       "geometry": {
         "type": "Polygon",
@@ -5391,11 +5397,11 @@ var hqDat = {
         "@id": "way/1008970401",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "office",
         "name": "cubículos geografía",
         "ref": "CubGeo",
         "pref": "Corredor derecho, Jefatura de geografía",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5434,11 +5440,12 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "toilet",
         "servicio": "baños",
         "name": "baños",
-        "ref": "WCCC",
-        "room": "toilet"
+        "ref": "wccc",
+        "pref": "",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5475,12 +5482,12 @@ var hqDat = {
         "@id": "way/1008970403",
         "indoor": "room",
         "level": "2",
-        "servicio": "Escaleras",
-        "servicio1":"escaleras",
+        "servicio":"escaleras",
+        "rooms": "stairs",
         "name": "Escaleras izquierdas",
         "ref": "escizq2",
         "pref":"corredor izquierdo CCE ,baño, aula 209",
-        "rooms": "stairs"
+        "Descripcion": "corredor izquierdo cce, centro de cómputo cce, baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -5535,11 +5542,12 @@ var hqDat = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "toilet",
         "servicio":"baños",
         "name": "baños",
-        "ref": "WCECO",
-        "room": "toilet"
+        "ref": "wceco",
+        "pref": "",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5581,10 +5589,11 @@ var hqDat = {
         "servicio": "técnicos",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "Personal: Dr. José Luis Soto",
+        "room": "technical",
         "name": "jefatura de centro de cómputo",
         "ref": "JefCc",
-        "room": "technical"
+        "pref": "centro de computo, aula de reparación y mantenimiento, SITE",
+        "Descripcion": "<b>Personal:</b> Dr. José Luis Soto",
       },
       "geometry": {
         "type": "Polygon",
@@ -5625,11 +5634,11 @@ var hqDat = {
         "@id": "way/1008970406",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "class",
         "name": "aula 206",
         "ref": "206",
         "pref": "corredor izquierdo, Aula 207, Aula 216",
-        "room": "class"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5666,13 +5675,13 @@ var hqDat = {
         "@id": "way/1008970407",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "office",
         "servicio": "tutorias",
-        "name": "coordinación tutorías",
         "area": "coordinacion tutorias",
-        "ref": "CorTut",
+        "name": "coordinación tutorías",
+        "ref": "ccortut3",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5702,287 +5711,6 @@ var hqDat = {
         ]
       },
       "id": "way/1008970407"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786273",
-        "level": "1",
-        "name": "escaleras"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9271043,
-            19.5413302
-          ],
-          [
-            -96.9270797,
-            19.5413275
-          ],
-          [
-            -96.9270774,
-            19.5411914
-          ],
-          [
-            -96.9271036,
-            19.5411916
-          ],
-          [
-            -96.9271043,
-            19.5413302
-          ]
-        ]
-      },
-      "id": "way/1002786273"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786286",
-        "level": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272464,
-            19.5415257
-          ],
-          [
-            -96.9272036,
-            19.5415254
-          ],
-          [
-            -96.9272038,
-            19.5414855
-          ],
-          [
-            -96.9272037,
-            19.5414778
-          ],
-          [
-            -96.9272467,
-            19.541478
-          ],
-          [
-            -96.9272464,
-            19.5415257
-          ]
-        ]
-      },
-      "id": "way/1002786286"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786298",
-        "servicio": "trámites",
-        "servicio1":"director",
-        "level": "1",
-        "ref": "dirección",
-       "name": "Dirección de FEI",
-       "Descripcion": "</br>  <b> Personal: </b> Dr. Luis Gerardo Montané Jiménez",
-        "pref": "Secretaria Académica  de la FEI </br> Secretaria Académica de Economía ",
-
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272474,
-            19.5414316
-          ],
-          [
-            -96.9272047,
-            19.541431
-          ],
-          [
-            -96.9272051,
-            19.5413888
-          ],
-          [
-            -96.927205,
-            19.5413802
-          ],
-          [
-            -96.9272485,
-            19.5413803
-          ],
-          [
-            -96.9272474,
-            19.5414316
-          ]
-        ]
-      },
-      "id": "way/1002786298"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786300",
-        "level": "1",
-        "servicio": "corredor",
-        "name": "corredor de dirección",
-        "pref": "Mine"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            -96.9271985,
-            19.5415278
-          ],
-          [
-            -96.9272015,
-            19.5415248
-          ],
-          [
-            -96.9272032,
-            19.5413381
-          ],
-          [
-            -96.9271859,
-            19.5413376
-          ],
-          [
-            -96.9271836,
-            19.541525
-          ],
-          [
-            -96.9271887,
-            19.541528
-          ],
-          [
-            -96.9271985,
-            19.5415278
-          ]
-        ]
-      },
-      "id": "way/1002786300"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1002786312",
-        "servicio": "trámites",
-        "level": "1",
-        "name": "secretaría académica economía",
-        "pref": " Corredor Dirección, Secretaria académica FEI",
-        "Descripcion": ""
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272471,
-            19.5414762
-          ],
-          [
-            -96.9272041,
-            19.5414762
-          ],
-          [
-            -96.9272047,
-            19.5414412
-          ],
-          [
-            -96.9272048,
-            19.5414327
-          ],
-          [
-            -96.9272475,
-            19.5414334
-          ],
-          [
-            -96.9272471,
-            19.5414762
-          ]
-        ]
-      },
-      "id": "way/1002786312"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008962837",
-        "access": "yes",
-        "highway": "steps",
-        "level": "1",
-        "name": "escaleras cc",
-        "service": "escaleras",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9271795,
-            19.5414951
-          ],
-          [
-            -96.9271695,
-            19.5414961
-          ],
-          [
-            -96.9271593,
-            19.5415018
-          ],
-          [
-            -96.9271509,
-            19.5415093
-          ],
-          [
-            -96.9271493,
-            19.5415197
-          ],
-          [
-            -96.9271503,
-            19.5415241
-          ],
-          [
-            -96.9271795,
-            19.5415243
-          ],
-          [
-            -96.9271795,
-            19.5414951
-          ]
-        ]
-      },
-      "id": "way/1008962837"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008970354",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272575,
-            19.5409573
-          ],
-          [
-            -96.9273279,
-            19.5409583
-          ],
-          [
-            -96.9273279,
-            19.5409021
-          ],
-          [
-            -96.9272585,
-            19.5409008
-          ],
-          [
-            -96.9272575,
-            19.5409573
-          ]
-        ]
-      },
-      "id": "way/1008970354"
     },
     { "type": "Feature", "properties": {
       "@id": "way/1024801",
@@ -6025,71 +5753,6 @@ var hqDat = {
             [ -96.9272735, 19.5417494 ],
             [ -96.9272771, 19.5420333 ],
             [ -96.9274008, 19.542036 ] ] ] }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008970365",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272502,
-            19.541545
-          ],
-          [
-            -96.9272508,
-            19.5415193
-          ],
-          [
-            -96.9273196,
-            19.5415195
-          ],
-          [
-            -96.9273199,
-            19.5415454
-          ],
-          [
-            -96.9272502,
-            19.541545
-          ]
-        ]
-      },
-      "id": "way/1008970365"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008970380",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272487,
-            19.5416004
-          ],
-          [
-            -96.9272502,
-            19.541545
-          ],
-          [
-            -96.9273199,
-            19.5415454
-          ],
-          [
-            -96.9273192,
-            19.541601
-          ],
-          [
-            -96.9272487,
-            19.5416004
-          ]
-        ]
-      },
-      "id": "way/1008970380"
     }
   ]
 }

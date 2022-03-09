@@ -1718,7 +1718,8 @@ var hqData2 = {
         "level": "2",
         "room": "stairs",
         "servicio": "escaleras",
-        "name": "escaleras derechas",
+        "servicio1": "escaleras derechas",
+        "name": "escaleras cc",
         "pref": "Centro de cómputo CC, Baños",
         "ref": "escder2",
         "Descripcion": "",
@@ -1876,7 +1877,7 @@ var hqData2 = {
         "name": "área de estudio",
         "ref": "areaesl2",
         "pref": "",
-        "Descripcion": "<b>Descripción: Área con mesas para el auto-estudio y leer, además de libreros.",
+        "Descripcion": "<b>Descripción:</b> Área con mesas para el auto-estudio y leer, además de libreros.",
       },
       "geometry": {
         "type": "Polygon",
@@ -2126,7 +2127,7 @@ var hqData2 = {
         "level": "2",
         "room": "storage",
         "name": "Bodega",
-        "ref": "",
+        "ref": "bode2",
         "pref": "Aula de reparación y manteniento, Centro de cómṕuto",
         "Descripcion": "",
       },
@@ -2163,15 +2164,15 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970397",
+        "servicio": "prácticas",
+        "servicio2": "préstamo de equipo",
         "indoor": "room",
         "level": "2",
-        "servicio": "practicas",
-        "servicio2": "prestamo de equipo",
-        "name": "Laboratorio electrónica",
+        "room": "laboratory",
+        "name": "laboratorio de electrónica",
         "ref": "208",
-        "Descripcion": "<b>Descripción :</b> Área para realizar prácticas de electrónica  ",
         "pref": "Corredor izquierdo CCE, Aula 207",
-        "room": "laboratory"
+        "Descripcion": "<b>Descripción :</b> Área para realizar prácticas de electrónica  ",
       },
       "geometry": {
         "type": "Polygon",
@@ -2214,13 +2215,13 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970398",
-        "servicio":"estudio",
         "indoor": "room",
         "level": "2",
+        "room": "library",
+        "name": "cuarto biblioteca",
+        "ref": "cuabib2",
+        "pref": "",
         "Descripcion": "",
-        "name": "Cuarto biblioteca",
-        "ref": "cuabib",
-        "room": "library"
       },
       "geometry": {
         "type": "Polygon",
@@ -2255,13 +2256,15 @@ var hqData2 = {
       "type": "Feature",
       "properties": {
         "@id": "way/1008970400",
-        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
         "indoor": "room",
         "level": "2",
+        "servicio":"laboratorio de investigación y asesoría estadística",
+        "servicio1": "linae",
+        "room": "laboratory",
         "name": "Laboratorio de Investigación y Asesoría Estadística",
         "ref": "LINAE",
         "pref":"Corredor derecho, Aula 203, Jefatura de geografía",
-        "room": "laboratory"
+        "Descripcion":"Personal:  L. E. Miguel Alonso López,Mtra. María de Lourdes Velasco Vázquez </br> Página: https://www.uv.mx/linae/",
       },
       "geometry": {
         "type": "Polygon",
@@ -2298,11 +2301,11 @@ var hqData2 = {
         "@id": "way/1008970401",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Cubículos geografía",
+        "room": "office",
+        "name": "cubículos geografía",
         "ref": "CubGeo",
         "pref": "Corredor derecho, Jefatura de geografía",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2341,10 +2344,12 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
+        "room": "toilet",
+        "servicio": "baños",
+        "name": "baños",
+        "ref": "wccc",
+        "pref": "",
         "Descripcion": "",
-        "name": "Baños",
-        "ref": "WCCC",
-        "room": "toilet"
       },
       "geometry": {
         "type": "Polygon",
@@ -2381,13 +2386,12 @@ var hqData2 = {
         "@id": "way/1008970403",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "servicio":"escaleras",
+        "rooms": "stairs",
         "name": "Escaleras izquierdas",
-        "ref": "sizq2",
-        "servicio": "Escaleras",
-        "servicio1":"escaleras",
+        "ref": "escizq2",
         "pref":"corredor izquierdo CCE ,baño, aula 209",
-        "rooms": "stairs"
+        "Descripcion": "corredor izquierdo cce, centro de cómputo cce, baños"
       },
       "geometry": {
         "type": "Polygon",
@@ -2442,10 +2446,11 @@ var hqData2 = {
         "amenity": "toilets",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
+        "room": "toilet",
         "name": "Baños",
         "ref": "WCECO",
-        "room": "toilet"
+        "pref": "",
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2485,12 +2490,13 @@ var hqData2 = {
       "properties": {
         "@id": "way/1008970405",
         "servicio": "técnicos",
-        "Descripcion": "Personal: Dr. José Luis Soto",
         "indoor": "room",
         "level": "2",
-        "name": "Jefatura de Centro de cómputo",
+        "room": "technical",
+        "name": "jefatura de centro de cómputo",
         "ref": "JefCc",
-        "room": "technical"
+        "pref": "centro de computo, aula de reparación y mantenimiento, SITE",
+        "Descripcion": "<b>Personal:</b> Dr. José Luis Soto",
       },
       "geometry": {
         "type": "Polygon",
@@ -2531,11 +2537,11 @@ var hqData2 = {
         "@id": "way/1008970406",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Aula 206",
+        "room": "class",
+        "name": "aula 206",
         "ref": "206",
         "pref": "corredor izquierdo, Aula 207, Aula 216",
-        "room": "class"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2572,12 +2578,13 @@ var hqData2 = {
         "@id": "way/1008970407",
         "indoor": "room",
         "level": "2",
-        "Descripcion": "",
-        "name": "Coordinación tutorías",
+        "room": "office",
+        "servicio": "tutorias",
         "area": "coordinacion tutorias",
-        "ref": "CorTut",
+        "name": "coordinación tutorías",
+        "ref": "ccortut3",
         "pref": "Centro de cómputo, Aula de reparación y mantenimiento, CC4",
-        "room": "office"
+        "Descripcion": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2607,106 +2614,6 @@ var hqData2 = {
         ]
       },
       "id": "way/1008970407"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008970354",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272575,
-            19.5409573
-          ],
-          [
-            -96.9273279,
-            19.5409583
-          ],
-          [
-            -96.9273279,
-            19.5409021
-          ],
-          [
-            -96.9272585,
-            19.5409008
-          ],
-          [
-            -96.9272575,
-            19.5409573
-          ]
-        ]
-      },
-      "id": "way/1008970354"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008970365",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272502,
-            19.541545
-          ],
-          [
-            -96.9272508,
-            19.5415193
-          ],
-          [
-            -96.9272506,
-            19.5415194
-          ],
-          [
-            -96.9273196,
-            19.5415195
-          ],
-          [
-            -96.9273199,
-            19.5415454
-          ],
-          [
-            -96.9272502,
-            19.541545
-          ]
-        ]
-      },
-      "id": "way/1008970365"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008970380",
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -96.9272487,
-            19.5416004
-          ],
-          [
-            -96.9272502,
-            19.541545
-          ],
-          [
-            -96.9273199,
-            19.5415454
-          ],
-          [
-            -96.9273192,
-            19.541601
-          ],
-          [
-            -96.9272487,
-            19.5416004
-          ]
-        ]
-      },
-      "id": "way/1008970380"
     }
   ]
 }
