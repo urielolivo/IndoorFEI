@@ -627,6 +627,55 @@ var hqDat = {
     {
       "type": "Feature",
       "properties": {
+        "@id": "way/1008962837",
+        "access": "yes",
+        "highway": "steps",
+        "level": "1",
+        "name": "Escaleras CC",
+        "service": "escaleras",
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -96.9271795,
+            19.5414951
+          ],
+          [
+            -96.9271695,
+            19.5414961
+          ],
+          [
+            -96.9271593,
+            19.5415018
+          ],
+          [
+            -96.9271509,
+            19.5415093
+          ],
+          [
+            -96.9271493,
+            19.5415197
+          ],
+          [
+            -96.9271503,
+            19.5415241
+          ],
+          [
+            -96.9271795,
+            19.5415243
+          ],
+          [
+            -96.9271795,
+            19.5414951
+          ]
+        ]
+      },
+      "id": "way/1008962837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "way/1002786302",
         "level": "1",
         "name": "bosque auditorio",
@@ -639,6 +688,7 @@ var hqDat = {
         "type": "Polygon",
         "coordinates": [
           [
+
             [
               -96.9273398,
               19.5411297
@@ -1177,7 +1227,7 @@ var hqDat = {
         "level": "1",
         "name": "baño privado",
         "ref": "baño",
-        "pref": "",
+        "pref": "entrada principal, aula 104",
         "Descripcion":"",
       },
       "geometry": {
@@ -1932,47 +1982,6 @@ var hqDat = {
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1008962831",
-        "indoor": "room",
-        "level": "1",
-        "extra": "area de baño extra"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -96.9271804,
-              19.5415653
-            ],
-            [
-              -96.9271806,
-              19.5415547
-            ],
-            [
-              -96.9271663,
-              19.5415548
-            ],
-            [
-              -96.9271619,
-              19.5415578
-            ],
-            [
-              -96.9271622,
-              19.5415653
-            ],
-            [
-              -96.9271804,
-              19.5415653
-            ]
-          ]
-        ]
-      },
-      "id": "way/1008962831"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/1008962832",
         "indoor": "room",
         "level": "1",
@@ -2497,24 +2506,29 @@ var hqDat = {
         "level": "1",
         "name" : "baño privado",
         "ref": "baño",
-        "pref": "",
-        "Descripcion": ""
+        "pref": "Dirección de economía, salón maestría",
+        "Descripcion": "",
+        "extra": "baño privado  por direccion economia mas grande"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              -96.9271802,
-              19.5415979
+              [
+              -96.9271804,
+              19.5415653
             ],
             [
-              -96.92718,
-              19.5415678
+              -96.9271806,
+              19.5415547
             ],
             [
-              -96.9271611,
-              19.5415678
+              -96.9271663,
+              19.5415548
+            ],
+            [
+              -96.9271619,
+              19.5415578
             ],
             [
               -96.9271616,
