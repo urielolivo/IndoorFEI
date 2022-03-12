@@ -69,17 +69,15 @@ let googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z=
 });
 
 
-var nivel3 = L.geoJSON(hqData, {
+var nivel1 = L.geoJSON(hqData, {
       style: function () {
                 return {color: "#154F72"};
               },
    onEachFeature: function (feature, layer) {
 
-
        layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p>'+feature.properties.Descripcion+'</p>' + '</p><p> Punto Cercanos : '+ feature.properties.pref  + "</dd>");
  }
 })
-
 
 
 //var marker = L.markerClusterGroup();
@@ -87,23 +85,19 @@ var nivel22 = L.geoJSON(hqData2, {
     style: function (feature) {
               return {color: "#16B1C7"};
             },
-
   onEachFeature: function (feature, layer) {
-
-
 
       layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p></p> '+feature.properties.Descripcion+'</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
  }
 })
 
-
 var nivel00 = L.geoJSON(hqdatab, {
     style: function (feature) {
               return {color: "#16B1C7"};
             },
-
   onEachFeature: function (feature, layer) {
-      layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p></p> '+feature.properties.Descripcion+'</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
+
+        layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Nivel: '+feature.properties.level+'</p><p></p> '+feature.properties.Descripcion+'</p><p> Punto Cercanos : '+ feature.properties.pref + "</dd>");
  }
 })
 nivel00.addTo(map);
@@ -131,7 +125,7 @@ var baseMaps ={
 
 var niveles = {
     "Nivel 0": nivel00,
-	"Nivel 1" : nivel3,
+	"Nivel 1" : nivel1,
     "Nivel 2": nivel22,
 
 }
@@ -186,7 +180,7 @@ function estilo_puntos (feature) {
 
 
 function popup_puntos (feature, layer) {
-	document.getElementById("menu-bar").checked = true;
+    document.getElementById("menu-bar").checked = true;
 	document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
 		"<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
 		"</td></tr><tr><td> <b> Nivel <b/>: "+feature.properties.level+
@@ -210,7 +204,7 @@ var MarkerOptions = {
 
 
 function myFunction() {
-	var puntos = L.geoJSON(hqDat, {
+    var puntos = L.geoJSON(hqDat, {
 		pointToLayer: function (feature, latlng) {
 		return L.circleMarker(latlng, MarkerOptions);
 		},
@@ -221,9 +215,8 @@ function myFunction() {
 
 
 
-
-
-$("#nombres").keypress(function(event) {                    if (event.keyCode === 13) {
+$("#nombres").keypress(function(event) {
+    if (event.keyCode === 13) {
             $("#buscar").click();
         }
 });
@@ -237,10 +230,10 @@ $("#buscar").click(function(){
 	if (miSelect == ""){
       swal.fire({
       title: 'Error!',
-       text: 'el contenido no puede ir vacio.',
-        imageUrl:'https://c.tenor.com/wJIKa8hqsacAAAAC/cxyduck-cxydck.gif',     
-         imageWidth: 200,
-  imageHeight: 200,
+          text: 'el contenido no puede ir vacio.',
+          imageUrl:'https://c.tenor.com/wJIKa8hqsacAAAAC/cxyduck-cxydck.gif',
+          imageWidth: 200,
+          imageHeight: 200,
       })
 
 	}
