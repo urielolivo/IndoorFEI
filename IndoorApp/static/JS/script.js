@@ -164,6 +164,8 @@ function colorPuntos(d) {
 };
 
 
+
+
 function estilo_puntos (feature) {
 	return{
 		radius: 7,
@@ -176,7 +178,10 @@ function estilo_puntos (feature) {
 };
 
 
-	
+
+
+
+
 
 
 function popup_puntos (feature, layer) {
@@ -222,6 +227,11 @@ $("#nombres").keypress(function(event) {
 });
    
 
+
+$("#close").click(function(){
+     document.getElementById("menu-bar").checked = false;
+	      
+})
 
 
 $("#buscar").click(function(){
