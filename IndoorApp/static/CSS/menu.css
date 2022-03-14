@@ -73,3 +73,10 @@ header label {
     display:block;
     z-index:2;
 }
+
+#close {
+
+    position: absolute;
+    right: 0px;
+    float: right;
+}
