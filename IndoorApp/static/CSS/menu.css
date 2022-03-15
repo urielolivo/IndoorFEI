@@ -13,10 +13,13 @@
 }
 
 header label {
-    float: right;
+    float: left;
     font-size: 60%;
-    margin: 6px 0;
+    margin: 20px 0;
+    height: 25%;
+    width: 25%;
     cursor: pointer;
+    margin-top: 3%;
 } 
 
 

@@ -185,6 +185,7 @@ function estilo_puntos (feature) {
 
 
 function popup_puntos (feature, layer) {
+    ///activa la ventanda de informacion
     document.getElementById("menu-bar").checked = true;
 	document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
 		"<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
@@ -227,7 +228,7 @@ $("#nombres").keypress(function(event) {
 });
    
 
-
+///cerrar ventana de información de busqueda
 $("#close").click(function(){
      document.getElementById("menu-bar").checked = false;
 	      
