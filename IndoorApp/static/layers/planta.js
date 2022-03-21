@@ -2560,6 +2560,7 @@ var hqDat = {
         "servicio2": "director de la fei",
         "name":"Dirección de la FEI",
         "ref": "dirección",
+        "namesn" : "direccion",
         "pref": "Secretaria Académica de la FEI,Secretaria Académica de Economía y Corredor dirección ",
         "Descripcion":" <b> Personal:</b> Dr. Luis Gerardo Montané Jiménez "
       },
