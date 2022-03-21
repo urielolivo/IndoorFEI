@@ -517,11 +517,13 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786294",
         "servicio": "trámites",
+         "serviciosn":"reposicion",
         "servicio1": "reposición",
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
         "name": "área de secretarias",
+        "namesn": "tramites",
         "ref": "secretarias",
         "pref": "Biblioteca, aula 104, área libre",
         "Descripcion": ""
@@ -1396,6 +1398,7 @@ var hqDat = {
         "level": "1",
         "area": "economía",
         "name": "dirección economía",
+        "namesn":"direccion economia",
         "ref": "direeco",
         "pref": "Baño privado, Corredor dirección, Salón maestría",
         "Descripcion:": ""
@@ -1648,6 +1651,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "salón de maestría",
+        "namesn":"maestria",
         "ref": "maestría",
         "pref":"baño privado, área libre, aula 101",
         "Descripcion": ""
@@ -1986,6 +1990,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "dirección economía",
+        "namesn":"direccion economia",
         "ref": "direecon",
         "pref": "Baño privado, Corredor dirección, Salón maestría",
         "Descripcion": ""
