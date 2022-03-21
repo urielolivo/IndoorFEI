@@ -164,8 +164,6 @@ function colorPuntos(d) {
 };
 
 
-
-
 function estilo_puntos (feature) {
 	return{
 		radius: 7,
@@ -176,12 +174,6 @@ function estilo_puntos (feature) {
 		fillOpacity : 0.5
 	};
 };
-
-
-
-
-
-
 
 
 function popup_puntos (feature, layer) {
@@ -242,7 +234,6 @@ $("#buscar").click(function(){
       swal.fire({
       title: 'Error!',
           text: 'el contenido no puede ir vacio.',
-          imageUrl:'https://c.tenor.com/wJIKa8hqsacAAAAC/cxyduck-cxydck.gif',
           imageWidth: 200,
           imageHeight: 200,
       })
@@ -257,7 +248,7 @@ $("#buscar").click(function(){
 			if(miSelect != "TODOS"){
 				var x = feature.properties.name == miSelect;
          let result = miSelect.toString().toLowerCase();;
-				return (feature.properties.area == result || feature.properties.name == result || feature.properties.pe == result || feature.properties.ref == result || feature.properties.servicio == result  || feature.properties.personal == result || feature.properties.servicio1 == result || feature.properties.servicio2 == result);
+				return (feature.properties.namesn == result || feature.properties.area == result || feature.properties.name == result || feature.properties.pe == result || feature.properties.ref == result || feature.properties.servicio == result  || feature.properties.personal == result || feature.properties.servicio1 == result || feature.properties.servicio2 == result);
 				//
 			}	else
 				return true;
