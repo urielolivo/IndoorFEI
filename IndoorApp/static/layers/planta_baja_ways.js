@@ -390,7 +390,7 @@ var hqData = {
         "indoor": "corridor",
         "level": "1",
         "name": "corredor auditorio",
-        "ref": "",
+        "ref": "corrau",
         "pref":"Auditorio, Baños, Aula 108",
         "Descripcion": ""
       },
@@ -725,7 +725,7 @@ var hqData = {
         "indoor": "area",
         "level": "1",
         "name": "jardinera",
-        "ref": "",
+        "ref": "jard1",
         "pref": "Auditorio, Corredor auditorio, Corredor principal",
         "Descripcion": ""
       },

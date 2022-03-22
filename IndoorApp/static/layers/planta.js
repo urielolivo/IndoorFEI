@@ -306,9 +306,9 @@ var hqDat = {
         "servicio2": "exposiciones",
         "level": "1",
         "name": "auditorio",
-        "ref":"",
-        "Descripcion": "",
-        "pref": "Explanada, Aula 108, Baños."
+        "ref": "auditorio",
+        "pref": "Explanada, aula 108, baños",
+        "Descripcion": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -394,7 +394,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "1",
         "name": "corredor auditorio",
-        "ref": "",
+        "ref": "corrau",
         "pref":"Auditorio, Baños, Aula 108",
         "Descripcion": ""
       },
@@ -782,7 +782,7 @@ var hqDat = {
         "indoor": "area",
         "level": "1",
         "name": "jardinera",
-        "ref": "",
+        "ref": "jard1",
         "pref": "Auditorio, Corredor auditorio, Corredor principal",
         "Descripcion": ""
       },
@@ -2111,50 +2111,6 @@ var hqDat = {
         ]
       },
       "id": "way/1008962835"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1008962836",
-        "indoor": "room",
-        "level": "1",
-        "name": "",
-        "ref":"",
-        "pref":"",
-        "Descripcion":""
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -96.9273134,
-              19.5415566
-            ],
-            [
-              -96.9272869,
-              19.5415561
-            ],
-            [
-              -96.9272497,
-              19.5415555
-            ],
-            [
-              -96.9272493,
-              19.5416076
-            ],
-            [
-              -96.9273126,
-              19.5416081
-            ],
-            [
-              -96.9273134,
-              19.5415566
-            ]
-          ]
-        ]
-      },
-      "id": "way/1008962836"
     },
     {
       "type": "Feature",

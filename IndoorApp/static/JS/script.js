@@ -233,7 +233,7 @@ $("#buscar").click(function(){
 	if (miSelect == ""){
       swal.fire({
       title: 'Error!',
-          text: 'el contenido no puede ir vacio.',
+          text: 'El contenido no puede ir vacío.',
           imageWidth: 200,
           imageHeight: 200,
       })
