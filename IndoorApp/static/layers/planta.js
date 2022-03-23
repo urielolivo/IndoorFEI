@@ -305,7 +305,7 @@ var hqDat = {
         "servicio1": "platicas",
         "servicio2": "exposiciones",
         "level": "1",
-        "name": "auditorio",
+        "name": "Auditorio",
         "ref": "auditorio",
         "pref": "Explanada, aula 108, baños",
         "Descripcion": ""
@@ -517,13 +517,14 @@ var hqDat = {
       "properties": {
         "@id": "way/1002786294",
         "servicio": "trámites",
-         "serviciosn":"reposicion",
+        "serviciosn": "tramites",
         "servicio1": "reposición",
+        "serviciosn1":"reposicion",
         "servicio2": "constancia",
         "indoor": "room",
         "level": "1",
         "name": "área de secretarias",
-        "namesn": "tramites",
+        "namesn": "area de secretarias",
         "ref": "secretarias",
         "pref": "Biblioteca, aula 104, área libre",
         "Descripcion": ""
@@ -634,6 +635,7 @@ var hqDat = {
         "highway": "steps",
         "level": "1",
         "name": "Escaleras CC",
+        "namesn": "escaleras cc",
         "service": "escaleras",
       },
       "geometry": {
@@ -824,7 +826,6 @@ var hqDat = {
         "servicio": "pagos",
         "servicio1": "extraordinario",
         "servicio2": "titulo",
-        "pref":"Entrada estacionamiento, Explanada",
         "name": "Caja",
         "ref" : "caja",
         "pref":"Entrada estacionamiento, Explanada",
@@ -866,6 +867,7 @@ var hqDat = {
         "indoor": "area",
         "level": "1",
         "name": "árbol jardinera",
+        "namesn": "arbol jardinera",
         "ref": "árbol",
         "pref": "área libre, aula 103, aula 102, área secretarias,  corredor dirección ",
         "Descripcion": ""
@@ -1000,6 +1002,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name": "Enfermería",
+        "namesn": "enfermeria",
         "ref": "enfermeria",
         "pref":  "Recibidor entrada principal, Corredor principal ",
         "Descripcion": ""
@@ -1308,6 +1311,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "name":"área administrativa",
+        "namesn": "area administrativa",
         "ref": "administración",
         "pref": "Explanada, Caja ",
         "Descripcion": ""
@@ -1397,6 +1401,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "area": "economía",
+        "serviciosn": "economia",
         "name": "dirección economía",
         "namesn":"direccion economia",
         "ref": "direeco",
@@ -1650,8 +1655,9 @@ var hqDat = {
         "@id": "way/1008962827",
         "indoor": "room",
         "level": "1",
+        "serviciosn": "maestria",
         "name": "salón de maestría",
-        "namesn":"maestria",
+        "namesn":"salon de maestria",
         "ref": "maestría",
         "pref":"baño privado, área libre, aula 101",
         "Descripcion": ""
@@ -2071,6 +2077,7 @@ var hqDat = {
         "indoor": "corridor",
         "level": "1",
         "name": "corredor dirección",
+        "namesn": "corredor direccion",
         "ref": "corrdi",
         "pref": "",
         "Descripcion": ""
@@ -2200,9 +2207,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "extra": "area junto a direccion",
-        "name " :"",
-        "ref": "",
-        "pref": "",
+        "name " :"oficina",
+        "ref": "ofic",
+        "pref": " Corredor Dirección, Secretaria académica FEI, Dirección de la FEI",
         "Descripcion": ""
       },
       "geometry": {
@@ -2512,11 +2519,13 @@ var hqDat = {
         "level": "1",
         "personal":"Dr. Luis Gerardo Montané Jiménez",
         "servicio": "trámites",
+        "serviciosn": "tramites",
         "servicio1": "director",
+        "serviciosn1": "direccion",
         "servicio2": "director de la fei",
         "name":"Dirección de la FEI",
+        "namesn": "direccion de la fei",
         "ref": "dirección",
-        "namesn" : "direccion",
         "pref": "Secretaria Académica de la FEI,Secretaria Académica de Economía y Corredor dirección ",
         "Descripcion":" <b> Personal:</b> Dr. Luis Gerardo Montané Jiménez "
       },
@@ -2560,6 +2569,7 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "servicio": "secretaria académica economía",
+        "serviciosn": "secretarua academica economia",
         "name": "Secretaría académica economía",
         "ref": "secracec",
         "pref": " Corredor Dirección, Secretaria académica FEI",
@@ -2729,6 +2739,7 @@ var hqDat = {
         "level": "1",
         "servicio": "libre",
         "name": "área libre",
+        "namesn": "area libre",
         "ref": "areali",
         "pref": "",
         "Descripcion": ""
@@ -2770,7 +2781,7 @@ var hqDat = {
         "level": "1",
         "name": "jardinera",
         "ref": "jard2",
-        "pref": "árbol",
+        "pref": "árbol, área de secretarias, aula 103",
         "Descripcion": ""
       },
       "geometry": {

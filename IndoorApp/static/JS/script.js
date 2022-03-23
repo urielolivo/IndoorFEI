@@ -248,7 +248,7 @@ $("#buscar").click(function(){
 			if(miSelect != "TODOS"){
 				var x = feature.properties.name == miSelect;
          let result = miSelect.toString().toLowerCase();;
-				return (feature.properties.namesn == result || feature.properties.area == result || feature.properties.name == result || feature.properties.pe == result || feature.properties.ref == result || feature.properties.servicio == result  || feature.properties.personal == result || feature.properties.servicio1 == result || feature.properties.servicio2 == result);
+				return (feature.properties.namesn == result || feature.properties.area == result ||feature.properties.serviciosn == result || feature.properties.serviciosn1 == result || feature.properties.name == result || feature.properties.pe == result || feature.properties.ref == result || feature.properties.servicio == result  || feature.properties.personal == result || feature.properties.servicio1 == result || feature.properties.servicio2 == result);
 				//
 			}	else
 				return true;
