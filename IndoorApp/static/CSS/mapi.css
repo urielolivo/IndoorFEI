@@ -76,6 +76,14 @@
     
 }
 
+.mani {
+    font-size: 150%;
+    margin-top: 20PX;
+    margin-bottom: 10px;
+    float: right;
+
+}
+
 section {
     width:79%;
     margin-right:99px;

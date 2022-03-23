@@ -227,6 +227,32 @@ $("#close").click(function(){
 })
 
 
+
+$("#enlace").click(function(){
+
+     if(this.checked){
+     
+         swal.fire({
+           title: 'Redirección' 
+
+
+         })
+        window.location.replace("https://youtu.be/QhMyJzqKXzQ");
+    
+
+
+
+
+     }
+
+ 
+
+
+});
+
+
+
+
 $("#buscar").click(function(){
   
 	var miSelect = document.getElementById("nombres").value;

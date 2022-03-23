@@ -3,6 +3,10 @@
     display:none;    
 }
 
+#enlace {
+    display:none;
+}
+
 .icono i {
     font-size: 400px;
 }
