@@ -2701,7 +2701,7 @@ var hqData = {
         "level": "1",
         "name": "jardinera",
         "ref": "jard2",
-        "pref": "árbol",
+        "pref": "árbol, área de secretarias, aula 103",
         "Descripcion": ""
       },
       "geometry": {

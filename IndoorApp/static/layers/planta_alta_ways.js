@@ -412,7 +412,7 @@ var hqData2 = {
         "indoor": "room",
         "level": "2",
         "area": "biblioteca",
-        "name": "CC biblioteca",
+        "name": "Cuarto biblioteca",
         "ref": "cuabib",
         "pref": "",
         "Descripcion": "",
