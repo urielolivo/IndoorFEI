@@ -177,7 +177,7 @@ function estilo_puntos (feature) {
 
 
 function popup_puntos (feature, layer) {
-    ///activa la ventanda de informacion
+    ///activa la ventana de informacion
     document.getElementById("menu-bar").checked = true;
 	document.getElementById('bt21').innerHTML = "<div style=text-align:center><h2>"+feature.properties.name+
 		"<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
@@ -212,7 +212,7 @@ function myFunction() {
 }
 
 
-
+/// Enter en buscar
 $("#nombres").keypress(function(event) {
     if (event.keyCode === 13) {
             $("#buscar").click();
@@ -225,33 +225,25 @@ $("#close").click(function(){
      document.getElementById("menu-bar").checked = false;
 	      
 })
-
-
-
+/*
+/// botón a enlace de video
 $("#enlace").click(function(){
 
      if(this.checked){
-     
          swal.fire({
-           title: 'Redirección' 
-
+           title: 'Modo de uso - video',
+             ///html:
+                /// '<iframe width="560" height="315" src="https://youtu.be/QhMyJzqKXzQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
 
          })
-        window.location.replace("https://youtu.be/QhMyJzqKXzQ");
-    
-
-
-
+         window.location.replace("https://youtu.be/QhMyJzqKXzQ");
 
      }
 
- 
-
-
 });
+*/
 
-
-
+/// botón de buscar
 
 $("#buscar").click(function(){
   
