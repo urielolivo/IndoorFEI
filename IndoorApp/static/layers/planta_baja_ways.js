@@ -430,9 +430,9 @@ var hqData = {
         "indoor": "room",
         "level": "1",
         "extra": "anteriormente era ocupado por una jefatura",
-        "name": "",
-        "ref":"",
-        "pref": "",
+        "name": "oficina",
+        "ref":"Corredor dirección, secretaria academica FEI ",
+        "pref": "ofic",
         "Descripcion": ""
       },
       "geometry": {
@@ -2132,10 +2132,10 @@ var hqData = {
         "@id": "way/1008962842",
         "indoor": "room",
         "level": "1",
-        "extra": "area junto a direccion",
-        "name " :"",
-        "ref": "",
-        "pref": "",
+        "extra": "anteriormente era ocupado por una jefatura",
+        "name": "oficina",
+        "ref":"Corredor dirección, secretaria academica FEI ",
+        "pref": "ofic",
         "Descripcion": ""
       },
       "geometry": {

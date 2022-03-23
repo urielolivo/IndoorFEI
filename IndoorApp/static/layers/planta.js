@@ -434,9 +434,9 @@ var hqDat = {
         "indoor": "room",
         "level": "1",
         "extra": "anteriormente era ocupado por una jefatura",
-        "name": "",
-        "ref":"",
-        "pref": "",
+        "name": "oficina",
+        "ref":"Corredor dirección, secretaria academica FEI ",
+        "pref": "ofic",
         "Descripcion": ""
       },
       "geometry": {
