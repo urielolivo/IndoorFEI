@@ -5433,7 +5433,7 @@ var hqDat = {
         "namesn": "escaleras izquierdas",
         "ref": "escizq2",
         "pref":"corredor izquierdo CCE ,baño, aula 209",
-        "Descripcion": "corredor izquierdo cce, centro de cómputo cce, baños"
+        "Descripcion": "corredor izquierdo cce, centro de cómputo cce, baños lado auditorio"
       },
       "geometry": {
         "type": "Polygon",
