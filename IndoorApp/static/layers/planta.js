@@ -307,7 +307,7 @@ var hqDat = {
         "level": "1",
         "name": "Auditorio",
         "ref": "auditorio",
-        "pref": "Explanada, aula 108, baños lado Auditorio",
+        "pref": "Explanada, aula 108, baños",
         "Descripcion": ""
       },
       "geometry": {
@@ -2256,7 +2256,7 @@ var hqDat = {
         "servicio2": "exposiciones",
         "name": "Auditorio",
         "ref": "auditorio",
-        "pref": "Explanada, aula 108, baños lado Auditorio",
+        "pref": "Explanada, aula 108, baños",
         "Descripcion": ""
       },
       "geometry": {
@@ -2352,7 +2352,7 @@ var hqDat = {
         "level": "1",
         "name": "aula 109",
         "ref": "109",
-        "pref": "aula 108, baños, área libre, baños lado auditorio",
+        "pref": "aula 108, baños, área libre, baños",
         "Descripcion": ""
       },
       "geometry": {
