@@ -183,7 +183,7 @@ function popup_puntos (feature, layer) {
 		"<h2></div>" + "<hr><table><tr><td> <b> Referencia: </b> "+feature.properties.ref+
 		"</td></tr><tr><td> <b> Nivel <b/>: "+feature.properties.level+
 		"</td></tr><tr><td>"+feature.properties.Descripcion+
-		"</td></tr><tr><td> <b>Puntos Cercanos</b>: "+feature.properties.pref+
+        "</td></tr><tr><td> <b> <span style='color:red'> Puntos Cercanos </span> </b>: "+feature.properties.pref+
 		"</td></tr></table>";
 
 	layer.bindPopup ("<div style=text-align:center><h3>"+feature.properties.name+
