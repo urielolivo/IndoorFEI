@@ -11,8 +11,3 @@
 3.- Ejecuta el siguiente comando: <pre><code> docker-compose up -d </pre></code>
 
  4.- En un navegador ingresa la siguiente url <pre> localhost:9000/IndoorApp <code>
-
-
-
-
-
