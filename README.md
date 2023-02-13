@@ -6,10 +6,11 @@
 
 1.- Descaga el reposito del proyecto.
 <br/> 
-2.-Entra a la carpeta llamada ** "IndoorFEI" **.
+2.-Entra a la carpeta llamada <b>"IndoorFEI"</b> .
 <br/>
-3.- Ejecuta el comando <pre> docker-compose up -d <code> .
-4.- En un navegador ingresa la siguiente url ** localhost:9000/IndoorApp **
+3.- Ejecuta el siguiente comando: <pre><code> docker-compose up -d </pre></code>
+
+ 4.- En un navegador ingresa la siguiente url <pre> localhost:9000/IndoorApp <code>
 
 
 
